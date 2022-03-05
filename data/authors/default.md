@@ -15,7 +15,7 @@ github: https://github.com/aozaki-kuro
 
 ## 关于网站 / About the website
 
-[Next.js](https://nextjs.org/) / [Tailwind CSS](https://tailwindcss.com/) / [Vercel](https://vercel.com/)
+[Next.js](https://nextjs.org/) / [Tailwind CSS](https://tailwindcss.com/) / [TypeScript](https://www.typescriptlang.org/) / [Vercel](https://vercel.com/)
 
 本站使用 Plausible Analytics 作为第三方统计工具收集统计基础的页面访问信息，如果您对该行为表示不认同，通过设置浏览器开启 `Do Not Track` 即可禁止本站统计脚本的生效。
 

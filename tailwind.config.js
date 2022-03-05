@@ -37,7 +37,7 @@ module.exports = {
         primary: colors.sky,
         //@ts-ignore
         gray: colors.slate, // TODO: Remove ts-ignore after tw types gets updated to v3
-        navday: '#ffffffa6',
+        navday: 'rgba(255,255,255,0.65)',
         navdark: 'rgba(17,23,38,0.65)',
       },
       typography: (theme) => ({
