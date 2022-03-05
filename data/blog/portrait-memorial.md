@@ -1,0 +1,29 @@
+---
+title: 'Portrait: Memorial'
+date: 2014-03-27
+draft: false
+
+tags:
+  - 摄影
+  - 人像
+layout: PostSimple
+---
+
+![1](https://img.aozaki.cc/20140327_0001.jpg)
+
+![2](https://img.aozaki.cc/20140327_0002.jpg)
+
+![3](https://img.aozaki.cc/20140327_0003.jpg)
+
+![4](https://img.aozaki.cc/20140327_0004.jpg)
+
+![5](https://img.aozaki.cc/20140327_0005.jpg)
+
+![6](https://img.aozaki.cc/20140327_0006.jpg)
+
+![7](https://img.aozaki.cc/20140327_0007.jpg)
+
+<p className="text-xs text-center font-bold leading-7">
+  Copyright © 2014 Aozaki All rights reserved.<br/>
+  [ DO NOT REPOST ]
+</p>

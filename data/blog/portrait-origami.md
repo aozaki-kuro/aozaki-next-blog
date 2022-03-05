@@ -1,0 +1,19 @@
+---
+title: 'Portrait: Origami'
+date: '2016-05-05'
+draft: false
+
+tags:
+  - 摄影
+  - 人像
+layout: PostSimple
+---
+
+![1](https://img.aozaki.cc/20160505_0001.jpg)
+
+![2](https://img.aozaki.cc/20160505_0002.jpg)
+
+<p className="text-xs text-center font-bold leading-7">
+  Copyright © 2016 Aozaki All rights reserved.<br/>
+  [ DO NOT REPOST ]
+</p>
