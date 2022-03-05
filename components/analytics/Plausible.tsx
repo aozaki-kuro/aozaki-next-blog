@@ -8,7 +8,7 @@ const PlausibleScript = () => {
       <Script
         strategy="lazyOnload"
         data-domain={siteMetadata.analytics.plausibleDataDomain}
-        src="https://beacon.suisei.cc/app.js"
+        src="https://beacon.aozaki.cc/app.js"
       />
       <Script strategy="lazyOnload" id="plausible-script">
         {`
