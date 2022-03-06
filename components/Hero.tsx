@@ -41,13 +41,13 @@ function Hero() {
             </ul>
           </div>
         </div>
-        <div className="hidden sm:block">
+        <div className="hidden sm:block h-[130px] w-[130px] relative">
           <Image
             src="/static/images/avatar.jpg"
             alt="Avatar"
-            height="130px"
-            width="130px"
-            className="transform select-none rounded-full duration-700 ease-in-out"
+            layout="fill"
+            objectFit="contain"
+            className="rounded-full"
           />
         </div>
       </div>
