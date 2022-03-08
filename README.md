@@ -4,10 +4,10 @@
   <b>- <em>Yet Another Blog of Aozaki</em> -</b>
   
   <br>
-  <img style="display: inline-block;" src="https://img.shields.io/badge/Next.js-black?style=flat-square&logo=next.js&logoColor=white" alt="Next.js" />
-  <img style="display: inline-block;" src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=flat-square&logo=tailwind-css&logoColor=white" alt="Tailwind CSS" />
-  <img style="display: inline-block;" src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
-  <img style="display: inline-block;" src="https://img.shields.io/badge/pnpm-%236C78AF.svg?style=flat-square&logo=pnpm&logoColor=white" alt="pnpm" />  
+  <a href="https://nextjs.org/" target="_blank" rel="noopener noreferrer"><img style="display: inline-block;" src="https://img.shields.io/badge/Next.js-black?style=flat-square&logo=next.js&logoColor=white" alt="Next.js" /></a>
+  <a href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer"><img style="display: inline-block;" src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=flat-square&logo=tailwind-css&logoColor=white" alt="Tailwind CSS" /></a>
+  <a href="https://www.typescriptlang.org/" target="_blank" rel="noopener noreferrer"><img style="display: inline-block;" src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" /></a>
+  <a href="https://pnpm.io/" target="_blank" rel="noopener noreferrer"><img style="display: inline-block;" src="https://img.shields.io/badge/pnpm-%236C78AF.svg?style=flat-square&logo=pnpm&logoColor=white" alt="pnpm" />  </a>
 </div>
 
 ---
