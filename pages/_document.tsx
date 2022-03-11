@@ -18,7 +18,6 @@ class MyDocument extends Document {
             sizes="16x16"
             href="/static/favicons/favicon-16x16.png"
           />
-          <link rel="manifest" href="/static/favicons/site.webmanifest" />
           <link rel="mask-icon" href="/static/favicons/safari-pinned-tab.svg" color="#5bbad5" />
           <meta name="theme-color" content="#0ea5e9" />
           <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
