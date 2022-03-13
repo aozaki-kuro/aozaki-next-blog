@@ -5,7 +5,6 @@ class MyDocument extends Document {
     return (
       <Html lang="zh-CN" className="scroll-smooth">
         <Head>
-          <link rel="apple-touch-icon" sizes="76x76" href="/static/favicons/apple-touch-icon.png" />
           <link
             rel="icon"
             type="image/png"
@@ -18,6 +17,7 @@ class MyDocument extends Document {
             sizes="16x16"
             href="/static/favicons/favicon-16x16.png"
           />
+          <link rel="apple-touch-icon" sizes="76x76" href="/static/favicons/apple-touch-icon.png" />
           <link rel="mask-icon" href="/static/favicons/safari-pinned-tab.svg" color="#5bbad5" />
           <meta name="theme-color" content="#0ea5e9" />
           <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
