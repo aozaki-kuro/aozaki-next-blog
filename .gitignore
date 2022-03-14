@@ -37,5 +37,8 @@ yarn-error.log*
 .env.production.local
 
 # pwa
-/public/sw.js
-/public/workbox-*.js
+**/public/workbox-*.js
+**/public/workbox-*.js.map
+**/public/sw.js
+**/public/sw.js.map
+**/public/worker-*.js
