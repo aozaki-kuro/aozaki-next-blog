@@ -1,6 +1,6 @@
 {
-  "name": "tailwind-nextjs-starter-blog",
-  "version": "1.5.3",
+  "name": "aozaki-next-js",
+  "version": "1.0.1",
   "private": true,
   "scripts": {
     "start": "next dev",

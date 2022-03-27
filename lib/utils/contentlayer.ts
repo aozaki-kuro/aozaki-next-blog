@@ -31,7 +31,7 @@ export const pick = <Obj, Keys extends keyof Obj>(
   return keys.reduce((acc, key) => {
     acc[key] = obj[key] ?? null
     return acc
-  }, {} as any)
+  }, {} as any) // eslint-disable-line
 }
 
 export const omit = <Obj, Keys extends keyof Obj>(obj: Obj, keys: Keys[]): Omit<Obj, Keys> => {
