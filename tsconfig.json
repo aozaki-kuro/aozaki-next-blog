@@ -20,7 +20,10 @@
       "@/data/*": ["data/*"],
       "@/layouts/*": ["layouts/*"],
       "@/lib/*": ["lib/*"],
-      "@/css/*": ["css/*"]
+      "@/css/*": ["css/*"],
+      "@fortawesome/fontawesome-common-types": [
+        "node_modules/@fortawesome/fontawesome-common-types/index"
+      ]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
