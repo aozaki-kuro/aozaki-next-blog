@@ -1,9 +1,8 @@
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 import siteMetadata from '@/data/siteMetadata'
-import { AuthorFrontMatter } from 'types/AuthorFrontMatter'
-import { PostFrontMatter } from 'types/PostFrontMatter'
-
+import { CoreContent } from '@/lib/utils/contentlayer'
+import type { Blog, Authors } from 'contentlayer/generated'
 interface CommonSEOProps {
   title: string
   description: string
@@ -99,8 +98,8 @@ export const TagSEO = ({ title, description }: PageSEOProps) => {
   )
 }
 
-interface BlogSeoProps extends PostFrontMatter {
-  authorDetails?: AuthorFrontMatter[]
+interface BlogSeoProps extends CoreContent<Blog> {
+  authorDetails?: CoreContent<Authors>[]
   url: string
 }
 

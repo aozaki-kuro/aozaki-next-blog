@@ -6,22 +6,23 @@ import siteMetadata from '@/data/siteMetadata'
 import formatDate from '@/lib/utils/formatDate'
 import Comments from '@/components/comments'
 import ScrollTopAndComment from '@/components/ScrollTopAndComment'
+import { CoreContent } from '@/lib/utils/contentlayer'
 import { ReactNode } from 'react'
-import { PostFrontMatter } from 'types/PostFrontMatter'
+import type { Blog } from 'contentlayer/generated'
 
 interface Props {
-  frontMatter: PostFrontMatter
+  content: CoreContent<Blog>
   children: ReactNode
   next?: { slug: string; title: string }
   prev?: { slug: string; title: string }
 }
 
-export default function PostLayout({ frontMatter, next, prev, children }: Props) {
-  const { slug, date, title } = frontMatter
+export default function PostLayout({ content, next, prev, children }: Props) {
+  const { slug, date, title } = content
 
   return (
     <SectionContainer>
-      <BlogSEO url={`${siteMetadata.siteUrl}/blog/${slug}`} {...frontMatter} />
+      <BlogSEO url={`${siteMetadata.siteUrl}/blog/${slug}`} {...content} />
       <ScrollTopAndComment />
       <article>
         <div>
@@ -47,7 +48,7 @@ export default function PostLayout({ frontMatter, next, prev, children }: Props)
             <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:col-span-3 xl:row-span-2 xl:pb-0">
               <div className="prose max-w-none pt-10 pb-8 dark:prose-dark">{children}</div>
             </div>
-            <Comments frontMatter={frontMatter} />
+            <Comments frontMatter={content} />
             <footer>
               <div className="flex flex-col text-sm font-medium sm:flex-row sm:justify-between sm:text-base">
                 {prev && (

@@ -36,6 +36,9 @@ yarn-error.log*
 .env.test.local
 .env.production.local
 
+# Contentlayer
+.contentlayer
+
 # pwa
 **/public/workbox-*.js
 **/public/workbox-*.js.map
