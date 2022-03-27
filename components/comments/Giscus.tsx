@@ -3,11 +3,7 @@ import { useTheme } from 'next-themes'
 
 import siteMetadata from '@/data/siteMetadata'
 
-interface Props {
-  mapping: string
-}
-
-const Giscus = ({ mapping }: Props) => {
+const Giscus = ({ mapping }) => {
   const [enableLoadComments, setEnabledLoadComments] = useState(true)
   const { theme, resolvedTheme } = useTheme()
   const commentsTheme =

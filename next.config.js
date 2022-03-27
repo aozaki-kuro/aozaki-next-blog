@@ -1,3 +1,5 @@
+const { withContentlayer } = require('next-contentlayer')
+
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
   enabled: process.env.ANALYZE === 'true',
 })
@@ -5,7 +7,7 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 // You might need to insert additional domains in script-src if you are using external services
 const ContentSecurityPolicy = `
   default-src 'self';
-  script-src 'self' 'unsafe-eval' 'unsafe-inline' giscus.app beacon.aozaki.cc;
+  script-src 'self' 'unsafe-eval' 'unsafe-inline' giscus.app;
   style-src 'self' 'unsafe-inline';
   img-src * blob: data:;
   media-src 'none';
@@ -52,31 +54,19 @@ const securityHeaders = [
   },
 ]
 
-const withPWA = require('next-pwa')
-const runtimeCaching = require('next-pwa/cache')
-
 /**
  * @type {import('next/dist/next-server/server/config').NextConfig}
  **/
-
-module.exports = withBundleAnalyzer(
-  withPWA({
-    reactStrictMode: true,
+module.exports = withContentlayer()(
+  withBundleAnalyzer({
     images: {
       domains: ['img.aozaki.cc'],
     },
+    reactStrictMode: true,
     pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
     eslint: {
       dirs: ['pages', 'components', 'lib', 'layouts', 'scripts'],
     },
-
-    pwa: {
-      dest: 'public',
-      register: true,
-      disable: process.env.NODE_ENV === 'development',
-      runtimeCaching,
-    },
-
     async headers() {
       return [
         {
@@ -86,19 +76,6 @@ module.exports = withBundleAnalyzer(
       ]
     },
     webpack: (config, { dev, isServer }) => {
-      config.module.rules.push({
-        test: /\.(png|jpe?g|gif|mp4)$/i,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              publicPath: '/_next',
-              name: 'static/media/[name].[hash].[ext]',
-            },
-          },
-        ],
-      })
-
       config.module.rules.push({
         test: /\.svg$/,
         use: ['@svgr/webpack'],

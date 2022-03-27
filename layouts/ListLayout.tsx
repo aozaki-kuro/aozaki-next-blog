@@ -3,22 +3,23 @@ import Tag from '@/components/Tag'
 import { ComponentProps, useState } from 'react'
 import Pagination from '@/components/Pagination'
 import formatDate from '@/lib/utils/formatDate'
+import { CoreContent } from '@/lib/utils/contentlayer'
+import type { Blog } from 'contentlayer/generated'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTags } from '@fortawesome/free-solid-svg-icons'
 
-import { PostFrontMatter } from 'types/PostFrontMatter'
 interface Props {
-  posts: PostFrontMatter[]
+  posts: CoreContent<Blog>[]
   title: string
-  initialDisplayPosts?: PostFrontMatter[]
+  initialDisplayPosts?: CoreContent<Blog>[]
   pagination?: ComponentProps<typeof Pagination>
 }
 
 export default function ListLayout({ posts, title, initialDisplayPosts = [], pagination }: Props) {
   const [searchValue, setSearchValue] = useState('')
-  const filteredBlogPosts = posts.filter((frontMatter) => {
-    const searchContent = frontMatter.title + frontMatter.summary + frontMatter.tags.join(' ')
+  const filteredBlogPosts = posts.filter((post) => {
+    const searchContent = post.title + post.summary + post.tags.join(' ')
     return searchContent.toLowerCase().includes(searchValue.toLowerCase())
   })
 
