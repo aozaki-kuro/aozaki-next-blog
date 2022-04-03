@@ -24,6 +24,12 @@ input:-webkit-autofill:focus {
   transition: background-color 600000s 0s, color 600000s 0s;
 }
 
+/** ===== 自定义区域 ===== **/
+
+.prose :where(a):not(:where([class~='not-prose'] *)) {
+  text-decoration: none;
+}
+
 /** 定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸 **/
 
 ::-webkit-scrollbar {
