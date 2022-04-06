@@ -57,7 +57,7 @@ const securityHeaders = [
 /**
  * @type {import('next/dist/next-server/server/config').NextConfig}
  **/
-module.exports = withContentlayer()(
+module.exports = withContentlayer(
   withBundleAnalyzer({
     images: {
       domains: ['img.aozaki.cc'],
