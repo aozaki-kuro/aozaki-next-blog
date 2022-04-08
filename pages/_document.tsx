@@ -19,8 +19,7 @@ class MyDocument extends Document {
           />
           <link rel="apple-touch-icon" sizes="76x76" href="/static/favicons/apple-touch-icon.png" />
           <link rel="mask-icon" href="/static/favicons/safari-pinned-tab.svg" color="#5bbad5" />
-          <meta name="theme-color" media="(prefers-color-scheme: light)" content="white" />
-          <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#111729" />
+          <meta name="theme-color" content="#111729" />
           <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
           <link rel="manifest" href="/static/manifest.json" />
         </Head>
