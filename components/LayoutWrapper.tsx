@@ -85,7 +85,7 @@ const LayoutWrapper = ({ children }: Props) => {
         </div>
       </header>
       <div className="pt-4 max-w-3xl px-6 md:px-3 xl:px-0 mx-auto sm:px-6 xl:max-w-[62rem]">
-        <div className="flex flex-col justify-between min-h-screen">
+        <div className="flex flex-col justify-between">
           <main className="mb-auto">{children}</main>
           <Footer />
         </div>
