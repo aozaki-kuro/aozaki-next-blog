@@ -18,6 +18,14 @@
   @apply my-5;
 }
 
+/* https://stackoverflow.com/questions/61083813/how-to-avoid-internal-autofill-selected-style-to-be-applied */
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  transition: background-color 600000s 0s, color 600000s 0s;
+}
+
+/** ===== 自定义区域 ===== **/
+
 @media (prefers-color-scheme: light) {
   body {
     background-color: white;
@@ -30,13 +38,7 @@
   }
 }
 
-/* https://stackoverflow.com/questions/61083813/how-to-avoid-internal-autofill-selected-style-to-be-applied */
-input:-webkit-autofill,
-input:-webkit-autofill:focus {
-  transition: background-color 600000s 0s, color 600000s 0s;
-}
-
-/** ===== 自定义区域 ===== **/
+/** 删除超链接下划线 **/
 
 .prose :where(a):not(:where([class~='not-prose'] *)) {
   text-decoration: none;
@@ -69,11 +71,15 @@ input:-webkit-autofill:focus {
   transition: background-color 0.15s ease-in-out;
 }
 
+/** 替代引用 **/
+
 .poet {
   font-style: italic;
   margin-block-start: 1em;
   margin-block-end: 1em;
 }
+
+/** FontAwesome 右侧增加空档 **/
 
 .svg-inline--fa {
   padding-right: 0.2rem;
