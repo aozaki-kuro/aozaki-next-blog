@@ -62,7 +62,7 @@ const projectsData = [
   {
     title: 'Art Commission',
     description: `The record of art commission. DO NOT REPOST.`,
-    imgSrc: '/static/images/featured_commission.jpg',
+    imgSrc: '/static/featured/20211102_0000.jpg',
     href: '/blog/commission',
   },
   {
