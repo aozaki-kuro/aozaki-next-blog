@@ -84,3 +84,17 @@ input:-webkit-autofill:focus {
 .svg-inline--fa {
   padding-right: 0.2rem;
 }
+
+/** 修改引用 **/
+
+.prose :where(blockquote):not(:where([class~='not-prose'] *)) {
+  font-weight: 500;
+  font-style: normal;
+  color: #0f172a;
+  border-left-width: 0.25rem;
+  border-left-color: rgba(135, 212, 249);
+  quotes: none;
+  margin-top: 1.6em;
+  margin-bottom: 1.6em;
+  padding-left: 1em;
+}
