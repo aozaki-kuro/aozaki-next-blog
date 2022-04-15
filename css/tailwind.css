@@ -47,4 +47,5 @@ input:-webkit-autofill:focus {
 
 .prose :where(blockquote):not(:where([class~='not-prose'] *)) {
   @apply font-medium not-italic border-l-4 border-l-sky-400 my-6 pl-4;
+  quotes: none;
 }
