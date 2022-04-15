@@ -6,6 +6,7 @@
 @import 'custom/navbar.css';
 @import 'custom/scrollbar.css';
 @import 'custom/smooth.css';
+@import 'custom/paragraph.css';
 
 .task-list-item::before {
   @apply hidden;
