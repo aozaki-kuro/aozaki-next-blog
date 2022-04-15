@@ -1,0 +1,9 @@
+/** 平滑滚动 **/
+
+html {
+  @apply scroll-smooth motion-reduce:scroll-auto;
+}
+
+body {
+  @apply bg-white dark:bg-slate-700;
+}

@@ -1,0 +1,17 @@
+/** 删除超链接下划线 **/
+
+.prose :where(a):not(:where([class~='not-prose'] *)) {
+  @apply no-underline;
+}
+
+/** FontAwesome 右侧增加空档 **/
+
+.svg-inline--fa {
+  @apply pr-1;
+}
+
+/** 修改引用 **/
+
+.prose :where(blockquote):not(:where([class~='not-prose'] *)) {
+  @apply font-medium not-italic border-l-4 border-l-sky-400 my-6 pl-4;
+}

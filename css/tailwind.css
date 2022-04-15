@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+/** 引入自定义 **/
+@import 'custom/navbar.css';
+@import 'custom/scrollbar.css';
+@import 'custom/smooth.css';
+
 .task-list-item::before {
   @apply hidden;
 }
@@ -22,62 +27,4 @@
 input:-webkit-autofill,
 input:-webkit-autofill:focus {
   transition: background-color 600000s 0s, color 600000s 0s;
-}
-
-/** ========== 自定义区域 ========== **/
-
-/** 平滑滚动 **/
-
-html {
-  @apply scroll-smooth motion-reduce:scroll-auto;
-}
-
-body {
-  @apply bg-white dark:bg-slate-700;
-}
-
-/** 删除超链接下划线 **/
-
-.prose :where(a):not(:where([class~='not-prose'] *)) {
-  @apply no-underline;
-}
-
-/** 定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸 **/
-
-::-webkit-scrollbar {
-  @apply w-1.5 h-1.5;
-}
-
-/** 定义滚动条轨道 **/
-
-::-webkit-scrollbar-track {
-  @apply bg-slate-400/50;
-}
-
-/** 定义滑块 **/
-
-::-webkit-scrollbar-thumb {
-  @apply bg-sky-700;
-}
-
-/** 渐变色定义 **/
-
-.navbartrans {
-  @apply transition-border duration-0;
-}
-
-* {
-  @apply transition-bg duration-150 ease-in-out motion-reduce:duration-0;
-}
-
-/** FontAwesome 右侧增加空档 **/
-
-.svg-inline--fa {
-  @apply pr-1;
-}
-
-/** 修改引用 **/
-
-.prose :where(blockquote):not(:where([class~='not-prose'] *)) {
-  @apply font-medium not-italic border-l-4 border-l-sky-400 my-6 pl-4;
 }

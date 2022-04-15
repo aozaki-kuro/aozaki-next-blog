@@ -1,0 +1,9 @@
+/** 渐变色动画定义 **/
+
+.navbartrans {
+  @apply transition-border duration-0;
+}
+
+* {
+  @apply transition-bg duration-150 ease-in-out motion-reduce:duration-0;
+}
