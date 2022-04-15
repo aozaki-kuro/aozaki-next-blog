@@ -46,6 +46,14 @@ module.exports = {
         navday: 'rgba(255,255,255,0.65)',
         navdark: 'rgba(17,23,38,0.65)',
       },
+      transitionProperty: {
+        border: 'border-color',
+        bg: 'background-color',
+      },
+      transitionDuration: {
+        0: '0ms',
+      },
+      quotes: 'none',
       typography: (theme) => ({
         DEFAULT: {
           css: {

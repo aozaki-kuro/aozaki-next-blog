@@ -24,77 +24,60 @@ input:-webkit-autofill:focus {
   transition: background-color 600000s 0s, color 600000s 0s;
 }
 
-/** ===== 自定义区域 ===== **/
+/** ========== 自定义区域 ========== **/
 
-@media (prefers-color-scheme: light) {
-  body {
-    background-color: white;
-  }
+/** 平滑滚动 **/
+
+html {
+  @apply scroll-smooth motion-reduce:scroll-auto;
 }
 
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #111729;
-  }
+body {
+  @apply bg-white dark:bg-slate-700;
 }
 
 /** 删除超链接下划线 **/
 
 .prose :where(a):not(:where([class~='not-prose'] *)) {
-  text-decoration: none;
+  @apply no-underline;
 }
 
 /** 定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸 **/
 
 ::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
+  @apply w-1.5 h-1.5;
 }
 
 /** 定义滚动条轨道 **/
 
 ::-webkit-scrollbar-track {
-  background-color: rgb(209, 209, 209, 0.5);
+  @apply bg-slate-400/50;
 }
 
 /** 定义滑块 **/
 
 ::-webkit-scrollbar-thumb {
-  background-color: #184c77;
+  @apply bg-sky-700;
 }
 
+/** 渐变色定义 **/
+
 .navbartrans {
-  transition: border-color 0;
+  @apply transition-border duration-0;
 }
 
 * {
-  transition: background-color 0.15s ease-in-out;
-}
-
-/** 替代引用 **/
-
-.poet {
-  font-style: italic;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
+  @apply transition-bg duration-150 ease-in-out motion-reduce:duration-0;
 }
 
 /** FontAwesome 右侧增加空档 **/
 
 .svg-inline--fa {
-  padding-right: 0.2rem;
+  @apply pr-1;
 }
 
 /** 修改引用 **/
 
 .prose :where(blockquote):not(:where([class~='not-prose'] *)) {
-  font-weight: 500;
-  font-style: normal;
-  color: #0f172a;
-  border-left-width: 0.25rem;
-  border-left-color: rgba(135, 212, 249);
-  quotes: none;
-  margin-top: 1.6em;
-  margin-bottom: 1.6em;
-  padding-left: 1em;
+  @apply font-medium not-italic border-l-4 border-l-sky-400 my-6 pl-4;
 }
