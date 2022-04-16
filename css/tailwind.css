@@ -46,6 +46,6 @@ input:-webkit-autofill:focus {
 /** 修改引用 **/
 
 .prose :where(blockquote):not(:where([class~='not-prose'] *)) {
-  @apply font-medium not-italic border-l-4 border-l-sky-400 my-6 pl-4;
+  @apply text-gray-600 font-medium leading-relaxed not-italic border-l-4 border-l-sky-500 pl-4;
   quotes: none;
 }
