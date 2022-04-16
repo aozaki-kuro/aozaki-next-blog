@@ -4,7 +4,7 @@ import Footer from './Footer'
 import MobileNav from './MobileNav'
 import ThemeSwitch from './ThemeSwitch'
 import { useEffect, useState, ReactNode } from 'react'
-import LogoSwitch from './LogoSwitch'
+import LogoSwitch from '@/components/custom/LogoSwitch'
 
 interface Props {
   children: ReactNode
