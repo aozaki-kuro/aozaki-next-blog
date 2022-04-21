@@ -1,0 +1,5 @@
+/** FontAwesome 右侧增加空档 **/
+
+.svg-inline--fa {
+  @apply pr-1;
+}
