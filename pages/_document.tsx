@@ -3,7 +3,7 @@ import Document, { Html, Head, Main, NextScript } from 'next/document'
 class MyDocument extends Document {
   render() {
     return (
-      <Html lang="zh-CN" className="scroll-smooth">
+      <Html lang="zh-CN" className="scroll-smooth motion-reduce:scroll-auto">
         <Head>
           <link
             rel="icon"

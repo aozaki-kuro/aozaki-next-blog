@@ -1,11 +1,5 @@
 import siteMetadata from '@/data/siteMetadata'
 import dynamic from 'next/dynamic'
-import { CoreContent } from '@/lib/utils/contentlayer'
-import type { Blog } from 'contentlayer/generated'
-
-interface Props {
-  frontMatter: CoreContent<Blog>
-}
 
 const UtterancesComponent = dynamic(
   () => {
@@ -26,29 +20,14 @@ const DisqusComponent = dynamic(
   { ssr: false }
 )
 
-const Comments = ({ frontMatter }: Props) => {
-  let term
-  switch (
-    siteMetadata.comment.giscusConfig.mapping ||
-    siteMetadata.comment.utterancesConfig.issueTerm
-  ) {
-    case 'pathname':
-      term = frontMatter.slug
-      break
-    case 'url':
-      term = window.location.href
-      break
-    case 'title':
-      term = frontMatter.title
-      break
-  }
+const Comments = ({ frontMatter }) => {
+  const comment = siteMetadata?.comment
+  if (!comment || Object.keys(comment).length === 0) return <></>
   return (
     <div id="comment">
-      {siteMetadata.comment && siteMetadata.comment.provider === 'giscus' && (
-        <GiscusComponent mapping={term} />
-      )}
+      {siteMetadata.comment && siteMetadata.comment.provider === 'giscus' && <GiscusComponent />}
       {siteMetadata.comment && siteMetadata.comment.provider === 'utterances' && (
-        <UtterancesComponent issueTerm={term} />
+        <UtterancesComponent />
       )}
       {siteMetadata.comment && siteMetadata.comment.provider === 'disqus' && (
         <DisqusComponent frontMatter={frontMatter} />
