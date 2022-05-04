@@ -26,6 +26,8 @@
     "@icons-pack/react-simple-icons": "^4.6.1",
     "@tailwindcss/forms": "^0.4.0",
     "@tailwindcss/typography": "^0.5.0",
+    "@types/mdast": "^3.0.10",
+    "@types/unist": "^2.0.6",
     "autoprefixer": "^10.4.0",
     "contentlayer": "0.2.1",
     "esbuild": "^0.13.13",
