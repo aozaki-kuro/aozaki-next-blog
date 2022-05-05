@@ -15,11 +15,7 @@ function Hero() {
           <h1 className="pb-6 text-4xl font-semibold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
             Aozaki
           </h1>
-          <p className="text-gray-700 dark:text-gray-300 tracking-normal md:tracking-wide leading-7">
-            "Do not go gentle into that good night.
-            <br />
-            <p className="indent-5">Rage, rage against the dying of the light."</p>
-          </p>
+          <p className="text-base sm:text-lg">Read, watch, write. It forges my soul.</p>
           <div>
             <ul className="flex gap-x-4 text-sm text-gray-500 dark:text-gray-400 pt-4 underline underline-offset-1">
               <li>
