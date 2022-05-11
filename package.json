@@ -14,7 +14,7 @@
     "lint": "next lint --fix --dir pages --dir components --dir lib --dir layouts --dir scripts",
     "prepare": "husky install",
     "clear": "rm -rf .contentlayer .next public/tags public/feed.xml public/sitemap.xml public/sw.js public/workbox-*.js",
-    "format": "prettier '*/**/*.+(js|jsx|ts|tsx|json|css|md|mdx)' --write"
+    "format": "prettier './**/*.+(js|jsx|ts|tsx|json|css|md|mdx)' --write"
   },
   "dependencies": {
     "@fontsource/inter": "4.5.2",
