@@ -10,7 +10,7 @@ const siteMetadata = {
   siteLogo: '/static/images/logo.png',
   image: '/static/images/avatar.jpg',
   socialBanner: '/static/images/twitter-card.jpg',
-  email: 'aozaki.blog@gmail.com',
+  email: 'i@aozaki.cc',
   github: 'https://github.com/aozaki-kuro',
   twitter: 'https://twitter.com/Aozaki__',
   facebook: '',
