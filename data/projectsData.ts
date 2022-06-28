@@ -3,7 +3,7 @@ const projectsData = [
   {
     title: 'Art Commission',
     description: `The record of art commission. DO NOT REPOST.`,
-    imgSrc: '/static/featured/20211102_0000.jpg',
+    imgSrc: 'https://img.aozaki.cc/commission/20211018_Laxy.jpg',
     href: '/blog/commission',
   },
   {
