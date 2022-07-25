@@ -6,12 +6,6 @@ const projectsData = [
     imgSrc: 'https://img.aozaki.cc/commission/20211018_Laxy.jpg',
     href: '/blog/commission',
   },
-  {
-    title: 'Tokomachi Wiki',
-    description: `A Wiki site to record Tokomachi activities and details. This wiki is fan-made, unofficial and non-profit.`,
-    imgSrc: '/static/images/tokomachi_wiki.jpg',
-    href: 'https://toko.suisei.cc',
-  },
 
   /** Photography */
   {
@@ -73,6 +67,13 @@ const projectsData = [
     description: `© 2014 Aozaki`,
     imgSrc: 'https://img.aozaki.cc/20140327_0005.jpg',
     href: '/blog/portrait/memorial',
+  },
+
+  {
+    title: 'Tokomachi Wiki',
+    description: `A Wiki site to record Tokomachi activities and details. This wiki is fan-made, unofficial and non-profit.`,
+    imgSrc: '/static/images/tokomachi_wiki.jpg',
+    href: 'https://toko.suisei.cc',
   },
 ]
 
