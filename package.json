@@ -1,8 +1,8 @@
 {
-  "name": "site",
+  "name": "aozaki-next-blog",
   "version": "1.0.0",
   "main": "index.js",
-  "author": "Shu Ding <g@shud.in>",
+  "author": "Aozaki <i@aozaki.cc>",
   "license": "MIT",
   "scripts": {
     "dev": "next",
@@ -16,17 +16,17 @@
     "@fortawesome/free-regular-svg-icons": "^6.0.0",
     "@fortawesome/free-solid-svg-icons": "^6.0.0",
     "@fortawesome/react-fontawesome": "^0.1.17",
-    "canvas-confetti": "^1.5.1",
+    "canvas-confetti": "^1.6.0",
     "gray-matter": "^4.0.3",
-    "next": "12.1.6",
+    "next": "^12.3.2",
     "nextra": "2.0.0-alpha.56",
     "nextra-theme-blog": "2.0.0-alpha.55",
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "rss": "^1.2.2"
   },
   "devDependencies": {
-    "eslint": "8.9.0",
+    "eslint": "8.26.0",
     "eslint-config-next": "^12.1.0",
     "next-sitemap": "^3.1.30"
   }
