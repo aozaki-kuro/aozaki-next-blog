@@ -1,10 +1,12 @@
-function repost(props) {
+import React from 'react'
+
+const repost = props => {
+  const Date = `${props.Date}`
   return (
-    <p style={{ textAlign: 'center', fontSize: '0.8rem' }}>
-      Copyright © {props.Date} Aozaki All rights reserved.
-      <br />
-      <br />[ DO NOT REPOST ]
-    </p>
+    <div style={{ textAlign: 'center', fontSize: '0.8rem' }}>
+      <p>Copyright © {Date} Aozaki All rights reserved.</p>
+      <p>[ DO NOT REPOST ]</p>
+    </div>
   )
 }
 

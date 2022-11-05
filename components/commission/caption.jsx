@@ -1,4 +1,6 @@
-function caption(props) {
+import React from 'react'
+
+const caption = props => {
   const Year = props.Year
   const Name = props.Name
   const Url = props.Url

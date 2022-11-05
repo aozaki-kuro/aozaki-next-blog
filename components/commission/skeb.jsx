@@ -1,4 +1,6 @@
-export default function skeb () {
+import React from 'react'
+
+const skeb = () => {
   return (
     <div style={{ textAlign: 'center', fontSize: '0.8rem' }}>
       <p>
@@ -12,3 +14,5 @@ export default function skeb () {
     </div>
   )
 }
+
+export default skeb
