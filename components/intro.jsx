@@ -8,7 +8,6 @@ import {
   faFilm,
   faHeadphonesSimple,
 } from '@fortawesome/free-solid-svg-icons'
-import '@fortawesome/fontawesome-svg-core/styles.css'
 
 const Main = () => {
   return (
