@@ -36,19 +36,39 @@ export default {
     <div>
       <hr />
       <span style={{ fontSize: '1.2rem' }}>
-        <a href="https://twitter.com/Aozaki__" target="_blank" style={{ paddingRight: '1rem' }}>
+        <a
+          href="https://twitter.com/Aozaki__"
+          aria-label="Twitter"
+          target="_blank"
+          style={{ paddingRight: '1rem' }}
+        >
           <FontAwesomeIcon icon={faTwitter} />
         </a>
-        <a href="https://t.me/aozaki_ch" target="_blank" style={{ paddingRight: '1rem' }}>
+        <a
+          href="https://t.me/aozaki_ch"
+          aria-label="Telegram"
+          target="_blank"
+          style={{ paddingRight: '1rem' }}
+        >
           <FontAwesomeIcon icon={faTelegram} />
         </a>
-        <a href="https://github.com/aozaki-kuro" target="_blank" style={{ paddingRight: '1rem' }}>
+        <a
+          href="https://github.com/aozaki-kuro"
+          aria-label="GitHub"
+          target="_blank"
+          style={{ paddingRight: '1rem' }}
+        >
           <FontAwesomeIcon icon={faGithub} />
         </a>
-        <a href="mailto:i@aozaki.cc" target="_blank" style={{ paddingRight: '1rem' }}>
+        <a
+          href="mailto:i@aozaki.cc"
+          aria-label="email"
+          target="_blank"
+          style={{ paddingRight: '1rem' }}
+        >
           <FontAwesomeIcon icon={faEnvelope} />
         </a>
-        <a href="/feed.xml">
+        <a href="/feed.xml" aria-label="RSS">
           <FontAwesomeIcon icon={faRss} />
         </a>
       </span>
