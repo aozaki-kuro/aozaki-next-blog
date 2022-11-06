@@ -11,6 +11,11 @@
     "format": "prettier './**/*.+(js|jsx|ts|tsx|json|css|md|mdx)' --write"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.2.0",
+    "@fortawesome/free-brands-svg-icons": "^6.2.0",
+    "@fortawesome/free-regular-svg-icons": "^6.2.0",
+    "@fortawesome/free-solid-svg-icons": "^6.2.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "canvas-confetti": "^1.6.0",
     "gray-matter": "^4.0.3",
     "next": "^12.3.2",
