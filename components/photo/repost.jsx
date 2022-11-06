@@ -1,9 +1,7 @@
-import React from 'react'
-
 const repost = props => {
   const Date = `${props.Date}`
   return (
-    <div style={{ textAlign: 'center', fontSize: '0.8rem' }}>
+    <div className="text-sm centered">
       <p>Copyright © {Date} Aozaki All rights reserved.</p>
       <p>[ DO NOT REPOST ]</p>
     </div>

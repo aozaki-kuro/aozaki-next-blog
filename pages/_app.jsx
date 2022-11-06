@@ -3,8 +3,7 @@ import Script from 'next/script'
 
 import 'nextra-theme-blog/style.css'
 import '../styles/main.css'
-
-import '@fortawesome/fontawesome-svg-core/styles.css'
+import '../styles/custom.css'
 
 export default function Nextra({ Component, pageProps }) {
   const getLayout = Component.getLayout || (page => page)

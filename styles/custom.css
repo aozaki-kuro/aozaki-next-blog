@@ -1,0 +1,8 @@
+.social > a > svg {
+  padding-right: 1rem;
+  font-size: 1.2rem;
+}
+
+.centered {
+  text-align: center;
+}

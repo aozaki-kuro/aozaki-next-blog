@@ -1,8 +1,6 @@
-import React from 'react'
-
 const skeb = () => {
   return (
-    <div style={{ textAlign: 'center', fontSize: '0.8rem' }}>
+    <div className="centered text-xs">
       <p>
         Skebの規約による、Skebでやり取りされた作品のすべての権利はクリエイターと版権元に帰属する。
       </p>

@@ -1,9 +1,5 @@
 const YEAR = new Date().getFullYear()
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub, faTelegram, faTwitter } from '@fortawesome/free-brands-svg-icons'
-import { faEnvelope, faRss } from '@fortawesome/free-solid-svg-icons'
-
 export default {
   head: ({ meta }) => {
     return (
@@ -35,41 +31,21 @@ export default {
   footer: (
     <div>
       <hr />
-      <span style={{ fontSize: '1.2rem' }}>
-        <a
-          href="https://twitter.com/Aozaki__"
-          aria-label="Twitter"
-          target="_blank"
-          style={{ paddingRight: '1rem' }}
-        >
-          <FontAwesomeIcon icon={faTwitter} />
-        </a>
-        <a
-          href="https://t.me/aozaki_ch"
-          aria-label="Telegram"
-          target="_blank"
-          style={{ paddingRight: '1rem' }}
-        >
-          <FontAwesomeIcon icon={faTelegram} />
-        </a>
-        <a
-          href="https://github.com/aozaki-kuro"
-          aria-label="GitHub"
-          target="_blank"
-          style={{ paddingRight: '1rem' }}
-        >
-          <FontAwesomeIcon icon={faGithub} />
-        </a>
-        <a
-          href="mailto:i@aozaki.cc"
-          aria-label="email"
-          target="_blank"
-          style={{ paddingRight: '1rem' }}
-        >
-          <FontAwesomeIcon icon={faEnvelope} />
-        </a>
-        <a href="/feed.xml" aria-label="RSS">
-          <FontAwesomeIcon icon={faRss} />
+      <span>
+        <a href="https://twitter.com/Aozaki__" target="_blank">
+          Twitter
+        </a>{' '}
+        ·{' '}
+        <a href="https://t.me/aozaki_ch" target="_blank">
+          Telegram
+        </a>{' '}
+        ·{' '}
+        <a href="https://github.com/aozaki-kuro" target="_blank">
+          Github
+        </a>{' '}
+        ·{' '}
+        <a href="mailto:i@aozaki.cc" target="_blank">
+          Mail
         </a>
       </span>
       <small style={{ display: 'block', marginTop: '8rem' }}>
@@ -80,7 +56,7 @@ export default {
           CC BY-NC 4.0
         </abbr>{' '}
         <time>{YEAR}</time> © Aozaki.
-        <div style={{ wordBreak: 'break-word', float: 'right' }}>Afezeria</div>
+        <a href="/feed.xml">RSS</a>
         <style jsx>{`
           a {
             float: right;
