@@ -35,7 +35,7 @@ export default {
   footer: (
     <div>
       <hr />
-      <span className="text-xl">
+      <span className="social">
         <a href="https://twitter.com/Aozaki__" aria-label="Twitter" target="_blank">
           <FontAwesomeIcon icon={faTwitter} />
         </a>
