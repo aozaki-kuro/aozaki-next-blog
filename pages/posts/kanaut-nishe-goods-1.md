@@ -1,6 +1,6 @@
 ---
 title: 'Kanaut Nishe Goods'
-date: 2020/11/09
+date: 2022/11/09
 description: 'The goods of Kanaut Nishe, illustrations by Ukai Saki sensei.'
 image: https://img.aozaki.cc/20221109/cover.jpg
 ---
