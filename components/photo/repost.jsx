@@ -1,7 +1,7 @@
 const repost = props => {
   const Date = `${props.Date}`
   return (
-    <div className="text-sm centered">
+    <div className="textsmall centered">
       <p>Copyright © {Date} Aozaki All rights reserved.</p>
       <p>[ DO NOT REPOST ]</p>
     </div>

@@ -6,3 +6,11 @@
 .centered {
   text-align: center;
 }
+
+.hym {
+  float: right;
+}
+
+.textsmall {
+  font-size: 0.8rem;
+}

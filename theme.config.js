@@ -60,7 +60,7 @@ export default {
           CC BY-NC 4.0
         </abbr>{' '}
         <time>{YEAR}</time> © Aozaki.
-        <a href="/feed.xml">RSS</a>
+        <div className="hym">Afezeria</div>
         <style jsx>{`
           a {
             float: right;

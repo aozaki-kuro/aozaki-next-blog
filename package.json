@@ -19,7 +19,7 @@
     "canvas-confetti": "^1.6.0",
     "gray-matter": "^4.0.3",
     "next": "^12.3.2",
-    "nextra": "2.0.0-alpha.56",
+    "nextra": "2.0.0-beta.56",
     "nextra-theme-blog": "2.0.0-alpha.55",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

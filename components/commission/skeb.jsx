@@ -1,6 +1,6 @@
 const skeb = () => {
   return (
-    <div className="centered text-xs">
+    <div className="centered textsmall">
       <p>
         Skebの規約による、Skebでやり取りされた作品のすべての権利はクリエイターと版権元に帰属する。
       </p>
