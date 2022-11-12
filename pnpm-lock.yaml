@@ -1,5 +1,10 @@
 lockfileVersion: 5.4
 
+patchedDependencies:
+  nextra-theme-blog@2.0.0-alpha.55:
+    hash: gswsnurdvstm6ylqwtyv22p2ce
+    path: patches/nextra-theme-blog@2.0.0-alpha.55.patch
+
 specifiers:
   '@fortawesome/fontawesome-svg-core': ^6.2.0
   '@fortawesome/free-brands-svg-icons': ^6.2.0
@@ -28,7 +33,7 @@ dependencies:
   gray-matter: 4.0.3
   next: 12.3.3_biqbaboplfbrettd7655fr4n2y
   nextra: 2.0.0-alpha.56_react@18.2.0
-  nextra-theme-blog: 2.0.0-alpha.55_axequwibc5yadwk55bo7ehxsoe
+  nextra-theme-blog: 2.0.0-alpha.55_gswsnurdvstm6ylqwtyv22p2ce_axequwibc5yadwk55bo7ehxsoe
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   rss: 1.2.2
@@ -169,8 +174,8 @@ packages:
       - supports-color
     dev: false
 
-  /@mdx-js/react/2.1.1_react@18.2.0:
-    resolution: {integrity: sha512-7zlZDf5xmWH8I0kFE4DG91COOkxjaW9DX5f1HWztZpFcVua2gJgMYfIkFaDpO/DH/tWi6Mz+OheW4194r15igg==}
+  /@mdx-js/react/2.1.5_react@18.2.0:
+    resolution: {integrity: sha512-3Az1I6SAWA9R38rYjz5rXBrGKeZhq96CSSyQtqY+maPj8stBsoUH5pNcmIixuGkufYsh8F5+ka2CVPo2fycWZw==}
     peerDependencies:
       react: '>=16'
     dependencies:
@@ -2431,14 +2436,14 @@ packages:
       - '@babel/core'
       - babel-plugin-macros
 
-  /nextra-theme-blog/2.0.0-alpha.55_axequwibc5yadwk55bo7ehxsoe:
+  /nextra-theme-blog/2.0.0-alpha.55_gswsnurdvstm6ylqwtyv22p2ce_axequwibc5yadwk55bo7ehxsoe:
     resolution: {integrity: sha512-UZoNDqCGvUU5fclz491r1TjN4gwmntsr71Lex3J5coaq/5PdHor3welM/TU6T+0rmuhVBd4v4kxuFETLHT6+Ug==}
     peerDependencies:
       next: '>=9.5.3'
       react: '>=16.13.1'
       react-dom: '>=16.13.1'
     dependencies:
-      '@mdx-js/react': 2.1.1_react@18.2.0
+      '@mdx-js/react': 2.1.5_react@18.2.0
       github-slugger: 1.4.0
       next: 12.3.3_biqbaboplfbrettd7655fr4n2y
       next-themes: 0.2.0_axequwibc5yadwk55bo7ehxsoe
@@ -2446,6 +2451,7 @@ packages:
       react-cusdis: 2.1.3_biqbaboplfbrettd7655fr4n2y
       react-dom: 18.2.0_react@18.2.0
     dev: false
+    patched: true
 
   /nextra/2.0.0-alpha.56_react@18.2.0:
     resolution: {integrity: sha512-U6vFoUj4Oc+Px9WyNOUJWdta6j8B+dKtjbWvE1jCoz9wdAARtWxIZknIEMK62yt94zZeUjJg5KCzj1HBZc6UpQ==}

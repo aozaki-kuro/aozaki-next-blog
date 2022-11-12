@@ -1,0 +1,13 @@
+diff --git a/dist/index.js b/dist/index.js
+index c511fb9b3bd3b2e69091b65c4ec5e0a2f6f7da27..85889465951ba426741b42a913f2a5a738a12fb6 100644
+--- a/dist/index.js
++++ b/dist/index.js
+@@ -346,7 +346,7 @@ var BlogLayout = ({
+         parentPages.push(page);
+       }
+     });
+-    const parentPage = parentPages.reverse().find((page) => page.frontMatter && page.frontMatter.type === "posts");
++    const parentPage = parentPages.reverse().find((page) => page.frontMatter && (page.frontMatter.type === "posts" || page.frontMatter.type === "page"));
+     if (parentPage) {
+       back = parentPage.route;
+     }
