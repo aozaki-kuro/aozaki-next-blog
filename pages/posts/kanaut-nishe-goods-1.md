@@ -1,8 +1,8 @@
 ---
-title: 'Kanaut Nishe Goods'
+title: 'Kanaut Nishe Merch'
 date: 2022/11/09
 author: Aozaki
-description: 'The goods of Kanaut Nishe, illustrations by Ukai Saki sensei.'
+description: 'The merch of Kanaut Nishe, illustrations by Ukai Saki sensei.'
 image: https://img.aozaki.cc/20221109/cover.jpg
 ---
 
@@ -16,9 +16,9 @@ Kanut Nishe (銀海渡ニシェ) is Saki-sensei's original character, also being
 
 She has purchased 3Dio FS XLR recently and is currently using it for [her ASMR streams](https://www.youtube.com/watch?v=s1_9TwPd-ts). Her ASMR techniques are pretty impressive by now, even it's just a few months since her first ASMR stream.
 
-## About the goods
+## About the merch
 
-I ordered the goods during her [stream on October 2nd](https://www.youtube.com/watch?v=w_UJw5eb7Zo) and just received them on November 8th. EMS is obviously slow recently.
+I ordered the merch during her [stream on October 2nd](https://www.youtube.com/watch?v=w_UJw5eb7Zo) and just received them on November 8th. EMS is obviously slow recently.
 
 I have ordered
 
@@ -26,7 +26,7 @@ I have ordered
 - 1 mug cup
 - 1 acrylic figure
 
-Pixiv Factory is doing a pretty good job on presenting very high quality goods but also considerably expensive.
+Pixiv Factory is doing a pretty good job on presenting very high quality merch but also considerably expensive.
 
 ### Fine Art Reproduction
 
@@ -60,7 +60,7 @@ Ah by the way, this is the first edition with the misspell **L**ANAUT instead of
 
 Honestly, I hesitated before buying this acrylic figure. It was double the regular price of the typical 7-8cm in height. But after reading the description, I found out that this one is 16cm in height, coupled with an extensive, rounded well-designed base. Plus, Ukai-sensei’s illustration, it’s all worth the price!
 
-Again I have to express my gratuities to Pixiv Factory, you guys are doing a magnificent job in producing goods.
+Again I have to express my gratuities to Pixiv Factory, you guys are doing a magnificent job in producing merch.
 
 ---
 
