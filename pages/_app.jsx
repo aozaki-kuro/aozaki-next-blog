@@ -22,8 +22,9 @@ export default function Nextra({ Component, pageProps }) {
         />
       </Head>
       {getLayout(<Component {...pageProps} />)}
-      <Script src="https://www.googletagmanager.com/gtag/js?id=G-TZVWSY3MXW" async />
+      <Script src="https://www.googletagmanager.com/gtag/js?id=G-TZVWSY3MXW" async id="GA-1" />
       <Script
+        id="GA-2"
         dangerouslySetInnerHTML={{
           __html: `
       window.dataLayer=window.dataLayer||[]
