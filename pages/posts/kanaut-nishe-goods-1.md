@@ -62,6 +62,24 @@ Honestly, I hesitated before buying this acrylic figure. It was double the regul
 
 Again I have to express my gratuities to Pixiv Factory, you guys are doing a magnificent job in producing merch.
 
+## Updates
+
+### 11/17/2022
+
+After posting the article on my blog, one of my friends sent me a message, asking if I was interested in his collections of Ukai Saki sensei's fine art prints. I said yes, of course, and offered a price for my favorite piece.
+
+And here comes the print I have dreamed of for a long time!
+
+; Pic here
+
+Above is the fine art print produced to celebrate the launch of the light novel "[異世界迷宮の最深部を目指そう](https://www.amazon.co.jp/dp/4865548254)" Vol.15 in the end of 2020. The fascinating part is Ukai-sensei signed on it! But unfortunately, I got occupied by my Master's degree graduation and the COVID-19 pandemic, so I never had the time to purchase one.
+
+I cannot describe my gratitude for my friend's willingness to let go of the shinest gems in his collection.
+
+Honestly, I have no idea what this character's name is, and I have never read a single word of the novel. Everything I love is the character design and the illustration itself. But considering how much love Ukai-sensei poured into it, I would consider reading it on Kindle with my poor Japanese.
+
+I also ordered the polishing cloth designed by Ukai-sensei. The design refers to the concept of [Kanaut Airlines](https://twitter.com/ukaisaki/status/1541606179650301953). I love the color and design. It also perfectly fits the role of taking care of Ukai-sensei's precious signed prints.
+
 ---
 
 Camera and Lenses
