@@ -22,10 +22,16 @@ export default function Nextra({ Component, pageProps }) {
         />
       </Head>
       {getLayout(<Component {...pageProps} />)}
+      <Script src="https://www.googletagmanager.com/gtag/js?id=G-TZVWSY3MXW" async />
       <Script
-        strategy="lazyOnload"
-        src="https://beacon.aozaki.cc/app.js"
-        data-domain="blog.aozaki.cc"
+        dangerouslySetInnerHTML={{
+          __html: `
+      window.dataLayer=window.dataLayer||[]
+      function gtag(){dataLayer.push(arguments)}
+      gtag('js',new Date)
+      gtag('config','G-TZVWSY3MXW')
+    `,
+        }}
       />
     </>
   )
