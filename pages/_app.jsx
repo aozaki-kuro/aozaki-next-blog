@@ -1,6 +1,6 @@
 import Head from 'next/head'
 
-import { AnalyticsWrapper } from '@/components/analytics/plausible'
+import { AnalyticsWrapper } from '@/components/analytics/google'
 
 import 'nextra-theme-blog/style.css'
 import '../styles/main.css'
