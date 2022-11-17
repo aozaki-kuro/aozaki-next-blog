@@ -8,4 +8,9 @@ const withNextra = require('nextra')({
   },
 })
 
-module.exports = withNextra({})
+module.exports = withNextra({
+  i18n: {
+    locales: ['zh'],
+    defaultLocale: 'zh',
+  },
+})
