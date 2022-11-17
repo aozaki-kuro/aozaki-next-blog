@@ -1,5 +1,6 @@
 import Head from 'next/head'
-import Script from 'next/script'
+
+import { AnalyticsWrapper } from '@/components/analytics/vercel'
 
 import 'nextra-theme-blog/style.css'
 import '../styles/main.css'
@@ -22,18 +23,7 @@ export default function Nextra({ Component, pageProps }) {
         />
       </Head>
       {getLayout(<Component {...pageProps} />)}
-      <Script src="https://www.googletagmanager.com/gtag/js?id=G-TZVWSY3MXW" async id="GA-1" />
-      <Script
-        id="GA-2"
-        dangerouslySetInnerHTML={{
-          __html: `
-      window.dataLayer=window.dataLayer||[]
-      function gtag(){dataLayer.push(arguments)}
-      gtag('js',new Date)
-      gtag('config','G-TZVWSY3MXW')
-    `,
-        }}
-      />
+      <AnalyticsWrapper />
     </>
   )
 }
