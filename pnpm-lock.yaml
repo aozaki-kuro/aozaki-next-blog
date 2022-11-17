@@ -11,7 +11,6 @@ specifiers:
   '@fortawesome/free-regular-svg-icons': ^6.2.1
   '@fortawesome/free-solid-svg-icons': ^6.2.1
   '@fortawesome/react-fontawesome': ^0.2.0
-  '@vercel/analytics': ^0.1.5
   canvas-confetti: ^1.6.0
   eslint: 8.26.0
   eslint-config-next: ^12.3.3
@@ -30,7 +29,6 @@ dependencies:
   '@fortawesome/free-regular-svg-icons': 6.2.1
   '@fortawesome/free-solid-svg-icons': 6.2.1
   '@fortawesome/react-fontawesome': 0.2.0_6j2wdqxompc6mcokhxkpep2gqu
-  '@vercel/analytics': 0.1.5_react@18.2.0
   canvas-confetti: 1.6.0
   gray-matter: 4.0.3
   next: 12.3.3_biqbaboplfbrettd7655fr4n2y
@@ -590,14 +588,6 @@ packages:
       '@typescript-eslint/types': 5.42.0
       eslint-visitor-keys: 3.3.0
     dev: true
-
-  /@vercel/analytics/0.1.5_react@18.2.0:
-    resolution: {integrity: sha512-/k9N8Ea3Yc5A52GlkjzUEbi2vE/izClrOf++ryBkxEfrZM/OZwtHkdNw/QExZ1h/B67RCZLK7bCOnKKrhG7gTg==}
-    peerDependencies:
-      react: ^16.8||^17||^18
-    dependencies:
-      react: 18.2.0
-    dev: false
 
   /acorn-jsx/5.3.2_acorn@8.8.1:
     resolution: {integrity: sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==}
