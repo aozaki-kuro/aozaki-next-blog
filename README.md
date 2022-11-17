@@ -12,12 +12,14 @@
 
 Built with Next.js / Nextra
 
+Based on [shuding/site](https://github.com/shuding/site)
+
 Deployed on Vercel
 
 ---
 
 Code and framework released under [MIT License](https://github.com/aozaki-kuro/aozaki-next-blog/blob/master/LICENSE)
 
-Contents were release under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+Contents were release under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)
 
 Photo / Porfolio _ALL RIGHTS RESERVED_.
