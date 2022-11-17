@@ -8,6 +8,8 @@ export default {
   head: ({ meta }) => {
     return (
       <>
+        <meta httpEquiv="Content-Language" content="zh-Hans" />
+        <meta name="description" content={meta.description} />
         <meta name="author" content="Aozaki" />
         <link rel="canonical" href="https://blog.aozaki.cc" />
         <meta name="title" content={meta.title} />
