@@ -11,15 +11,10 @@
     "format": "prettier './**/*.+(js|jsx|ts|tsx|json|css|md|mdx)' --write"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.2.0",
-    "@fortawesome/free-brands-svg-icons": "^6.2.1",
-    "@fortawesome/free-regular-svg-icons": "^6.2.1",
-    "@fortawesome/free-solid-svg-icons": "^6.2.1",
-    "@fortawesome/react-fontawesome": "^0.2.0",
     "@vercel/analytics": "^0.1.5",
     "canvas-confetti": "^1.6.0",
     "gray-matter": "^4.0.3",
-    "next": "^12.3.3",
+    "next": "^12.1.6",
     "nextra": "2.0.0-alpha.56",
     "nextra-theme-blog": "2.0.0-alpha.55",
     "react": "^18.2.0",
@@ -28,7 +23,7 @@
   },
   "devDependencies": {
     "eslint": "8.26.0",
-    "eslint-config-next": "^12.3.3",
+    "eslint-config-next": "^12.1.6",
     "next-sitemap": "^3.1.32"
   },
   "pnpm": {

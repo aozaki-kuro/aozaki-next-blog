@@ -1,12 +1,10 @@
 import Head from 'next/head'
 
-import { Analytics } from '@vercel/analytics/react';
+import { Analytics } from '@vercel/analytics/react'
 
 import 'nextra-theme-blog/style.css'
 import '../styles/main.css'
 import '../styles/custom.css'
-
-import '@fortawesome/fontawesome-svg-core/styles.css'
 
 export default function Nextra({ Component, pageProps }) {
   const getLayout = Component.getLayout || (page => page)

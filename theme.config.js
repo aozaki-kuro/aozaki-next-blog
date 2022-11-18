@@ -1,9 +1,5 @@
 const YEAR = new Date().getFullYear()
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub, faTelegram, faTwitter } from '@fortawesome/free-brands-svg-icons'
-import { faEnvelope, faRss } from '@fortawesome/free-solid-svg-icons'
-
 export default {
   head: ({ meta }) => {
     return (
@@ -37,23 +33,25 @@ export default {
   footer: (
     <div>
       <hr />
-      <span className="social">
-        <a href="https://twitter.com/Aozaki__" aria-label="Twitter" target="_blank">
-          <FontAwesomeIcon icon={faTwitter} />
-        </a>
-        <a href="https://t.me/aozaki_ch" aria-label="Telegram" target="_blank">
-          <FontAwesomeIcon icon={faTelegram} />
-        </a>
-        <a href="https://github.com/aozaki-kuro" aria-label="GitHub" target="_blank">
-          <FontAwesomeIcon icon={faGithub} />
-        </a>
-        <a href="mailto:i@aozaki.cc" aria-label="email" target="_blank">
-          <FontAwesomeIcon icon={faEnvelope} />
-        </a>
-        <a href="/feed.xml" aria-label="RSS">
-          <FontAwesomeIcon icon={faRss} />
-        </a>
-      </span>
+      <a href="https://twitter.com/Aozaki__" target="_blank">
+        Twitter
+      </a>{' '}
+      ·{' '}
+      <a href="https://t.me/aozaki_ch" target="_blank">
+        Telegram
+      </a>{' '}
+      ·{' '}
+      <a href="https://github.com/aozaki-kuro" target="_blank">
+        Github
+      </a>{' '}
+      ·{' '}
+      <a href="mailto:i@aozaki.cc" target="_blank">
+        Mail
+      </a>{' '}
+      ·{' '}
+      <a href="/feed.xml" aria-label="RSS">
+        RSS
+      </a>
       <small style={{ display: 'block', marginTop: '8rem' }}>
         <abbr
           title="This site and all its content are licensed under a Creative Commons Attribution-NonCommercial 4.0 International License."
