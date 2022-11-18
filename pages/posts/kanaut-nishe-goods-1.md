@@ -72,9 +72,9 @@ And here comes the print I have dreamed of for a long time!
 
 ; Pic here
 
-Above is the fine art print produced to celebrate the launch of the light novel "[異世界迷宮の最深部を目指そう](https://www.amazon.co.jp/dp/4865548254)" Vol.15 in the end of 2020. The fascinating part is Ukai-sensei signed on it! But unfortunately, I got occupied by my Master's degree graduation and the COVID-19 pandemic, so I never had the time to purchase one.
+Above is the fine art print produced in the end of 2020, to celebrate the launch of the light novel "[異世界迷宮の最深部を目指そう](https://www.amazon.co.jp/dp/4865548254)" Vol.15. The fascinating part is Ukai-sensei signed on it! But unfortunately, I got occupied by my Master's thesis and the COVID-19 pandemic, so I never had the chance to purchase one.
 
-I cannot describe my gratitude for my friend's willingness to let go of the shinest gems in his collection.
+I cannot describe my gratitude for my friend's willingness to let go of the shiniest gems in his collection.
 
 Honestly, I have no idea what this character's name is, and I have never read a single word of the novel. Everything I love is the character design and the illustration itself. But considering how much love Ukai-sensei poured into it, I would consider reading it on Kindle with my poor Japanese.
 

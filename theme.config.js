@@ -37,20 +37,16 @@ export default {
         Twitter
       </a>{' '}
       ·{' '}
-      <a href="https://t.me/aozaki_ch" target="_blank">
-        Telegram
-      </a>{' '}
-      ·{' '}
       <a href="https://github.com/aozaki-kuro" target="_blank">
         Github
       </a>{' '}
       ·{' '}
-      <a href="mailto:i@aozaki.cc" target="_blank">
-        Mail
+      <a href="https://t.me/aozaki_ch" target="_blank">
+        Telegram
       </a>{' '}
       ·{' '}
-      <a href="/feed.xml" aria-label="RSS">
-        RSS
+      <a href="mailto:i@aozaki.cc" target="_blank">
+        i@aozaki.cc
       </a>
       <small style={{ display: 'block', marginTop: '8rem' }}>
         <abbr
@@ -60,7 +56,7 @@ export default {
           CC BY-NC 4.0
         </abbr>{' '}
         <time>{YEAR}</time> © Aozaki.
-        <div className="hym">Afezeria</div>
+        <a href="/feed.xml">RSS</a>
         <style jsx>{`
           a {
             float: right;
