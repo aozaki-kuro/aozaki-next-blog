@@ -1,6 +1,5 @@
 import Head from 'next/head'
-
-import { Analytics } from '@vercel/analytics/react'
+import { AnalyticsWrapper } from '@/components/analytics/plausible'
 
 import 'nextra-theme-blog/style.css'
 import '../styles/main.css'
@@ -21,7 +20,7 @@ export default function Nextra({ Component, pageProps }) {
         />
       </Head>
       {getLayout(<Component {...pageProps} />)}
-      <Analytics />
+      <AnalyticsWrapper />
     </>
   )
 }
