@@ -20,6 +20,16 @@ module.exports = withNextra({
         destination: '/posts/kanaut-nishe-merch',
         permanent: true,
       },
+      {
+        source: '/blog/:slug*',
+        destination: '/posts/:slug*',
+        permanent: true,
+      },
+      {
+        source: '/portfoilo/:slug*',
+        destination: '/portrait/:slug*',
+        permanent: true,
+      },
     ]
   },
 })
