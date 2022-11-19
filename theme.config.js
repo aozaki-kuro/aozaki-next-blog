@@ -1,10 +1,11 @@
 const YEAR = new Date().getFullYear()
+const Site = `Aozaki's blog`
 
 export default {
   head: ({ meta }) => {
     return (
       <>
-        <title>{meta.title+` - Aozaki's blog`}</title>
+        <title>{meta.title === `About` ? Site : `${meta.title} - ${Site}`}</title>
         <meta name="author" content="Aozaki" />
         <link rel="canonical" href="https://blog.aozaki.cc" />
         <meta name="title" content={meta.title} />
