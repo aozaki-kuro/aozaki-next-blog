@@ -13,4 +13,13 @@ module.exports = withNextra({
     locales: ['zh'],
     defaultLocale: 'zh',
   },
+  async redirects() {
+    return [
+      {
+        source: '/posts/kanaut-nishe-goods-1',
+        destination: '/posts/kanaut-nishe-merch',
+        permanent: true,
+      },
+    ]
+  },
 })
