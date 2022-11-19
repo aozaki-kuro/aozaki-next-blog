@@ -4,11 +4,10 @@ export default {
   head: ({ meta }) => {
     return (
       <>
-        <meta httpEquiv="Content-Language" content="zh-Hans" />
-        <meta name="description" content={meta.description} />
         <meta name="author" content="Aozaki" />
         <link rel="canonical" href="https://blog.aozaki.cc" />
         <meta name="title" content={meta.title} />
+        <meta name="description" content={meta.description} />
         <meta property="description" content={meta.description} />
         <meta property="og:type" content="website" />
         <meta property="og:title" content={meta.title} />
