@@ -2,17 +2,17 @@
 title: 'Ukai Saki Sensei Merch'
 date: 2022/12/07
 author: Aozaki
-description: "Fine art prints I bought recently. Mostly Ukai Saki sensei's signed versions."
-image: https://img.aozaki.cc/20221109/cover.jpg
+description: "Fine art print I bought recently. Mostly Ukai Saki sensei's signed versions."
+image: 
 ---
 
-## Updates
+## Fine Art Print
 
 Mainly about the signed fine art prints I missed in the past 3 years.
 
 Partially about Kanaut Nishe's merch.
 
-### 11/18/2022
+### I Think of You Even in My Dreams
 
 After posting [the previous article](/posts/kanaut-nishe-goods-1) on my blog, one of my friends sent me a message, asking if I was interested in his collections of Ukai Saki sensei's fine art prints. I said yes, of course, and offered a price for my favorite piece.
 
@@ -24,13 +24,19 @@ Above is the fine art print produced at the end of 2020 to celebrate the launch 
 
 I cannot describe my gratitude for my friend's willingness to let go of the shiniest gems in his collection.
 
+From the description [Ukai-sensei wrote on pixiv](https://www.pixiv.net/artworks/86713438), there are some pretty exciting things about the masterpiece.
+
+- This piece is for the new year celebration.
+- The hair accessory is a white [Tsubaki](https://en.wikipedia.org/wiki/Toona_sinensis) means _perfect beauty_. Because the entire flower falls when it disperses, it also suggests _death_.
+- The patterns on the kimono are [pine, bamboo and plum](https://en.wikipedia.org/wiki/Three_Friends_of_Winter). There are also cranes as part of the traditional design on kimonos for the New Year. But in fact, these are [white egret flowers](https://en.wikipedia.org/wiki/Pecteilis_radiata) disguised as cranes. White egret flower means _I think of you even in my dreams_. Ukai-sensei also used this as the title.
+
 Honestly, I have no idea what this character's name is, and I have never read a single word of the novel. Everything I love is the character design and the illustration itself. But considering how much love Ukai-sensei poured into it, I would consider reading it on Kindle with my poor Japanese.
 
 ; Pics here
 
 I also ordered the polishing cloth designed by Ukai-sensei. The design refers to the concept of [Kanaut Airlines](https://twitter.com/ukaisaki/status/1541606179650301953). I love the color and design. It also perfectly fits the role of taking care of Ukai-sensei's precious signed prints.
 
-### 12/05/2022
+### Unholy Orange
 
 Here's the other fine art print I got in December. I was searching frantically on the Japanese auction sites, but it turned out to be several lying around on the domestic ones.
 
@@ -48,7 +54,7 @@ Being able to collect two signed fine art prints so quickly at a relatively reas
 
 ---
 
-Camera and Lenses
+<h3>Camera and Lenses</h3>
 
 - Sony A7R III
 - Leica APO-Summicron-M 90 f/2 ASPH (11884)

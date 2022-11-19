@@ -1,3 +1,5 @@
+import { SiGmail, SiTelegram, SiTwitter, SiGithub, SiRss } from 'react-icons/si'
+
 const YEAR = new Date().getFullYear()
 const Site = `Aozaki's blog`
 
@@ -34,21 +36,33 @@ export default {
   footer: (
     <div>
       <hr />
-      <a href="https://twitter.com/Aozaki__" target="_blank">
-        Twitter
-      </a>{' '}
-      ·{' '}
-      <a href="https://github.com/aozaki-kuro" target="_blank">
-        Github
-      </a>{' '}
-      ·{' '}
-      <a href="https://t.me/aozaki_ch" target="_blank">
-        Telegram
-      </a>{' '}
-      ·{' '}
-      <a href="mailto:i@aozaki.cc" target="_blank">
-        i@aozaki.cc
-      </a>
+      <span className="social">
+        <a
+          href="https://twitter.com/Aozaki__"
+          aria-label="Twitter"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <SiTwitter />
+        </a>{' '}
+        <a
+          href="https://github.com/aozaki-kuro"
+          aria-label="Github"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <SiGithub />
+        </a>{' '}
+        <a href="https://t.me/aozaki_ch" aria-label="Telegram" target="_blank" rel="noreferrer">
+          <SiTelegram />
+        </a>{' '}
+        <a href="mailto:i@aozaki.cc" aria-label="Mail" target="_blank" rel="noreferrer">
+          <SiGmail />
+        </a>{' '}
+        <a href="/feed.xml" aria-label="RSS" target="_blank" rel="noreferrer">
+          <SiRss />
+        </a>
+      </span>
       <small style={{ display: 'block', marginTop: '8rem' }}>
         <abbr
           title="This site and all its content are licensed under a Creative Commons Attribution-NonCommercial 4.0 International License."
@@ -57,7 +71,7 @@ export default {
           CC BY-NC 4.0
         </abbr>{' '}
         <time>{YEAR}</time> © Aozaki.
-        <a href="/feed.xml">RSS</a>
+        <div className="hym">Afezeria</div>
         <style jsx>{`
           a {
             float: right;

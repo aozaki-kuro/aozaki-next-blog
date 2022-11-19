@@ -4,7 +4,11 @@ const caption = props => {
   const Url = props.Url
   return (
     <div className="centered">
-      © {Year} [ <a href={Url}>{Name}</a> ]
+      © {Year} [{' '}
+      <a href={Url} target="_blank" rel="noreferrer">
+        {Name}
+      </a>{' '}
+      ]
     </div>
   )
 }
