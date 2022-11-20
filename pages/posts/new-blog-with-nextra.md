@@ -1,7 +1,7 @@
 ---
 title: 'Next.js / Nextra 重构博客'
 date: 2022/11/04
-description: '折腾永无止境，但如何面对过去和未来。'
+description: '折腾永无止境，但如何面对过去和未来。删了一些博文，也会增加新的。'
 author: Aozaki
 image:
 ---

@@ -2,6 +2,7 @@
 title: '文献阅读：脂蛋白(a)作为CVD危险因素'
 date: 2020/08/15
 author: Aozaki
+description: '脂蛋白(a)作为CVD危险因素。'
 ---
 
 文献标题：**Lipoprotein(a) as a cardiovascular risk factor**

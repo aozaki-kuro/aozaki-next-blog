@@ -1,7 +1,7 @@
 ---
 title: '圆了徕卡梦'
 date: 2020/10/27
-description: '哎，啊，当个器材党真开心。'
+description: '哎，啊，当个器材党真开心。钱真的可以买到快乐啊。'
 image: https://img.aozaki.cc/20201027/0003.jpg
 ---
 

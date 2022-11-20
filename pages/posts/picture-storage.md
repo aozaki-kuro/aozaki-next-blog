@@ -1,7 +1,7 @@
 ---
 title: '本地图片库的整理思路'
 date: 2020/08/11
-description: '仓鼠症的自我救赎。'
+description: '图片整理的穷途末路——论仓鼠症的自我救赎。'
 author: Aozaki
 ---
 
