@@ -36,7 +36,7 @@ export default {
   footer: (
     <div>
       <hr />
-      <span className="social">
+      <div className="social">
         <a
           href="https://twitter.com/Aozaki__"
           aria-label="Twitter"
@@ -62,7 +62,7 @@ export default {
         <a href="/feed.xml" aria-label="RSS" target="_blank" rel="noreferrer">
           <SiRss />
         </a>
-      </span>
+      </div>
       <small style={{ display: 'block', marginTop: '8rem' }}>
         <abbr
           title="This site and all its content are licensed under a Creative Commons Attribution-NonCommercial 4.0 International License."
