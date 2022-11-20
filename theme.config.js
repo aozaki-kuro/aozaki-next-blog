@@ -1,5 +1,3 @@
-import { SiGmail, SiTelegram, SiTwitter, SiGithub, SiRss } from 'react-icons/si'
-
 const YEAR = new Date().getFullYear()
 const Site = `Aozaki's blog`
 
@@ -43,25 +41,25 @@ export default {
           target="_blank"
           rel="noreferrer"
         >
-          <SiTwitter />
+          Twitter
         </a>{' '}
+        ·{' '}
         <a
           href="https://github.com/aozaki-kuro"
           aria-label="Github"
           target="_blank"
           rel="noreferrer"
         >
-          <SiGithub />
+          Github
         </a>{' '}
+        ·{' '}
         <a href="https://t.me/aozaki_ch" aria-label="Telegram" target="_blank" rel="noreferrer">
-          <SiTelegram />
+          Telegram
         </a>{' '}
+        ·{' '}
         <a href="mailto:i@aozaki.cc" aria-label="Mail" target="_blank" rel="noreferrer">
-          <SiGmail />
-        </a>{' '}
-        <a href="/feed.xml" aria-label="RSS" target="_blank" rel="noreferrer">
-          <SiRss />
-        </a>{' '}
+          i@aozaki.cc
+        </a>
       </div>
       <small style={{ display: 'block', marginTop: '8rem' }}>
         <abbr
@@ -71,7 +69,9 @@ export default {
           CC BY-NC 4.0
         </abbr>{' '}
         <time>{YEAR}</time> © Aozaki.
-        <div className="hym">Afezeria</div>
+        <a href="/feed.xml" aria-label="RSS" target="_blank" rel="noreferrer">
+          RSS
+        </a>
         <style jsx>{`
           a {
             float: right;

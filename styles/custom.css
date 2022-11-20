@@ -1,8 +1,12 @@
+/**
+
 .social > a {
   margin-right: 1.3rem;
   font-size: 1.3rem;
   display: inline-grid;
 }
+
+**/
 
 .centered {
   text-align: center;
