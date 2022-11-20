@@ -3,20 +3,22 @@ import { SiGmail, SiTelegram, SiTwitter, SiGithub, SiRss } from 'react-icons/si'
 const YEAR = new Date().getFullYear()
 const Site = `Aozaki's blog`
 
+
+
 export default {
   head: ({ meta }) => {
     return (
       <>
         <title>{meta.title === `About` ? Site : `${meta.title} - ${Site}`}</title>
         <meta name="author" content="Aozaki" />
-        <link rel="canonical" href="https://blog.aozaki.cc" />
+        
         <meta name="title" content={meta.title} />
         <meta name="description" content={meta.description} />
         <meta property="description" content={meta.description} />
         <meta property="og:type" content="website" />
         <meta property="og:title" content={meta.title} />
         <meta property="og:description" content={meta.description} />
-        <meta property="og:url" content="https://blog.aozaki.cc" />
+        <meta property="og:url" content="https://aozaki.cc" />
         <meta
           property="og:image"
           content={meta.image || 'https://img.aozaki.cc/twitter-card.jpg'}
@@ -25,7 +27,7 @@ export default {
         <meta property="twitter:site" content="@Aozaki__" />
         <meta property="twitter:title" content={meta.title} />
         <meta property="twitter:description" content={meta.description} />
-        <meta property="twitter:url" content="https://blog.aozaki.cc" />
+        <meta property="twitter:url" content="https://aozaki.cc" />
         <meta
           property="twitter:image"
           content={meta.image || 'https://img.aozaki.cc/twitter-card.jpg'}

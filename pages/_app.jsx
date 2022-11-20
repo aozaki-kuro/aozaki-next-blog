@@ -5,8 +5,14 @@ import 'nextra-theme-blog/style.css'
 import '../styles/main.css'
 import '../styles/custom.css'
 
+import { useRouter } from 'next/router'
+
 export default function Nextra({ Component, pageProps }) {
   const getLayout = Component.getLayout || (page => page)
+  const router = useRouter()
+  const canonicalUrl = (`https://aozaki.cc` + (router.asPath === '/' ? '' : router.asPath)).split(
+    '?'
+  )[0]
   return (
     <>
       <Head>
@@ -18,6 +24,7 @@ export default function Nextra({ Component, pageProps }) {
           type="font/woff2"
           crossOrigin="anonymous"
         />
+        <link rel="canonical" href={canonicalUrl} />
       </Head>
       {getLayout(<Component {...pageProps} />)}
       <AnalyticsWrapper />

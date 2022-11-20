@@ -6,7 +6,7 @@ export function AnalyticsWrapper() {
     <Script
       strategy="lazyOnload"
       src="https://beacon.aozaki.cc/app.js"
-      data-domain="blog.aozaki.cc"
+      data-domain="aozaki.cc"
     />
   )
 }
