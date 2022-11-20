@@ -1,5 +1,5 @@
 <div align=center>
-  <a href="https://aozaki.cc/" target="_blank" rel="noopener noreferrer"><img src="/public/logo/logo_dark.svg" alt="aozaki's blog" width="50%" height="50%" /></a>
+  <a href="https://blog.aozaki.cc/" target="_blank" rel="noopener noreferrer"><img src="/public/logo/logo_dark.svg" alt="aozaki's blog" width="50%" height="50%" /></a>
   
   <b>- <em>Yet Another Blog of Aozaki</em> -</b>
   

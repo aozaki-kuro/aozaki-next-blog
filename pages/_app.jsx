@@ -10,7 +10,7 @@ import { useRouter } from 'next/router'
 export default function Nextra({ Component, pageProps }) {
   const getLayout = Component.getLayout || (page => page)
   const router = useRouter()
-  const canonicalUrl = (`https://aozaki.cc` + (router.asPath === '/' ? '' : router.asPath)).split(
+  const canonicalUrl = (`https://blog.aozaki.cc` + (router.asPath === '/' ? '' : router.asPath)).split(
     '?'
   )[0]
   return (
