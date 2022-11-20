@@ -3,15 +3,13 @@ import { SiGmail, SiTelegram, SiTwitter, SiGithub, SiRss } from 'react-icons/si'
 const YEAR = new Date().getFullYear()
 const Site = `Aozaki's blog`
 
-
-
 export default {
   head: ({ meta }) => {
     return (
       <>
         <title>{meta.title === `About` ? Site : `${meta.title} - ${Site}`}</title>
         <meta name="author" content="Aozaki" />
-        
+
         <meta name="title" content={meta.title} />
         <meta name="description" content={meta.description} />
         <meta property="description" content={meta.description} />
@@ -46,7 +44,7 @@ export default {
           rel="noreferrer"
         >
           <SiTwitter />
-        </a>{' '}
+        </a>
         <a
           href="https://github.com/aozaki-kuro"
           aria-label="Github"
@@ -54,13 +52,13 @@ export default {
           rel="noreferrer"
         >
           <SiGithub />
-        </a>{' '}
+        </a>
         <a href="https://t.me/aozaki_ch" aria-label="Telegram" target="_blank" rel="noreferrer">
           <SiTelegram />
-        </a>{' '}
+        </a>
         <a href="mailto:i@aozaki.cc" aria-label="Mail" target="_blank" rel="noreferrer">
           <SiGmail />
-        </a>{' '}
+        </a>
         <a href="/feed.xml" aria-label="RSS" target="_blank" rel="noreferrer">
           <SiRss />
         </a>
