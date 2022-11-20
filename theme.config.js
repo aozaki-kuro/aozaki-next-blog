@@ -44,7 +44,7 @@ export default {
           rel="noreferrer"
         >
           <SiTwitter />
-        </a>
+        </a>{' '}
         <a
           href="https://github.com/aozaki-kuro"
           aria-label="Github"
@@ -52,16 +52,16 @@ export default {
           rel="noreferrer"
         >
           <SiGithub />
-        </a>
+        </a>{' '}
         <a href="https://t.me/aozaki_ch" aria-label="Telegram" target="_blank" rel="noreferrer">
           <SiTelegram />
-        </a>
+        </a>{' '}
         <a href="mailto:i@aozaki.cc" aria-label="Mail" target="_blank" rel="noreferrer">
           <SiGmail />
-        </a>
+        </a>{' '}
         <a href="/feed.xml" aria-label="RSS" target="_blank" rel="noreferrer">
           <SiRss />
-        </a>
+        </a>{' '}
       </div>
       <small style={{ display: 'block', marginTop: '8rem' }}>
         <abbr
