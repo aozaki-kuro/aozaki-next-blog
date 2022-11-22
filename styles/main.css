@@ -168,9 +168,11 @@ img.next-image {
   margin: 0;
 }
 
+/**
 .vercel-icon {
   font-family: sans-serif;
 }
+*/
 
 article.prose pre {
   background-color: #f7f7f7 !important;
@@ -192,6 +194,8 @@ article.prose pre code {
 .dark .dark\:prose-dark blockquote {
   border-left-color: #4b4f50;
 }
+
+/** Insite and Shiki features
 
 :root {
   --shiki-color-text: #414141;
@@ -240,6 +244,8 @@ a.insite-card h3 {
 a.insite-card p {
   margin: 0.25rem 0 0;
 }
+
+**/
 
 @media screen and (max-width: 480px) {
   a.insite-card {
