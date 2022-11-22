@@ -3,6 +3,7 @@ module.exports = {
   siteUrl: 'https://aozaki.cc',
   generateRobotsTxt: true,
   autoLastmod: true,
-  changefreq: 'hourly',
+  changefreq: 'daily',
   generateIndexSitemap: false,
+  priority: 1,
 }
