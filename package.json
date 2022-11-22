@@ -12,10 +12,9 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@tailwindcss/typography": "^0.5.8",
     "canvas-confetti": "^1.6.0",
     "gray-matter": "^4.0.3",
-    "next": "12.3.3",
+    "next": "^12.3.4",
     "nextra": "2.0.0-beta.42",
     "nextra-theme-blog": "2.0.0-beta.42",
     "react": "^18.2.0",
@@ -24,7 +23,7 @@
   },
   "devDependencies": {
     "eslint": "8.26.0",
-    "eslint-config-next": "^12.3.3",
+    "eslint-config-next": "^12.3.4",
     "next-sitemap": "^3.1.32"
   },
   "pnpm": {
