@@ -1,5 +1,10 @@
 lockfileVersion: 5.4
 
+patchedDependencies:
+  nextra-theme-blog@2.0.0-beta.42:
+    hash: vnwdx3b7aafgvejyxhd2y2ye64
+    path: patches/nextra-theme-blog@2.0.0-beta.42.patch
+
 specifiers:
   '@tailwindcss/typography': ^0.5.8
   canvas-confetti: ^1.6.0
@@ -20,7 +25,7 @@ dependencies:
   gray-matter: 4.0.3
   next: 12.3.3_biqbaboplfbrettd7655fr4n2y
   nextra: 2.0.0-beta.42_axequwibc5yadwk55bo7ehxsoe
-  nextra-theme-blog: 2.0.0-beta.42_axequwibc5yadwk55bo7ehxsoe
+  nextra-theme-blog: 2.0.0-beta.42_vnwdx3b7aafgvejyxhd2y2ye64_axequwibc5yadwk55bo7ehxsoe
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   rss: 1.2.2
@@ -2505,7 +2510,7 @@ packages:
       - '@babel/core'
       - babel-plugin-macros
 
-  /nextra-theme-blog/2.0.0-beta.42_axequwibc5yadwk55bo7ehxsoe:
+  /nextra-theme-blog/2.0.0-beta.42_vnwdx3b7aafgvejyxhd2y2ye64_axequwibc5yadwk55bo7ehxsoe:
     resolution: {integrity: sha512-ny3K2McROk9de1inYfMaLlEwLLjlmnlyfA6220Z4kxidErWBEqHlvJt7tiBkGr6hsufs0QEbpNRkQ0rAk4vJOQ==}
     peerDependencies:
       next: '>=9.5.3'
@@ -2522,6 +2527,7 @@ packages:
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
     dev: false
+    patched: true
 
   /nextra/2.0.0-beta.42_axequwibc5yadwk55bo7ehxsoe:
     resolution: {integrity: sha512-9YYL9hViKMt7gxzoqBODosqaJ8hutZo/Ahc9yfcGVXrf34gSqp44aKbJVEH/sWrkvRvR/+oz1n3u7OdvMae7DA==}

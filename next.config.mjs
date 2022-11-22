@@ -1,14 +1,16 @@
 /** @type {import('next').NextConfig} */
-const withNextra = require('nextra')({
+import nextra from 'nextra'
+
+const withNextra = nextra({
   theme: 'nextra-theme-blog',
-  themeConfig: './theme.config.js',
+  themeConfig: './theme.config.jsx',
   unstable_staticImage: true,
   images: {
     domains: ['img.aozaki.cc'],
   },
 })
 
-module.exports = withNextra({
+export default withNextra({
   i18n: {
     locales: ['zh'],
     defaultLocale: 'zh',

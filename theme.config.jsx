@@ -1,3 +1,4 @@
+/* eslint sort-keys: error */
 const YEAR = new Date().getFullYear()
 const Site = `Aozaki's blog`
 
