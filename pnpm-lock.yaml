@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 patchedDependencies:
   nextra-theme-blog@2.0.0-beta.42:
-    hash: vnwdx3b7aafgvejyxhd2y2ye64
+    hash: fdcglwg2dk4ohysczvz6rbobea
     path: patches/nextra-theme-blog@2.0.0-beta.42.patch
 
 specifiers:
@@ -23,7 +23,7 @@ dependencies:
   gray-matter: 4.0.3
   next: 12.3.4_biqbaboplfbrettd7655fr4n2y
   nextra: 2.0.0-beta.42_bhgafntz2ozm43l35i5qtimxry
-  nextra-theme-blog: 2.0.0-beta.42_vnwdx3b7aafgvejyxhd2y2ye64_bhgafntz2ozm43l35i5qtimxry
+  nextra-theme-blog: 2.0.0-beta.42_fdcglwg2dk4ohysczvz6rbobea_bhgafntz2ozm43l35i5qtimxry
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   rss: 1.2.2
@@ -2484,7 +2484,7 @@ packages:
       - '@babel/core'
       - babel-plugin-macros
 
-  /nextra-theme-blog/2.0.0-beta.42_vnwdx3b7aafgvejyxhd2y2ye64_bhgafntz2ozm43l35i5qtimxry:
+  /nextra-theme-blog/2.0.0-beta.42_fdcglwg2dk4ohysczvz6rbobea_bhgafntz2ozm43l35i5qtimxry:
     resolution: {integrity: sha512-ny3K2McROk9de1inYfMaLlEwLLjlmnlyfA6220Z4kxidErWBEqHlvJt7tiBkGr6hsufs0QEbpNRkQ0rAk4vJOQ==}
     peerDependencies:
       next: '>=9.5.3'
