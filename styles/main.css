@@ -126,7 +126,7 @@ article.prose {
   font-variation-settings: 'wght' 450;
 }
 
-article.md\:prose h1 {
+.md\:nx-prose :where(h1):not(:where([class~='nx-not-prose'] *)) {
   font-size: 1.6em;
   margin-bottom: 0.4em;
 }
@@ -141,7 +141,7 @@ article.prose code {
   font-weight: 500;
   font-variation-settings: 'wght' 500;
 }
-article.prose a {
+article a {
   word-break: break-word;
   color: #5d676a;
 }
@@ -264,4 +264,21 @@ figure,
 
 a[data-footnote-ref] {
   text-decoration: none;
+}
+
+.md\:nx-prose {
+  color: #313233;
+  font-variation-settings: 'wght' 450;
+  line-height: 1.6;
+  word-spacing: -0.04em;
+  max-width: 40rem;
+}
+
+.md\:nx-prose :where(a):not(:where([class~='nx-not-prose'] *)) {
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity));
+  font-weight: 500;
+  text-decoration-thickness: from-font;
+  text-decoration-line: underline;
+  text-decoration-color: #a5adb1;
 }
