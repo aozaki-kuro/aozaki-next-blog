@@ -6,10 +6,12 @@
   "license": "MIT",
   "scripts": {
     "dev": "next",
-    "build": "node ./scripts/gen-rss.js && next build && next-sitemap --config ./scripts/next-sitemap.config.js",
+    "build": "next build",
     "start": "next start",
     "format": "prettier '**/*.+(js|mjs|jsx|ts|tsx|json|css|md|mdx)' --write",
-    "lint": "next lint"
+    "lint": "next lint",
+    "rss": "node ./scripts/gen-rss.js && next build",
+    "sitemap": "next-sitemap --config ./scripts/next-sitemap.config.js"
   },
   "dependencies": {
     "canvas-confetti": "^1.6.0",
