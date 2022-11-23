@@ -1,8 +1,6 @@
 //Next.js
 import type { AppProps } from 'next/app'
 import type { Page } from '../types/page'
-// React
-import React from 'react'
 // CSS
 import 'nextra-theme-blog/style.css'
 import '../styles/main.css'

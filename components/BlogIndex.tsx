@@ -1,5 +1,3 @@
-import React from 'react'
-
 import { getPagesUnderRoute } from 'nextra/context'
 import Link from 'next/link'
 

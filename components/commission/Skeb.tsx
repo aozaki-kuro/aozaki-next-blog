@@ -1,5 +1,3 @@
-import React from 'react'
-
 const Skeb = () => {
   return (
     <div className="centered text-small">

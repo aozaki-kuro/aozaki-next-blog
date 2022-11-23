@@ -1,5 +1,3 @@
-import React from 'react'
-
 const Repost = ({ inDate }: { inDate: string }) => {
   const Date = `${inDate}`
   return (
