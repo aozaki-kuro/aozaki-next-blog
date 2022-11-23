@@ -10,7 +10,7 @@
     "start": "next start",
     "format": "prettier '**/*.+(js|mjs|jsx|ts|tsx|json|css|md|mdx)' --write",
     "lint": "next lint",
-    "rss": "node ./scripts/gen-rss.js && next build",
+    "rss": "node ./scripts/gen-rss.js",
     "sitemap": "next-sitemap --config ./scripts/next-sitemap.config.js"
   },
   "dependencies": {
