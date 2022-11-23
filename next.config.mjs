@@ -4,16 +4,16 @@ import nextra from 'nextra'
 const withNextra = nextra({
   theme: 'nextra-theme-blog',
   themeConfig: './theme.config.jsx',
-  unstable_staticImage: true,
-  images: {
-    domains: ['img.aozaki.cc']
-  }
+  unstable_staticImage: true
 })
 
 export default withNextra({
   i18n: {
     locales: ['zh'],
     defaultLocale: 'zh'
+  },
+  images: {
+    domains: ['img.aozaki.cc']
   },
   async redirects() {
     return [

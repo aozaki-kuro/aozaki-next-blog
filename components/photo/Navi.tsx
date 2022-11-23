@@ -10,9 +10,7 @@ const Navi = ({ Name, Date }: { Name: string; Date: number }) => {
       </div>
       <hr />
       <p className="centered">
-        <i>
-          For other photo works, please <Link href={Url}>Click HERE</Link>
-        </i>
+        For other photo works, please <Link href={Url}>Click HERE</Link>
       </p>
     </>
   )
