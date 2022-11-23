@@ -295,3 +295,7 @@ a[data-footnote-ref] {
 .text-small {
   font-size: 0.8rem;
 }
+
+.navi-top-pad {
+  padding-top: 0.5rem;
+}
