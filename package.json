@@ -20,7 +20,8 @@
     "nextra-theme-blog": "2.0.0-beta.42",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "rss": "^1.2.2"
+    "rss": "^1.2.2",
+    "sharp": "^0.31.2"
   },
   "devDependencies": {
     "@types/node": "^18.11.9",
