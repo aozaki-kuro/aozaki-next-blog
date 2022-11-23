@@ -1,0 +1,41 @@
+{
+  "name": "aozaki-next-blog",
+  "version": "1.2.0",
+  "main": "index.js",
+  "author": "Aozaki <i@aozaki.cc>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next",
+    "build": "node ./scripts/gen-rss.js && next build && next-sitemap --config ./scripts/next-sitemap.config.js",
+    "start": "next start",
+    "format": "prettier '**/*.+(js|mjs|jsx|ts|tsx|json|css|md|mdx)' --write",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "canvas-confetti": "^1.6.0",
+    "gray-matter": "^4.0.3",
+    "next-sitemap": "^3.1.32",
+    "next": "^12.3.4",
+    "nextra": "2.0.0-beta.42",
+    "nextra-theme-blog": "2.0.0-beta.42",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rss": "^1.2.2"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.9",
+    "@types/react": "^18.0.25",
+    "@types/react-dom": "^18.0.9",
+    "@typescript-eslint/eslint-plugin": "^5.44.0",
+    "@typescript-eslint/parser": "^5.44.0",
+    "eslint": "8.26.0",
+    "eslint-config-next": "^12.3.4",
+    "eslint-config-prettier": "^8.5.0",
+    "typescript": "^4.9.3"
+  },
+  "pnpm": {
+    "patchedDependencies": {
+      "nextra-theme-blog@2.0.0-beta.42": "patches/nextra-theme-blog@2.0.0-beta.42.patch"
+    }
+  }
+}
