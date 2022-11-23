@@ -10,7 +10,6 @@ export default {
           {meta.title === `About` ? Site : `${meta.title} - ${Site}`}
         </title>
         <meta name="author" content="Aozaki" />
-
         <meta name="title" content={meta.title} />
         <meta name="description" content={meta.description} />
         <meta property="description" content={meta.description} />

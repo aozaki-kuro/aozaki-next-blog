@@ -1,5 +1,6 @@
 module.exports = {
   parser: '@typescript-eslint/parser', //定义ESLint的解析器
+  reportUnusedDisableDirectives: true,
   extends: [
     'next/core-web-vitals',
     'plugin:@typescript-eslint/recommended',
@@ -20,7 +21,7 @@ module.exports = {
   },
   parserOptions: {
     //指定ESLint可以解析JSX语法
-    ecmaVersion: 2019,
+    ecmaVersion: 'latest',
     sourceType: 'module',
     ecmaFeatures: {
       jsx: true
