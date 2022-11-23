@@ -31,6 +31,11 @@ export default withNextra({
         source: '/portfoilo/:slug*',
         destination: '/portrait/:slug*',
         permanent: true
+      },
+      {
+        source: '/about',
+        destination: '/',
+        permanent: true
       }
     ]
   }

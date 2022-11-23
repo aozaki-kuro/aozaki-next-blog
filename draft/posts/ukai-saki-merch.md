@@ -22,6 +22,8 @@ And here comes the print I have dreamed of for a long time!
 
 Above is the fine art print produced at the end of 2020 to celebrate the launch of the light novel "[異世界迷宮の最深部を目指そう](https://www.amazon.co.jp/dp/4865548254)" Vol.15. The fascinating part is Ukai-sensei signed on it! But unfortunately, I got occupied by my Master's thesis and the COVID-19 pandemic, so I never had the chance to purchase one.
 
+; Pic Here
+
 I cannot describe my gratitude for my friend's willingness to let go of the shiniest gems in his collection.
 
 From the description [Ukai-sensei wrote on pixiv](https://www.pixiv.net/artworks/86713438), there are some pretty exciting things about the masterpiece.
@@ -32,7 +34,7 @@ From the description [Ukai-sensei wrote on pixiv](https://www.pixiv.net/artworks
 
 Honestly, I have no idea what this character's name is, and I have never read a single word of the novel. Everything I love is the character design and the illustration itself. But considering how much love Ukai-sensei poured into it, I would consider reading it on Kindle with my poor Japanese.
 
-; Pics here
+; Pics w/ cleaning cloth here
 
 I also ordered the polishing cloth designed by Ukai-sensei. The design refers to the concept of [Kanaut Airlines](https://twitter.com/ukaisaki/status/1541606179650301953). I love the color and design. It also perfectly fits the role of taking care of Ukai-sensei's precious signed prints.
 
@@ -45,6 +47,10 @@ Here's the other fine art print I got in December. I was searching frantically o
 It was from the light novel "[異世界拷問姫](https://mfbunkoj.jp/product/goumonhime/321703000340.html)". The illustration was the cover image of Vol.4, and the title was _Unholy Orange_. I was choosing from all nine versions and decided to buy this at first glance.
 
 The character design was elegant and mysterious. It was said that the character was born from the death and last wishes of the departed. According to [the introduction movie](https://www.youtube.com/watch?v=yfZ-kKjtKbU) on KADOKAWA Official Channel, the background was all gravestones. The gravestones had 48 different kinds of designs and were paired with 24 types of flowers. All of these were carefully drawn one after one. Ukai-sensei said it was the most time-consuming illustration of all time.
+
+; Signature here
+
+By the way, I love Ukai-sensei's signature. It's like a traditional name stamp, unlike the more common fancy hand-written cursive design. The signature is pretty easy to recognize, and you can also feel its strength. Because of this, I once thought Ukai-sensei was a male, but I was proven wrong.
 
 ## Future Plans
 
