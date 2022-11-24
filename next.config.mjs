@@ -39,7 +39,7 @@ export default withNextra({
       },
       {
         source: '/desk-new-layout',
-        destination: '/posts/desk-new-layout',
+        destination: '/posts/new-desktop-layout',
         permanent: true
       },
       {
