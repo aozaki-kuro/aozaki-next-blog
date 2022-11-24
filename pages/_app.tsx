@@ -6,7 +6,7 @@ import 'nextra-theme-blog/style.css'
 import '../styles/main.css'
 // Components
 import Font from '#components/Font'
-import Plausible from '#components/analytics/Plausible'
+import CustomAnalytics from '#components/analytics/Cloudflare'
 
 type Props = AppProps & {
   Component: Page
@@ -18,7 +18,7 @@ const Nextra = ({ Component, pageProps }: Props) => {
     <>
       <Font />
       {getLayout(<Component {...pageProps} />)}
-      <Plausible />
+      <CustomAnalytics />
     </>
   )
 }
