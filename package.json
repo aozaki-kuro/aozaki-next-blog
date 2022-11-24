@@ -14,6 +14,7 @@
     "sitemap": "next-sitemap --config ./scripts/next-sitemap.config.js"
   },
   "dependencies": {
+    "@vercel/analytics": "^0.1.5",
     "canvas-confetti": "^1.6.0",
     "gray-matter": "^4.0.3",
     "next": "^12.3.4",

@@ -6,7 +6,8 @@ import 'nextra-theme-blog/style.css'
 import '../styles/main.css'
 // Components
 import Font from '#components/Font'
-import CustomAnalytics from '#components/analytics/Cloudflare'
+//import CustomAnalytics from '#components/analytics/Plausible'
+import { Analytics } from '@vercel/analytics/react'
 
 type Props = AppProps & {
   Component: Page
@@ -18,7 +19,7 @@ const Nextra = ({ Component, pageProps }: Props) => {
     <>
       <Font />
       {getLayout(<Component {...pageProps} />)}
-      <CustomAnalytics />
+      <Analytics />
     </>
   )
 }
