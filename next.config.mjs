@@ -36,6 +36,16 @@ export default withNextra({
         source: '/about',
         destination: '/',
         permanent: true
+      },
+      {
+        source: '/desk-new-layout',
+        destination: '/posts/desk-new-layout',
+        permanent: true
+      },
+      {
+        source: '/bladerunner-revisit',
+        destination: '/posts/bladerunner-revisit',
+        permanent: true
       }
     ]
   }
