@@ -299,3 +299,11 @@ a[data-footnote-ref] {
 .navi-top-pad {
   padding-top: 0.5rem;
 }
+
+.nx-border {
+  border-width: 0px;
+}
+
+.nx-block {
+  display: table;
+}
