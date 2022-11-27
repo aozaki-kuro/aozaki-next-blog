@@ -10,11 +10,17 @@ export default {
           {meta.title === `About` ? Site : `${meta.title} - ${Site}`}
         </title>
         <meta name="author" content="Aozaki" />
-        <meta name="title" content={meta.title} />
+        <meta
+          name="title"
+          content={meta.title === `About` ? Site : `${meta.title} - ${Site}`}
+        />
         <meta name="description" content={meta.description} />
         <meta property="description" content={meta.description} />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content={meta.title} />
+        <meta
+          property="og:title"
+          content={meta.title === `About` ? Site : `${meta.title} - ${Site}`}
+        />
         <meta property="og:description" content={meta.description} />
         <meta property="og:url" content="https://aozaki.cc" />
         <meta
@@ -26,7 +32,10 @@ export default {
           content={meta.image ? 'summary_large_image' : 'summary'}
         />
         <meta property="twitter:site" content="@Aozaki__" />
-        <meta property="twitter:title" content={meta.title} />
+        <meta
+          property="twitter:title"
+          content={meta.title === `About` ? Site : `${meta.title} - ${Site}`}
+        />
         <meta property="twitter:description" content={meta.description} />
         <meta property="twitter:url" content="https://aozaki.cc" />
         <meta
