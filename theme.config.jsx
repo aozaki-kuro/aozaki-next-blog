@@ -1,25 +1,43 @@
 /* eslint sort-keys: error */
+import { useRouter } from 'next/router'
 import Footer from '#components/index/Footer'
+
 const Site = `Aozaki's blog`
 
 export default {
   head: ({ meta }) => {
+    // Get current route for Url
+    const router = useRouter()
+    const canonicalUrl = (
+      `https://blog.aozaki.cc` + (router.asPath === '/' ? '' : router.asPath)
+    ).split('?')[0]
+
+    // Get Current Title
     const currentTitle =
       meta.title === `About` ? Site : `${meta.title} - ${Site}`
+
+    // Here goes the SEO part
     return (
       <>
+        {/* SEO : Traditional */}
         <title>{currentTitle}</title>
         <meta name="author" content="Aozaki" />
         <meta name="title" content={currentTitle} />
         <meta name="description" content={meta.description} />
+        <link rel="canonical" href={canonicalUrl} />
+
+        {/* SEO : Opengraph */}
         <meta name="og:site_name" content={Site} />
         <meta property="og:type" content="website" />
         <meta property="og:title" content={currentTitle} />
         <meta property="og:description" content={meta.description} />
+        <meta property="og:url" content={canonicalUrl} />
         <meta
           property="og:image"
           content={meta.image || 'https://img.aozaki.cc/twitter-card.jpg'}
         />
+
+        {/* SEO : Twitter Card */}
         <meta
           property="twitter:card"
           content={meta.image || 'summary_large_image'}
@@ -31,6 +49,9 @@ export default {
           property="twitter:image"
           content={meta.image || 'https://img.aozaki.cc/twitter-card.jpg'}
         />
+        <meta property="twitter:url" content={canonicalUrl} />
+
+        {/* SEO : PWA realted */}
         <meta name="application-name" content={Site} />
         <meta name="apple-mobile-web-app-title" content={Site} />
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
@@ -52,6 +73,8 @@ export default {
           href="/icons/safari-pinned-tab.svg"
           color="#6fa8dc"
         />
+
+        {/* SEO : RSS */}
         <link
           rel="feed"
           href="/index.xml"

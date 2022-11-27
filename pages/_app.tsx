@@ -7,7 +7,6 @@ import '../styles/main.css'
 // Components
 import Font from '#components/index/Font'
 //import CustomAnalytics from '#components/analytics/Plausible'
-import Canonical from '#components/index/Canonical'
 import { Analytics } from '@vercel/analytics/react'
 
 type Props = AppProps & {
@@ -19,7 +18,6 @@ const Nextra = ({ Component, pageProps }: Props) => {
   return (
     <>
       <Font />
-      <Canonical />
       {getLayout(<Component {...pageProps} />)}
       <Analytics />
     </>
