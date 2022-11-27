@@ -4,23 +4,17 @@ const Site = `Aozaki's blog`
 
 export default {
   head: ({ meta }) => {
+    const currentTitle =
+      meta.title === `About` ? Site : `${meta.title} - ${Site}`
     return (
       <>
-        <title>
-          {meta.title === `About` ? Site : `${meta.title} - ${Site}`}
-        </title>
+        <title>{currentTitle}</title>
         <meta name="author" content="Aozaki" />
-        <meta
-          name="title"
-          content={meta.title === `About` ? Site : `${meta.title} - ${Site}`}
-        />
+        <meta name="title" content={currentTitle} />
         <meta name="description" content={meta.description} />
         <meta name="og:site_name" content={Site} />
         <meta property="og:type" content="website" />
-        <meta
-          property="og:title"
-          content={meta.title === `About` ? Site : `${meta.title} - ${Site}`}
-        />
+        <meta property="og:title" content={currentTitle} />
         <meta property="og:description" content={meta.description} />
         <meta
           property="og:image"
@@ -31,10 +25,7 @@ export default {
           content={meta.image || 'summary_large_image'}
         />
         <meta property="twitter:site" content="@Aozaki__" />
-        <meta
-          property="twitter:title"
-          content={meta.title === `About` ? Site : `${meta.title} - ${Site}`}
-        />
+        <meta property="twitter:title" content={currentTitle} />
         <meta property="twitter:description" content={meta.description} />
         <meta
           property="twitter:image"
