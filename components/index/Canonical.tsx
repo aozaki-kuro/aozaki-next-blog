@@ -10,6 +10,8 @@ const Canonical = () => {
     <>
       <Head>
         <link rel="canonical" href={canonicalUrl} />
+        <meta property="og:url" content={canonicalUrl} />
+        <meta property="twitter:url" content={canonicalUrl} />
       </Head>
     </>
   )
