@@ -15,6 +15,7 @@ export default {
           content={meta.title === `About` ? Site : `${meta.title} - ${Site}`}
         />
         <meta name="description" content={meta.description} />
+        <meta name="og:site_name" content={Site} />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
@@ -27,7 +28,7 @@ export default {
         />
         <meta
           property="twitter:card"
-          content={meta.image ? 'summary_large_image'}
+          content={meta.image || 'summary_large_image'}
         />
         <meta property="twitter:site" content="@Aozaki__" />
         <meta
