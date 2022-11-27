@@ -11,6 +11,7 @@ export default {
     const canonicalUrl = (
       `https://blog.aozaki.cc` + (router.asPath === '/' ? '' : router.asPath)
     ).split('?')[0]
+    const twitterCard = `https://img.aozaki.cc/twitter-card.jpg`
 
     // Get Current Title
     const currentTitle =
@@ -21,35 +22,26 @@ export default {
       <>
         {/* SEO : Traditional */}
         <title>{currentTitle}</title>
-        <meta name="author" content="Aozaki" />
         <meta name="title" content={currentTitle} />
+        <meta name="author" content="Aozaki" />
         <meta name="description" content={meta.description} />
         <link rel="canonical" href={canonicalUrl} />
 
         {/* SEO : Opengraph */}
-        <meta name="og:site_name" content={Site} />
-        <meta property="og:type" content="website" />
         <meta property="og:title" content={currentTitle} />
         <meta property="og:description" content={meta.description} />
+        <meta property="og:type" content="website" />
         <meta property="og:url" content={canonicalUrl} />
-        <meta
-          property="og:image"
-          content={meta.image || 'https://img.aozaki.cc/twitter-card.jpg'}
-        />
+        <meta property="og:image" content={meta.image || twitterCard} />
+        <meta name="og:site_name" content={Site} />
 
         {/* SEO : Twitter Card */}
-        <meta
-          property="twitter:card"
-          content={meta.image || 'summary_large_image'}
-        />
-        <meta property="twitter:site" content="@Aozaki__" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:image" content={meta.image || twitterCard} />
         <meta property="twitter:title" content={currentTitle} />
         <meta property="twitter:description" content={meta.description} />
-        <meta
-          property="twitter:image"
-          content={meta.image || 'https://img.aozaki.cc/twitter-card.jpg'}
-        />
         <meta property="twitter:url" content={canonicalUrl} />
+        <meta property="twitter:site" content="@Aozaki__" />
 
         {/* SEO : PWA realted */}
         <meta name="application-name" content={Site} />
