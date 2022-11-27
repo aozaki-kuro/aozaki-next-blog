@@ -161,10 +161,6 @@ article a {
   }
 }
 
-details summary {
-  cursor: pointer;
-}
-
 img.next-image {
   margin: 0;
 }
@@ -268,10 +264,7 @@ figure,
 }
 **/
 
-a[data-footnote-ref] {
-  text-decoration: none;
-  padding: 0.2rem;
-}
+/** Article */
 
 .md\:nx-prose {
   line-height: 1.6;
@@ -288,6 +281,8 @@ a[data-footnote-ref] {
   text-decoration-color: #a5adb1;
 }
 
+/** Custom Components */
+
 .centered {
   text-align: center;
 }
@@ -300,6 +295,8 @@ a[data-footnote-ref] {
   padding-top: 0.5rem;
 }
 
+/** Table */
+
 .nx-border {
   border-width: 0px;
 }
@@ -308,6 +305,23 @@ a[data-footnote-ref] {
   display: table;
 }
 
+/** Footer */
+
 .RSS {
   float: right;
+}
+
+a[data-footnote-ref] {
+  text-decoration: none;
+  padding: 0.2rem;
+}
+
+/** Inline Summary */
+
+summary:not(:focus-visible):focus {
+  outline: none;
+}
+
+details summary {
+  cursor: pointer;
 }
