@@ -307,3 +307,7 @@ a[data-footnote-ref] {
 .nx-block {
   display: table;
 }
+
+.RSS {
+  float: right;
+}

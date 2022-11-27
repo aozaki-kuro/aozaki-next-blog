@@ -1,5 +1,5 @@
 /* eslint sort-keys: error */
-const YEAR = new Date().getFullYear()
+import Footer from '#components/index/Footer'
 const Site = `Aozaki's blog`
 
 export default {
@@ -31,50 +31,35 @@ export default {
           property="twitter:image"
           content={meta.image || 'https://img.aozaki.cc/twitter-card.jpg'}
         />
+        <meta name="application-name" content={Site} />
+        <meta name="apple-mobile-web-app-title" content={Site} />
+        <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/icons/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/icons/favicon-16x16.png"
+        />
+        <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+        <link
+          rel="mask-icon"
+          href="/icons/safari-pinned-tab.svg"
+          color="#6fa8dc"
+        />
+        <link
+          rel="feed"
+          href="/index.xml"
+          type="application/rss+xml"
+          title={Site}
+        />
       </>
     )
   },
-  footer: (
-    <div>
-      <hr />
-      <div className="social">
-        <a href="https://twitter.com/Aozaki__" target="_blank" rel="noreferrer">
-          Twitter
-        </a>{' '}
-        ·{' '}
-        <a
-          href="https://github.com/aozaki-kuro"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Github
-        </a>{' '}
-        ·{' '}
-        <a href="https://t.me/aozaki_ch" target="_blank" rel="noreferrer">
-          Telegram
-        </a>{' '}
-        ·{' '}
-        <a href="mailto:i@aozaki.cc" target="_blank" rel="noreferrer">
-          i@aozaki.cc
-        </a>
-      </div>
-      <small style={{ display: 'block', marginTop: '8rem' }}>
-        <abbr
-          title="This site and all its content are licensed under a Creative Commons Attribution-NonCommercial 4.0 International License."
-          style={{ cursor: 'help' }}
-        >
-          CC BY-NC 4.0
-        </abbr>{' '}
-        <time>{YEAR}</time> © Aozaki.
-        <a href="/feed.xml" aria-label="RSS" target="_blank" rel="noreferrer">
-          RSS
-        </a>
-        <style jsx>{`
-          a {
-            float: right;
-          }
-        `}</style>
-      </small>
-    </div>
-  )
+  footer: <Footer />
 }
