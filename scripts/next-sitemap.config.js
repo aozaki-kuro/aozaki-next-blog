@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: 'https://aozaki.cc',
+  siteUrl: 'https://blog.aozaki.cc',
   generateRobotsTxt: true,
   autoLastmod: true,
   changefreq: 'daily',

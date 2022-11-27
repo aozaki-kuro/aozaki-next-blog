@@ -6,7 +6,7 @@ const AnalyticsWrapper = () => {
     <Script
       strategy="lazyOnload"
       src="https://beacon.aozaki.cc/app.js"
-      data-domain="aozaki.cc"
+      data-domain="blog.aozaki.cc"
     />
   )
 }

@@ -4,7 +4,7 @@ import Head from 'next/head'
 const Canonical = () => {
   const router = useRouter()
   const canonicalUrl = (
-    `https://aozaki.cc` + (router.asPath === '/' ? '' : router.asPath)
+    `https://blog.aozaki.cc` + (router.asPath === '/' ? '' : router.asPath)
   ).split('?')[0]
   return (
     <>
