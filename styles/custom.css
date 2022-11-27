@@ -1,3 +1,0 @@
-summary:not(:focus-visible):focus {
-  outline: none;
-}

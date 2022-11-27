@@ -325,3 +325,18 @@ summary:not(:focus-visible):focus {
 details summary {
   cursor: pointer;
 }
+
+.cc-mark {
+  display: block;
+  margin-top: 8rem;
+}
+
+.cc-cursor {
+  cursor: help;
+}
+
+/** Post Title */
+.post-link {
+  color: inherit;
+  text-decoration: none;
+}

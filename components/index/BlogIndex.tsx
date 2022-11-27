@@ -18,10 +18,7 @@ const BlogIndex = () => {
       return (
         <div key={page.route} className="mb-10">
           <Link href={page.route}>
-            <a
-              style={{ color: 'inherit', textDecoration: 'none' }}
-              className="post-link font-semibold mt-8 text-2xl flex"
-            >
+            <a className="post-link font-semibold mt-8 text-2xl flex post-link">
               <h3 className="flex-1 m-0 post-title">
                 {page.meta?.title || frontMatter.title || page.name}
               </h3>
