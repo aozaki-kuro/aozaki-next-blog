@@ -21,6 +21,7 @@ export default {
     return (
       <>
         {/* SEO : Traditional */}
+        <meta name="robots" content="noodp" />
         <title>{currentTitle}</title>
         <meta name="title" content={currentTitle} />
         <meta name="author" content="Aozaki" />
