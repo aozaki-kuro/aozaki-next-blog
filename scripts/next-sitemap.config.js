@@ -4,6 +4,5 @@ module.exports = {
   generateRobotsTxt: true,
   autoLastmod: true,
   changefreq: 'daily',
-  generateIndexSitemap: false,
   priority: 1
 }
