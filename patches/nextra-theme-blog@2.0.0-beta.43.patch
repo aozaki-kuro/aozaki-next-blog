@@ -1,5 +1,5 @@
 diff --git a/dist/index.js b/dist/index.js
-index 1bd98a732724c7057634a736d344ae7489f1a106..e839cb150f6eb1cfba76d8536f55def829df354b 100644
+index f059ed03b8853ed429cda6aa9b472c13d6d7d799..6b10bc9c9bd6a9aa954f6c64f3d3ed0753a47c17 100644
 --- a/dist/index.js
 +++ b/dist/index.js
 @@ -235,7 +235,7 @@ var getParent = ({ opts }) => {
