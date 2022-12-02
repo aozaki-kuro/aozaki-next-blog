@@ -10,8 +10,7 @@
     "start": "next start",
     "format": "prettier '**/*.+(js|mjs|jsx|ts|tsx|json|css|md|mdx)' --write",
     "lint": "next lint",
-    "rss": "node ./scripts/gen-rss.js",
-    "sitemap": "next-sitemap --config ./scripts/next-sitemap.config.js",
+    "lint-fix": "next lint --fix",
     "production": "node ./scripts/gen-rss.js && next build && next-sitemap --config ./scripts/next-sitemap.config.js"
   },
   "dependencies": {
@@ -36,6 +35,8 @@
     "eslint": "8.28.0",
     "eslint-config-next": "^13.0.5",
     "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "2.8.0",
     "typescript": "^4.9.3"
   },
   "pnpm": {
