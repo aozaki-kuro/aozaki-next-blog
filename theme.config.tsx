@@ -5,7 +5,7 @@ import Footer from '#components/index/Footer'
 const Site = `Aozaki's blog`
 
 export default {
-  head: ({ meta }) => {
+  head: ({ meta }: { meta: any }) => {
     // Get current route for Url
     const router = useRouter()
     const canonicalUrl = (
