@@ -1,9 +1,9 @@
 lockfileVersion: 5.4
 
 patchedDependencies:
-  nextra-theme-blog@2.0.0-beta.43:
-    hash: ea57y55i652glzyfqfftes4pia
-    path: patches/nextra-theme-blog@2.0.0-beta.43.patch
+  nextra-theme-blog@2.0.0-beta.45:
+    hash: i6g5y7zthzjdukadvow5qdnrri
+    path: patches/nextra-theme-blog@2.0.0-beta.45.patch
 
 specifiers:
   '@types/node': ^18.11.9
@@ -19,8 +19,8 @@ specifiers:
   gray-matter: ^4.0.3
   next: ^13.0.5
   next-sitemap: ^3.1.32
-  nextra: 2.0.0-beta.43
-  nextra-theme-blog: 2.0.0-beta.43
+  nextra: 2.0.0-beta.45
+  nextra-theme-blog: 2.0.0-beta.45
   react: ^18.2.0
   react-dom: ^18.2.0
   rss: ^1.2.2
@@ -33,8 +33,8 @@ dependencies:
   gray-matter: 4.0.3
   next: 13.0.5_biqbaboplfbrettd7655fr4n2y
   next-sitemap: 3.1.32_next@13.0.5
-  nextra: 2.0.0-beta.43_7iuvftg57tblwyxclfkwku5xo4
-  nextra-theme-blog: 2.0.0-beta.43_ea57y55i652glzyfqfftes4pia_7iuvftg57tblwyxclfkwku5xo4
+  nextra: 2.0.0-beta.45_7iuvftg57tblwyxclfkwku5xo4
+  nextra-theme-blog: 2.0.0-beta.45_i6g5y7zthzjdukadvow5qdnrri_7iuvftg57tblwyxclfkwku5xo4
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   rss: 1.2.2
@@ -2797,8 +2797,8 @@ packages:
       - babel-plugin-macros
     dev: false
 
-  /nextra-theme-blog/2.0.0-beta.43_ea57y55i652glzyfqfftes4pia_7iuvftg57tblwyxclfkwku5xo4:
-    resolution: {integrity: sha512-4jgNsBaM6161g7uSfMDw2R+aW+b1ZwhA+YNAxtGa6acR/aJ8WR0RA35rr9Z412ZbQKCyfPeJ+4YAAEYlkQfMQg==}
+  /nextra-theme-blog/2.0.0-beta.45_i6g5y7zthzjdukadvow5qdnrri_7iuvftg57tblwyxclfkwku5xo4:
+    resolution: {integrity: sha512-BTECOqo4qT6Hw9BZOPAzRzryetWN8rKVeM3gkSwByWfwDS+PJgrgWWcNnSKfUsPnoB86rd027oKeMFgqx1sbMQ==}
     peerDependencies:
       next: '>=9.5.3'
       react: '>=16.13.1'
@@ -2816,8 +2816,8 @@ packages:
     dev: false
     patched: true
 
-  /nextra/2.0.0-beta.43_7iuvftg57tblwyxclfkwku5xo4:
-    resolution: {integrity: sha512-wtc0fU4z/dacaW5MSf3ar1jY7Hlij4fqP0PLtoj4F7E0ANV/p+TCU2181S5kCh0TRqMRLCvCpj7lCHZaslPsLA==}
+  /nextra/2.0.0-beta.45_7iuvftg57tblwyxclfkwku5xo4:
+    resolution: {integrity: sha512-UP5p6WFXUNBNqpGc4NqyM7qzENsT0BrxUTlghgNDIZLmr+cPt0qGxcmeVjT4nD/EjEKeVeL2zO9J7y0Aqp/opQ==}
     peerDependencies:
       next: '>=9.5.3'
       react: '>=16.13.1'

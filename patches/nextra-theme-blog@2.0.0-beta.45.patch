@@ -1,0 +1,13 @@
+diff --git a/dist/index.js b/dist/index.js
+index a559c3b71323e3964689ff545421da29383955a6..d1ded31e7fda75f1d4f4a785d9d88178ca8c5b6b 100644
+--- a/dist/index.js
++++ b/dist/index.js
+@@ -235,7 +235,7 @@ var getParent = ({ opts }) => {
+     }
+   });
+   const parentPage = parentPages.reverse().find(
+-    (page) => "frontMatter" in page && page.frontMatter && page.frontMatter.type === "posts"
++    (page) => "frontMatter" in page && page.frontMatter && ( page.frontMatter.type === "posts" || page.frontMatter.type === "page" )
+   );
+   if (parentPage) {
+     back = parentPage.route;
