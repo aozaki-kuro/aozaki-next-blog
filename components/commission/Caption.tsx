@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 const Caption = ({
   Year,
   Name,
@@ -10,9 +12,9 @@ const Caption = ({
   return (
     <div className="centered">
       © {Year} [{' '}
-      <a href={Url} target="_blank" rel="noreferrer">
+      <Link href={Url} target="_blank" rel="noreferrer">
         {Name}
-      </a>{' '}
+      </Link>{' '}
       ]
     </div>
   )

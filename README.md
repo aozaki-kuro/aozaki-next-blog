@@ -1,12 +1,12 @@
 <div align=center>
-  <a href="https://blog.aozaki.cc/" target="_blank" rel="noopener noreferrer"><img src="/public/logo/logo_dark.svg" alt="aozaki's blog" width="50%" height="50%" /></a>
+  <Link href="https://blog.aozaki.cc/" target="_blank" rel="noopener noreferrer"><img src="/public/logo/logo_dark.svg" alt="aozaki's blog" width="50%" height="50%" /></a>
   
   <b>- <em>Yet Another Blog of Aozaki</em> -</b>
   
   <br>
-  <a href="https://nextjs.org/" target="_blank" rel="noopener noreferrer"><img style="display: inline-block;" src="https://img.shields.io/badge/Next.js-black?style=flat-square&logo=next.js&logoColor=white" alt="Next.js" /></a>
-  <a href="https://pnpm.io/" target="_blank" rel="noopener noreferrer"><img style="display: inline-block;" src="https://img.shields.io/badge/pnpm-%236C78AF.svg?style=flat-square&logo=pnpm&logoColor=white" alt="pnpm" />  </a>
-  <a href="https://www.typescriptlang.org/" target="_blank" rel="noopener noreferrer"><img style="display: inline-block;" src="https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white" alt="typescript" />  </a>
+  <Link href="https://nextjs.org/" target="_blank" rel="noopener noreferrer"><img style="display: inline-block;" src="https://img.shields.io/badge/Next.js-black?style=flat-square&logo=next.js&logoColor=white" alt="Next.js" /></a>
+  <Link href="https://pnpm.io/" target="_blank" rel="noopener noreferrer"><img style="display: inline-block;" src="https://img.shields.io/badge/pnpm-%236C78AF.svg?style=flat-square&logo=pnpm&logoColor=white" alt="pnpm" />  </a>
+  <Link href="https://www.typescriptlang.org/" target="_blank" rel="noopener noreferrer"><img style="display: inline-block;" src="https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white" alt="typescript" />  </a>
 </div>
 
 ---

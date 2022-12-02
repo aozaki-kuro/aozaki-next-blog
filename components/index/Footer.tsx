@@ -1,28 +1,34 @@
+import Link from 'next/link'
+
 const Footer = () => {
   const YEAR = new Date().getFullYear()
   return (
     <div>
       <hr />
       <div className="social">
-        <a href="https://twitter.com/Aozaki__" target="_blank" rel="noreferrer">
+        <Link
+          href="https://twitter.com/Aozaki__"
+          target="_blank"
+          rel="noreferrer"
+        >
           Twitter
-        </a>{' '}
+        </Link>{' '}
         ·{' '}
-        <a
+        <Link
           href="https://github.com/aozaki-kuro"
           target="_blank"
           rel="noreferrer"
         >
           Github
-        </a>{' '}
+        </Link>{' '}
         ·{' '}
-        <a href="https://t.me/aozaki_ch" target="_blank" rel="noreferrer">
+        <Link href="https://t.me/aozaki_ch" target="_blank" rel="noreferrer">
           Telegram
-        </a>{' '}
+        </Link>{' '}
         ·{' '}
-        <a href="mailto:i@aozaki.cc" target="_blank" rel="noreferrer">
+        <Link href="mailto:i@aozaki.cc" target="_blank" rel="noreferrer">
           i@aozaki.cc
-        </a>
+        </Link>
       </div>
       <small className="cc-mark">
         <abbr
@@ -32,9 +38,9 @@ const Footer = () => {
           CC BY-NC 4.0
         </abbr>{' '}
         <time>{YEAR}</time> © Aozaki.
-        <a href="/feed.xml" target="_blank" rel="noreferrer" className="RSS">
+        <Link href="/feed.xml" target="_blank" rel="noreferrer" className="RSS">
           RSS
-        </a>
+        </Link>
       </small>
     </div>
   )
