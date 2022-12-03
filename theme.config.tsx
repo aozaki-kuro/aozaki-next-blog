@@ -7,7 +7,7 @@ const Site = `Aozaki's blog`
 const twitterCard = `https://img.aozaki.cc/twitter-card.jpg`
 
 // Nextra blog theme config
-const siteConfig = {
+export default {
   head: ({
     meta
   }: {
@@ -85,5 +85,3 @@ const siteConfig = {
   },
   footer: <Footer />
 }
-
-export default siteConfig
