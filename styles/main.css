@@ -37,7 +37,7 @@ a,
   transition: opacity 0.2s ease;
 }
 
-a:hover {
+.md\:nx-prose :where(a):not(:where([class~='nx-not-prose'] *)):hover {
   opacity: 0.7;
 }
 

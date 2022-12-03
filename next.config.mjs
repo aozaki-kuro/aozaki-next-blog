@@ -8,6 +8,7 @@ const withNextra = nextra({
 })
 
 export default withNextra({
+  reactStrictMode: true,
   i18n: {
     locales: ['zh-CN'],
     defaultLocale: 'zh-CN'

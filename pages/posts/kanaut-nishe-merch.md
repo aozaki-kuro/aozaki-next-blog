@@ -4,7 +4,6 @@ date: 2022/11/09
 author: Aozaki
 description: 'The merch of Kanaut Nishe, illustrations by Ukai Saki sensei.'
 image: https://img.aozaki.cc/20221109/cover.jpg
-tags: ['merch']
 ---
 
 ## About Ukai Saki sensei
