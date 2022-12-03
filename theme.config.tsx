@@ -2,16 +2,22 @@
 import { useRouter } from 'next/router'
 import Footer from '#components/index/Footer'
 
+// Fixed name and paths
 const Site = `Aozaki's blog`
+const twitterCard = `https://img.aozaki.cc/twitter-card.jpg`
 
-export default {
-  head: ({ meta }: { meta: any }) => {
+// Nextra blog theme config
+const siteConfig = {
+  head: ({
+    meta
+  }: {
+    meta: { title: string; description: string; image: string }
+  }) => {
     // Get current route for Url
     const router = useRouter()
     const canonicalUrl = (
       `https://blog.aozaki.cc` + (router.asPath === '/' ? '' : router.asPath)
     ).split('?')[0]
-    const twitterCard = `https://img.aozaki.cc/twitter-card.jpg`
 
     // Get Current Title
     const currentTitle =
@@ -79,3 +85,5 @@ export default {
   },
   footer: <Footer />
 }
+
+export default siteConfig
