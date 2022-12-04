@@ -19,8 +19,8 @@
     "gray-matter": "^4.0.3",
     "next": "^13.0.6",
     "next-sitemap": "^3.1.32",
-    "nextra": "2.0.0",
-    "nextra-theme-blog": "2.0.0",
+    "nextra": "^2.0.1",
+    "nextra-theme-blog": "^2.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "rss": "^1.2.2",
@@ -41,7 +41,7 @@
   },
   "pnpm": {
     "patchedDependencies": {
-      "nextra-theme-blog@2.0.0": "patches/nextra-theme-blog@2.0.0.patch"
+      "nextra-theme-blog@2.0.1": "patches/nextra-theme-blog@2.0.1.patch"
     }
   }
 }

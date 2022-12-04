@@ -1,9 +1,9 @@
 lockfileVersion: 5.4
 
 patchedDependencies:
-  nextra-theme-blog@2.0.0:
-    hash: i6g5y7zthzjdukadvow5qdnrri
-    path: patches/nextra-theme-blog@2.0.0.patch
+  nextra-theme-blog@2.0.1:
+    hash: r2sdxzirgs6m2fijeocy7sbrtq
+    path: patches/nextra-theme-blog@2.0.1.patch
 
 specifiers:
   '@types/node': ^18.11.10
@@ -20,8 +20,8 @@ specifiers:
   gray-matter: ^4.0.3
   next: ^13.0.6
   next-sitemap: ^3.1.32
-  nextra: 2.0.0
-  nextra-theme-blog: 2.0.0
+  nextra: ^2.0.1
+  nextra-theme-blog: ^2.0.1
   prettier: 2.8.0
   react: ^18.2.0
   react-dom: ^18.2.0
@@ -35,8 +35,8 @@ dependencies:
   gray-matter: 4.0.3
   next: 13.0.6_biqbaboplfbrettd7655fr4n2y
   next-sitemap: 3.1.32_next@13.0.6
-  nextra: 2.0.0_6jx7hpii6hgsrmhxgqrmo3277u
-  nextra-theme-blog: 2.0.0_i6g5y7zthzjdukadvow5qdnrri_6jx7hpii6hgsrmhxgqrmo3277u
+  nextra: 2.0.1_6jx7hpii6hgsrmhxgqrmo3277u
+  nextra-theme-blog: 2.0.1_r2sdxzirgs6m2fijeocy7sbrtq_6jx7hpii6hgsrmhxgqrmo3277u
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   rss: 1.2.2
@@ -2822,8 +2822,8 @@ packages:
       - babel-plugin-macros
     dev: false
 
-  /nextra-theme-blog/2.0.0_i6g5y7zthzjdukadvow5qdnrri_6jx7hpii6hgsrmhxgqrmo3277u:
-    resolution: {integrity: sha512-PxHLy/36yEs+xK6K1MOnP5GXQPhXyDqzXzReQCaKg4kZfmqxzGXnhnIbrRkOjPYDjaAv1vAQOQXMehITUazbYQ==}
+  /nextra-theme-blog/2.0.1_r2sdxzirgs6m2fijeocy7sbrtq_6jx7hpii6hgsrmhxgqrmo3277u:
+    resolution: {integrity: sha512-t63CCRAMPzXfTWLSKJ7zyI5jKTfnL5PNUn+kGl/kjcG17s/GD3VOKhBVTIaReNXi4zwNaEfqj+Bi0Cyl7Ea7lw==}
     peerDependencies:
       next: '>=9.5.3'
       react: '>=16.13.1'
@@ -2841,8 +2841,8 @@ packages:
     dev: false
     patched: true
 
-  /nextra/2.0.0_6jx7hpii6hgsrmhxgqrmo3277u:
-    resolution: {integrity: sha512-3mf5aX+ZJVz7HRtxwtWIo1kw51xrF5MsqoUl0cQDTbFiktCn/Af5AX1gBuiX8/Z4mSEedalvTZUfR6+LxumLFg==}
+  /nextra/2.0.1_6jx7hpii6hgsrmhxgqrmo3277u:
+    resolution: {integrity: sha512-IOBwqMREnadxGryNHvwr3sZuD90uyaTxCWi9yxDB56UndsLBTulKwXNIOdW1FV+vKTbSGpz89wNe665Moli7Kw==}
     peerDependencies:
       next: '>=9.5.3'
       react: '>=16.13.1'

@@ -1,8 +1,8 @@
 diff --git a/dist/index.js b/dist/index.js
-index a559c3b71323e3964689ff545421da29383955a6..d1ded31e7fda75f1d4f4a785d9d88178ca8c5b6b 100644
+index 374c299db7f94eff8a8a6db859e7360171439d7f..16f362931ae675858b798b2046afcb0b7ba86b99 100644
 --- a/dist/index.js
 +++ b/dist/index.js
-@@ -235,7 +235,7 @@ var getParent = ({ opts }) => {
+@@ -79,7 +79,7 @@ var getParent = ({ opts }) => {
      }
    });
    const parentPage = parentPages.reverse().find(
