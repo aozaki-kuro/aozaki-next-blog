@@ -1,9 +1,10 @@
 @import './custom.css';
 @import './postlist.css';
-@import './Link.css';
 @import './article.css';
 
-/* Font and heading size*/
+/*=========================*/
+/*  Font and heading size  */
+/*=========================*/
 
 @font-face {
   font-family: 'Inter var';
@@ -41,7 +42,9 @@ h1 {
   letter-spacing: -0.02em;
 }
 
-/* Overall width */
+/*=========================*/
+/*      Overall width      */
+/*=========================*/
 
 @media screen and (max-width: 480px) {
   article {
@@ -58,7 +61,9 @@ h1 {
   }
 }
 
-/* Background color */
+/*=========================*/
+/*    Background color     */
+/*=========================*/
 
 html[class~='dark']
   .dark\:nx-prose-dark
@@ -70,7 +75,9 @@ html.dark body {
   background-color: #18181a;
 }
 
-/* Lines */
+/*=========================*/
+/*         Lines           */
+/*=========================*/
 
 .dark .dark\:prose-dark hr {
   border-color: #4b4f50;
@@ -78,4 +85,53 @@ html.dark body {
 
 .dark .dark\:prose-dark ul > li::before {
   background-color: #4b4f50;
+}
+
+/*=========================*/
+/*      Link Behavior      */
+/*=========================*/
+
+*::selection {
+  background: #95a5ac40;
+}
+
+a,
+.prose a {
+  text-underline-position: from-font;
+  text-decoration-skip-ink: all;
+  text-decoration-color: #a5adb1;
+  text-decoration-line: underline;
+  text-decoration-thickness: from-font;
+  transition: opacity 0.2s ease;
+}
+
+.md\:nx-prose :where(a):not(:where([class~='nx-not-prose'] *)):hover {
+  opacity: 0.7;
+}
+
+/*=========================*/
+/*        Post List        */
+/*=========================*/
+
+.post-link {
+  align-items: baseline;
+  display: flex;
+  color: inherit;
+  text-decoration: none !important;
+}
+
+.post-title {
+  margin: 0.3rem 1rem;
+  margin-left: 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+  font-variation-settings: 'wght' 500;
+  flex-grow: 1;
+}
+
+.date {
+  font-feature-settings: 'case' 1, 'cpsp' 1, 'dlig' 1, 'cv01' 1, 'cv02',
+    'cv03' 1, 'cv04' 1, 'tnum' 1, 'calt' 1;
+  color: rgb(156, 163, 175);
+  flex-shrink: 0;
 }

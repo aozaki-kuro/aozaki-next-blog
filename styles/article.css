@@ -1,3 +1,7 @@
+/*=========================*/
+/*      Article Style      */
+/*=========================*/
+
 .md\:nx-prose {
   color: #313233;
   font-variation-settings: 'wght' 450;
@@ -15,7 +19,9 @@
   text-decoration-color: #a5adb1;
 }
 
-/* Heading */
+/*=========================*/
+/*         Heading         */
+/*=========================*/
 
 .md\:nx-prose :where(h1):not(:where([class~='nx-not-prose'] *)) {
   font-size: 1.6em;
@@ -27,12 +33,15 @@ strong {
   font-variation-settings: 'wght' 600;
 }
 
-/* Code blocks */
+/*=========================*/
+/*       Code blocks       */
+/*=========================*/
 
 .md\:nx-prose :where(code):not(:where([class~='nx-not-prose'] *))::before,
 .md\:nx-prose :where(code):not(:where([class~='nx-not-prose'] *))::after {
   content: none;
 }
+
 .md\:nx-prose :where(code):not(:where([class~='nx-not-prose'] *)) {
   border: none;
   padding: 2px 4px;
@@ -40,7 +49,20 @@ strong {
   font-variation-settings: 'wght' 500;
 }
 
-/* Nav tabs */
+article.prose pre code {
+  display: inline-block;
+  padding: 0;
+  color: #545454;
+  font-size: 0.9em;
+}
+
+.dark article.prose pre code {
+  color: #e9e9e9;
+}
+
+/*=========================*/
+/*         Nav tabs        */
+/*=========================*/
 
 article a {
   word-break: break-word;
@@ -57,18 +79,9 @@ article.prose pre {
   letter-spacing: 0;
 }
 
-article.prose pre code {
-  display: inline-block;
-  padding: 0;
-  color: #545454;
-  font-size: 0.9em;
-}
-
-.dark article.prose pre code {
-  color: #e9e9e9;
-}
-
-/* Block quote*/
+/*=========================*/
+/*       Block quote       */
+/*=========================*/
 
 html[class~='dark']
   .dark\:nx-prose-dark
@@ -76,7 +89,9 @@ html[class~='dark']
   border-left-color: #4b4f50;
 }
 
-/* Inline Summary */
+/*=========================*/
+/*      Inline Summary     */
+/*=========================*/
 
 summary:not(:focus-visible):focus {
   outline: none;
