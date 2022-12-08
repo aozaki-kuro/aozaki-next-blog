@@ -143,7 +143,14 @@ article.md\:nx-prose {
 }
 article a {
   word-break: break-word;
-  color: #5d676a;
+  /* nx-text-gray-500 */
+  color: rgb(75 85 99) !important;
+}
+
+article div div span {
+  word-break: break-word;
+  /* nx-text-gray-400 */
+  color: rgb(107 114 128) !important;
 }
 
 @media screen and (max-width: 480px) {
