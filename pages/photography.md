@@ -2,7 +2,8 @@
 type: page
 title: Photography
 date: 2020-01-03
-description: The portfolio of photo taken by Aozaki.
+description: The portfolio of photo taken by Aozaki. / All rights reserved.
+image: https://img.aozaki.cc/portrait-cover/dreamer.jpg
 ---
 
 ## 2014
