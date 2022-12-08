@@ -1,0 +1,19 @@
+/* Link Behavior */
+
+*::selection {
+  background: #95a5ac40;
+}
+
+a,
+.prose a {
+  text-underline-position: from-font;
+  text-decoration-skip-ink: all;
+  text-decoration-color: #a5adb1;
+  text-decoration-line: underline;
+  text-decoration-thickness: from-font;
+  transition: opacity 0.2s ease;
+}
+
+.md\:nx-prose :where(a):not(:where([class~='nx-not-prose'] *)):hover {
+  opacity: 0.7;
+}

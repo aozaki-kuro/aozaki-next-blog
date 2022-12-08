@@ -1,0 +1,34 @@
+/* Custom Components */
+
+.centered {
+  text-align: center;
+}
+
+.text-small {
+  font-size: 0.8rem;
+}
+
+.navi-top-pad {
+  padding-top: 0.5rem;
+}
+
+/* Table fix after Nextra 2.0 */
+
+.nx-border {
+  border-width: 0px;
+}
+
+.nx-block {
+  display: table;
+}
+
+/* Footer */
+
+.RSS {
+  float: right;
+}
+
+a[data-footnote-ref] {
+  text-decoration: none;
+  padding: 0.2rem;
+}
