@@ -1,5 +1,5 @@
 ---
-title: '文献阅读：S-ICD与ICD的临床效果评价'
+title: 'S-ICD与ICD的临床效果评价'
 date: 2020/08/14
 author: Aozaki
 description: 'S-ICD与ICD的临床效果评价。新技术真的让生命更安全了吗？'

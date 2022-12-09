@@ -1,5 +1,5 @@
 ---
-title: '读到一套挺有意思的医疗推理小说'
+title: '一套挺有意思的医疗推理小说'
 date: 2020/10/12
 description: '天久鷹央の推理カルテ，医生写的推理小说'
 author: Aozaki

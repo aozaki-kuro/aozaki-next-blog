@@ -1,5 +1,5 @@
 ---
-title: '黑群晖用户的归宿——白群晖'
+title: '白群晖：黑群晖用户的归宿'
 description: '能花钱解决的问题就别折腾自己了。'
 date: 2022/07/20
 author: Aozaki
