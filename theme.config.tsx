@@ -1,13 +1,17 @@
 /* eslint sort-keys: error */
 import { useRouter } from 'next/router'
-import Footer from '#components/index/Footer'
+import Link from 'next/link'
 
 // Fixed name and paths
 const Site = `Aozaki's blog`
 const twitterCard = `https://img.aozaki.cc/twitter-card.jpg`
 
+// Year
+const YEAR = new Date().getFullYear()
+
 // Nextra blog theme config
 export default {
+  // <Head>
   head: ({
     meta
   }: {
@@ -83,5 +87,48 @@ export default {
       </>
     )
   },
-  footer: <Footer />
+
+  // <Footer/>
+  footer: (
+    <div>
+      <hr />
+      <div className="social">
+        <Link
+          href="https://twitter.com/Aozaki__"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Twitter
+        </Link>{' '}
+        ·{' '}
+        <Link
+          href="https://github.com/aozaki-kuro"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Github
+        </Link>{' '}
+        ·{' '}
+        <Link href="https://t.me/aozaki_ch" target="_blank" rel="noreferrer">
+          Telegram
+        </Link>{' '}
+        ·{' '}
+        <Link href="mailto:i@aozaki.cc" target="_blank" rel="noreferrer">
+          i@aozaki.cc
+        </Link>
+      </div>
+      <small className="cc-mark">
+        <abbr
+          title="This site and all its content are licensed under a Creative Commons Attribution-NonCommercial 4.0 International License."
+          className="cc-cursor"
+        >
+          CC BY-NC 4.0
+        </abbr>{' '}
+        <time>{YEAR}</time> © Aozaki.
+        <Link href="/feed.xml" target="_blank" rel="noreferrer" className="RSS">
+          RSS
+        </Link>
+      </small>
+    </div>
+  )
 }
