@@ -11,7 +11,7 @@ const Caption = ({
   Url: string
   Skeb: boolean
 }) => {
-  let displaySkeb = Skeb == true ? `/ Skeb` : null
+  const displaySkeb = Skeb == true ? `/ Skeb` : null
   return (
     <div className="centered">
       © {Year} [{' '}
