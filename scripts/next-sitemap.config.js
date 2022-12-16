@@ -5,5 +5,6 @@ module.exports = {
   autoLastmod: true,
   generateIndexSitemap: false,
   changefreq: 'daily',
-  priority: 1
+  priority: 1,
+  exclude: ['/portrait*']
 }
