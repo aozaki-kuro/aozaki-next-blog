@@ -14,7 +14,7 @@ Partially about Kanaut Nishe's merch.
 
 ### "I Think of You Even in My Dreams"
 
-After posting [the previous article](/posts/kanaut-nishe-goods-1) on my blog, one of my friends sent me a message, asking if I was interested in his collections of Ukai Saki sensei's fine art prints. I said yes, of course, and offered a price for my favorite piece.
+After posting [the previous article](./kanaut-nishe-merch) on my blog, one of my friends sent me a message, asking if I was interested in his collections of Ukai Saki sensei's fine art prints. I said yes, of course, and offered a price for my favorite piece.
 
 And here comes the print I have dreamed of for a long time!
 
