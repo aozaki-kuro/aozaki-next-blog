@@ -24,6 +24,8 @@ Above is the fine art print produced at the end of 2020 to celebrate the launch 
 
 I cannot describe my gratitude for my friend's willingness to let go of the shiniest gems in his collection.
 
+The digital version is available on [Pixiv](https://www.pixiv.net/artworks/86713438).
+
 From the description [Ukai-sensei wrote on pixiv](https://www.pixiv.net/artworks/86713438), there are some pretty exciting things about the masterpiece.
 
 - This piece is for the new year celebration.
@@ -41,6 +43,8 @@ I also ordered the polishing cloth designed by Ukai-sensei. The design refers to
 ### "Unholy Orange"
 
 Here's the other fine art print I got in December. I was searching frantically on the Japanese auction sites, but it turned out to be several lying around on the domestic ones.
+
+The digital version is available on [Pixiv](https://www.pixiv.net/artworks/63528913).
 
 ![0004](../../public/images/20221217/0004.jpg)
 
