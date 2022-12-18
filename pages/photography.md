@@ -10,7 +10,7 @@ image: https://img.aozaki.cc/portrait-cover/dreamer.jpg
 
 ### Memorial
 
-[![Memorial](#portfolio/memorial.jpg)](/portrait/memorial)
+[![Memorial](#photography/memorial.jpg)](./photography/memorial)
 
 ---
 
@@ -18,23 +18,23 @@ image: https://img.aozaki.cc/portrait-cover/dreamer.jpg
 
 ### Blossom
 
-[![Blossom](#portfolio/blossom.jpg)](/portrait/blossom)
+[![Blossom](#photography/blossom.jpg)](./photography/blossom)
 
 ### Regret
 
-[![Regret](#portfolio/regret.jpg)](/portrait/regret)
+[![Regret](#photography/regret.jpg)](./photography/regret)
 
 ### Funeral
 
-[![funeral](#portfolio/funeral.jpg)](/portrait/funeral)
+[![funeral](#photography/funeral.jpg)](./photography/funeral)
 
 ### Refusal
 
-[![refusal](#portfolio/refusal.jpg)](/portrait/refusal)
+[![refusal](#photography/refusal.jpg)](./photography/refusal)
 
 ### Awareness
 
-[![awareness](#portfolio/awareness.jpg)](/portrait/awareness)
+[![awareness](#photography/awareness.jpg)](./photography/awareness)
 
 ---
 
@@ -42,11 +42,11 @@ image: https://img.aozaki.cc/portrait-cover/dreamer.jpg
 
 ### Origami
 
-[![origami](#portfolio/origami.jpg)](/portrait/origami)
+[![origami](#photography/origami.jpg)](./photography/origami)
 
 ### Unbalance
 
-[![unbalance](#portfolio/unbalance.jpg)](/portrait/unbalance)
+[![unbalance](#photography/unbalance.jpg)](./photography/unbalance)
 
 ---
 
@@ -54,7 +54,7 @@ image: https://img.aozaki.cc/portrait-cover/dreamer.jpg
 
 ### Wander
 
-[![wander](#portfolio/wander.jpg)](/portrait/wander)
+[![wander](#photography/wander.jpg)](./photography/wander)
 
 ---
 
@@ -62,4 +62,4 @@ image: https://img.aozaki.cc/portrait-cover/dreamer.jpg
 
 ### Dreamer
 
-[![dreamer](#portfolio/dreamer.jpg)](/portrait/dreamer)
+[![dreamer](#photography/dreamer.jpg)](./photography/dreamer)

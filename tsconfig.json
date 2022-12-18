@@ -20,7 +20,7 @@
     "paths": {
       "#components/*": ["components/*"],
       "#images/*": ["public/images/*"],
-      "#portfolio/*": ["public/images/portfolio/*"],
+      "#photography/*": ["public/images/photography/*"],
       "#commission/*": ["public/images/commission/*"]
     }
   },
