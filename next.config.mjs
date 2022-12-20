@@ -30,7 +30,7 @@ export default withNextra({
       },
       {
         source: '/portfoilo/:slug*',
-        destination: '/portrait/:slug*',
+        destination: '/photography/:slug*',
         permanent: true
       },
       {
