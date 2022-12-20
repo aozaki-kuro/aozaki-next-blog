@@ -58,6 +58,16 @@ By the way, I love Ukai-sensei's signature. It's like a traditional name stamp, 
 
 Ukai-sensei also talked about her signature in her [last drawing stream in 2022](https://www.youtube.com/live/qUCyKW1WcF8&t=28844), mentioning that signing that on fine art prints and other goods was so tiring. She once planned to switch to a Romaji signature since she hoped the West could recognize her, but the clearly written Kanji signature is already rare enough and easy to remember. She was convinced by the audience and went on with the present one.
 
+## Nishe-chan Poche
+
+But it would be too stupid to only have one cleaning cloth sent back here. So I bought a poche having Nishe-chan on it.
+
+![0006](../../public/images/20221217/0006.jpg)
+
+The design originates from Ukai-sensei's work named ["時代を着る"](https://twitter.com/ukaisaki/status/1175013512696848384). The illustration was also the first time Kanaut Nishe gained her design.
+
+The poche was built with high quality and the zip feeling swift when opening and closing. Nishe-chan was also nicely printed. I have been looking forward to having a poche for my daily use so, this one would be my daily driver.
+
 ## Future Plans
 
 The original plan was to buy an A3 print of Ukai Saki sensei's recent works, drawing her original character (OC), Kanaut Nishe. Everything changed right after my friend contacted me.
