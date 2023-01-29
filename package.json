@@ -1,0 +1,69 @@
+{
+  "name": "aozaki-next-blog",
+  "version": "1.4.3",
+  "main": "index.js",
+  "author": "Aozaki <i@aozaki.cc>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "lint-fix": "next lint --fix",
+    "production": "node ./scripts/gen-rss.js && next build && next-sitemap --config ./scripts/next-sitemap.config.js",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "@next/font": "^13.1.6",
+    "autoprefixer": "^10.4.13",
+    "canvas-confetti": "^1.6.0",
+    "gray-matter": "^4.0.3",
+    "next": "^13.1.6",
+    "next-sitemap": "^3.1.48",
+    "nextra": "^2.2.14",
+    "nextra-theme-blog": "^2.2.14",
+    "postcss": "^8.4.21",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.7.1",
+    "rss": "^1.2.2",
+    "sharp": "^0.31.3",
+    "tailwindcss": "^3.2.4"
+  },
+  "devDependencies": {
+    "@next/env": "^13.1.6",
+    "@next/eslint-plugin-next": "^13.1.6",
+    "@types/node": "^18.11.18",
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "@typescript-eslint/eslint-plugin": "^5.49.0",
+    "@typescript-eslint/parser": "^5.49.0",
+    "eslint": "8.32.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-tailwindcss": "^3.8.2",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.0",
+    "prettier": "2.8.3",
+    "prettier-plugin-tailwindcss": "^0.2.2",
+    "typescript": "^4.9.4"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "none",
+    "arrowParens": "avoid",
+    "plugins": [
+      "prettier-plugin-tailwindcss"
+    ]
+  },
+  "lint-staged": {
+    "*.+(js|mjs|cjs|jsx|ts|tsx)": [
+      "eslint --cache --fix --cache-location './node_modules/@eslint/.eslintcache/'"
+    ],
+    "*.+(json|css|md|mdx)": [
+      "prettier --write"
+    ]
+  }
+}

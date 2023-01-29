@@ -1,0 +1,7 @@
+node_modules
+.next
+.DS_Store
+public/feed.xml
+public/sitemap*
+public/robots.txt
+out
