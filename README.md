@@ -17,7 +17,7 @@ Based on [shuding/site](https://github.com/shuding/site)
 - Built with Next.js / [Nextra](https://github.com/shuding/nextra/tree/core), using [`nextra-theme-blog`](https://github.com/shuding/nextra/tree/main/packages/nextra-theme-blog) v2
 - Re-written functions with TypeScript
 - Refactor CSS layout with [Tailwind CSS](https://tailwindcss.com/)
-- Deployed on [Cloudflare Pages](https://pages.cloudflare.com/)
+<!-- - Deployed on [Cloudflare Pages](https://pages.cloudflare.com/) -->
 
 ---
 
