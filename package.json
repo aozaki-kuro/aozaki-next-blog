@@ -10,8 +10,6 @@
     "start": "next start",
     "lint": "next lint",
     "lint:fix": "next lint --fix",
-    "t:dev": "turbo dev",
-    "t:build": "turbo build",
     "production": "node ./scripts/gen-rss.js && next build && next-sitemap --config ./scripts/next-sitemap.config.js",
     "prepare": "husky install"
   },
@@ -50,7 +48,6 @@
     "lint-staged": "^13.1.0",
     "prettier": "2.8.3",
     "prettier-plugin-tailwindcss": "^0.2.2",
-    "turbo": "^1.7.0",
     "typescript": "^4.9.4"
   },
   "prettier": {
