@@ -1,4 +1,7 @@
 {
+  "insallCommand": "pnpm install",
+  "buildCommand": "node ./scripts/gen-rss.js && next build && next-sitemap --config ./scripts/next-sitemap.config.js",
+  "framework": "nextjs",
   "github": {
     "silent": true
   }
