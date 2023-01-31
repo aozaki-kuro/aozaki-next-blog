@@ -3,16 +3,6 @@
 @tailwind utilities;
 
 @layer base {
-  /**
-  @font-face {
-    font-family: 'Inter var';
-    font-style: normal;
-    font-weight: 100 900;
-    font-display: block;
-    src: url(/fonts/InterDisplay-roman.var.woff2) format('woff2');
-  }
-  */
-
   body {
     font-variation-settings: 'wght' 450;
     font-variant: common-ligatures contextual;
