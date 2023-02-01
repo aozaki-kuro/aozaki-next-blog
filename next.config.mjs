@@ -8,10 +8,6 @@ const withNextra = nextra({
   staticImage: true
 })
 
-const bundleAnalyzer = withBundleAnalyzer({
-  enabled: process.env.ANALYZE === 'true'
-})
-
 const securityHeaders = [
   // https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy
   {
@@ -45,65 +41,63 @@ const securityHeaders = [
   }
 ]
 
-export default bundleAnalyzer(
-  withNextra({
-    reactStrictMode: true,
+export default withNextra({
+  reactStrictMode: true,
 
-    // Image Loaders
-    images: {
-      domains: ['img.aozaki.cc'],
-      unoptimized: true
-    },
+  // Image Loaders
+  images: {
+    domains: ['img.aozaki.cc'],
+    unoptimized: true
+  },
 
-    // Ignore Lint during Build
-    eslint: {
-      ignoreDuringBuilds: true
-    },
+  // Ignore Lint during Build
+  eslint: {
+    ignoreDuringBuilds: true
+  },
 
-    // Security Headers
-    async headers() {
-      return [
-        {
-          source: '/(.*)',
-          headers: securityHeaders
-        }
-      ]
-    },
+  // Security Headers
+  async headers() {
+    return [
+      {
+        source: '/(.*)',
+        headers: securityHeaders
+      }
+    ]
+  },
 
-    // Fix Routing by Redirecting
-    async redirects() {
-      return [
-        {
-          source: '/posts/kanaut-nishe-goods-1',
-          destination: '/posts/kanaut-nishe-merch',
-          permanent: true
-        },
-        {
-          source: '/blog/:slug*',
-          destination: '/posts/:slug*',
-          permanent: true
-        },
-        {
-          source: '/portfoilo/:slug*',
-          destination: '/photography/:slug*',
-          permanent: true
-        },
-        {
-          source: '/about',
-          destination: '/',
-          permanent: true
-        },
-        {
-          source: '/desk-new-layout',
-          destination: '/posts/new-desktop-layout',
-          permanent: true
-        },
-        {
-          source: '/bladerunner-revisit',
-          destination: '/posts/bladerunner-revisit',
-          permanent: true
-        }
-      ]
-    }
-  })
-)
+  // Fix Routing by Redirecting
+  async redirects() {
+    return [
+      {
+        source: '/posts/kanaut-nishe-goods-1',
+        destination: '/posts/kanaut-nishe-merch',
+        permanent: true
+      },
+      {
+        source: '/blog/:slug*',
+        destination: '/posts/:slug*',
+        permanent: true
+      },
+      {
+        source: '/portfoilo/:slug*',
+        destination: '/photography/:slug*',
+        permanent: true
+      },
+      {
+        source: '/about',
+        destination: '/',
+        permanent: true
+      },
+      {
+        source: '/desk-new-layout',
+        destination: '/posts/new-desktop-layout',
+        permanent: true
+      },
+      {
+        source: '/bladerunner-revisit',
+        destination: '/posts/bladerunner-revisit',
+        permanent: true
+      }
+    ]
+  }
+})
