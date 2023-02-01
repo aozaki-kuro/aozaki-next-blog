@@ -1,6 +1,5 @@
 /** @type {import('next').NextConfig} */
 import nextra from 'nextra'
-import withBundleAnalyzer from '@next/bundle-analyzer'
 
 const withNextra = nextra({
   theme: 'nextra-theme-blog',
