@@ -130,7 +130,7 @@
   max-width: 40rem;
 }
 
-html[class~='dark'] .md\:nx-prose {
+.dark .md\:nx-prose {
   font-variation-settings: 'wght' 400;
 }
 
@@ -182,16 +182,4 @@ article.prose pre {
 
 .nx-block {
   display: table;
-}
-
-.subheading-anchor::after {
-  @apply dark:!text-gray-500;
-}
-
-.dsqjs-footer-container {
-  display: none;
-}
-
-#disqus_thread {
-  color-scheme: none;
 }

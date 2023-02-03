@@ -6,3 +6,4 @@ public/sitemap*
 public/robots.txt
 out
 .turbo
+.husky/_
