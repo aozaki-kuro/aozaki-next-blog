@@ -183,3 +183,8 @@ article.prose pre {
 .nx-block {
   display: table;
 }
+
+article div div button,
+[role='button'] {
+  display: none;
+}
