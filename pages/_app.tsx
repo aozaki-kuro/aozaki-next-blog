@@ -6,7 +6,7 @@ import type { Page } from '../types/page'
 import 'nextra-theme-blog/style.css'
 import '../styles/main.css'
 // Font Loader
-import localFont from '@next/font/local'
+import localFont from 'next/font/local'
 
 // Components
 import CustomAnalytics from '#components/analytics/Plausible'
