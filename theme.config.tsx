@@ -18,7 +18,6 @@ const YEAR = new Date().getFullYear()
 
 // Nextra blog theme config
 export default {
-  darkMode: true,
   // <Head>
   head: ({
     meta
