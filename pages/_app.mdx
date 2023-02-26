@@ -1,17 +1,14 @@
-// Next.js Basics
-import type { AppProps } from 'next/app'
-import type { Page } from '../types/page'
-
-// CSS
+{/* CSS */}
 import 'nextra-theme-blog/style.css'
 import '../styles/main.css'
-// Font Loader
-import localFont from 'next/font/local'
 
-// Components
+{/* Analytics */}
 import CustomAnalytics from '#components/analytics/Plausible'
 
-const inter = localFont({
+{/* Custom Font */}
+import localFont from 'next/font/local'
+
+export const inter = localFont({
   variable: '--font-inter',
   display: 'block',
   style: 'normal',
@@ -29,12 +26,7 @@ const inter = localFont({
   ]
 })
 
-type Props = AppProps & {
-  Component: Page
-}
-
-const Nextra = ({ Component, pageProps }: Props) => {
-  const getLayout = Component.getLayout || (page => page)
+export default function App({ Component, pageProps }) {
   return (
     <main className={`${inter.variable} font-sans`}>
       <link
@@ -43,10 +35,8 @@ const Nextra = ({ Component, pageProps }: Props) => {
         title="RSS"
         href="/feed.xml"
       />
-      {getLayout(<Component {...pageProps} />)}
+      <Component {...pageProps} />
       <CustomAnalytics />
     </main>
   )
 }
-
-export default Nextra
