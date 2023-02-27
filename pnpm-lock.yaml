@@ -3,7 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@next/env': ^13.2.1
   '@next/eslint-plugin-next': ^13.2.1
-  '@types/node': ^18.14.1
+  '@types/node': ^18.14.2
   '@types/react': ^18.0.28
   '@types/react-dom': ^18.0.11
   '@typescript-eslint/eslint-plugin': ^5.53.0
@@ -19,7 +19,7 @@ specifiers:
   husky: ^8.0.3
   lint-staged: ^13.1.2
   next: ^13.2.1
-  next-sitemap: ^3.1.53
+  next-sitemap: ^3.1.54
   nextra: ^2.2.16
   nextra-theme-blog: ^2.2.16
   postcss: ^8.4.21
@@ -38,7 +38,7 @@ dependencies:
   canvas-confetti: 1.6.0
   gray-matter: 4.0.3
   next: 13.2.1_biqbaboplfbrettd7655fr4n2y
-  next-sitemap: 3.1.53_w72blvo532ghymzwxfaavzsw7a
+  next-sitemap: 3.1.54_w72blvo532ghymzwxfaavzsw7a
   nextra: 2.2.16_qgtcjgzkkjtbiyvnx7d32fl5vu
   nextra-theme-blog: 2.2.16_vew7vg7qzvsrfl7ub63f7u6dme
   postcss: 8.4.21
@@ -52,7 +52,7 @@ dependencies:
 devDependencies:
   '@next/env': 13.2.1
   '@next/eslint-plugin-next': 13.2.1
-  '@types/node': 18.14.1
+  '@types/node': 18.14.2
   '@types/react': 18.0.28
   '@types/react-dom': 18.0.11
   '@typescript-eslint/eslint-plugin': 5.53.0_cjo54hduev4bqhpjw5znwiokqu
@@ -470,8 +470,8 @@ packages:
     resolution: {integrity: sha512-iiUgKzV9AuaEkZqkOLDIvlQiL6ltuZd9tGcW3gwpnX8JbuiuhFlEGmmFXEXkN50Cvq7Os88IY2v0dkDqXYWVgA==}
     dev: false
 
-  /@types/node/18.14.1:
-    resolution: {integrity: sha512-QH+37Qds3E0eDlReeboBxfHbX9omAcBCXEzswCu6jySP642jiM3cYSIkU/REqwhCUqXdonHFuBfJDiAJxMNhaQ==}
+  /@types/node/18.14.2:
+    resolution: {integrity: sha512-1uEQxww3DaghA0RxqHx0O0ppVlo43pJhepY51OxuQIKHpjbnYLA7vcdwioNPzIqmC2u3I/dmylcqjlh0e7AyUA==}
     dev: true
 
   /@types/prop-types/15.7.5:
@@ -2972,8 +2972,8 @@ packages:
       - supports-color
     dev: false
 
-  /next-sitemap/3.1.53_w72blvo532ghymzwxfaavzsw7a:
-    resolution: {integrity: sha512-l57HFQrydCMApb2WpQxOh9atWQzIqpC9nGPvDVn/P2Raa777kkUlW0WlRN2IXtBSh80aftR6HFrXwKYy+ybApA==}
+  /next-sitemap/3.1.54_w72blvo532ghymzwxfaavzsw7a:
+    resolution: {integrity: sha512-/uzk8hjHU5o6ZelzkLt/LJw9MyFhRiz9VKIst9EhZfF1C/Bw4OCGzLmA+8ImUnTzSxFyuiWr6P1sjFJxKBhjAA==}
     engines: {node: '>=14.18'}
     hasBin: true
     peerDependencies:
