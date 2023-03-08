@@ -1,13 +1,13 @@
 import Script from 'next/script'
 
-const Plausible = () => {
+const Analytics = () => {
   return (
     <Script
       strategy="afterInteractive"
-      data-domain="blog.aozaki.cc"
+      data-website-id="7fb39801-1ffd-4cfc-b7e3-001cf60d421b"
       src="https://sight.aozaki.cc/app.js"
     />
   )
 }
 
-export default Plausible
+export default Analytics
