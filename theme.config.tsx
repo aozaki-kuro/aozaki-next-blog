@@ -1,3 +1,4 @@
+/* eslint-disable tailwindcss/no-custom-classname */
 import { useRouter } from 'next/router'
 import Link from 'next/link'
 
@@ -105,6 +106,7 @@ export default {
           target="_blank"
           rel="noreferrer"
           aria-label="Twitter"
+          className="umami--click--check-twitter"
         >
           <FaTwitter />
         </Link>
@@ -113,6 +115,7 @@ export default {
           target="_blank"
           rel="me"
           aria-label="Mastodon"
+          className="umami--click--check-mastodon"
         >
           <FaMastodon />
         </Link>
@@ -121,6 +124,7 @@ export default {
           target="_blank"
           rel="noreferrer"
           aria-label="Github"
+          className="umami--click--check-github"
         >
           <FaGithub />
         </Link>
@@ -129,6 +133,7 @@ export default {
           target="_blank"
           rel="noreferrer"
           aria-label="Telegram"
+          className="umami--click--check-telegram"
         >
           <FaTelegramPlane />
         </Link>
@@ -137,7 +142,7 @@ export default {
           target="_blank"
           rel="noreferrer"
           aria-label="RSS"
-          className="mr-0"
+          className="umami--click--check-rss mr-0"
         >
           <FaRss />
         </Link>
