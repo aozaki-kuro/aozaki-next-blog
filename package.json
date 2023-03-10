@@ -12,10 +12,10 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "autoprefixer": "^10.4.13",
+    "autoprefixer": "^10.4.14",
     "canvas-confetti": "^1.6.0",
     "gray-matter": "^4.0.3",
-    "next": "^13.2.3",
+    "next": "^13.2.4",
     "next-sitemap": "^4.0.5",
     "nextra": "^2.2.18",
     "nextra-theme-blog": "^2.2.18",
@@ -28,9 +28,9 @@
     "tailwindcss": "^3.2.7"
   },
   "devDependencies": {
-    "@next/env": "^13.2.3",
-    "@next/eslint-plugin-next": "^13.2.3",
-    "@types/node": "^18.14.6",
+    "@next/env": "^13.2.4",
+    "@next/eslint-plugin-next": "^13.2.4",
+    "@types/node": "^18.15.0",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
     "@typescript-eslint/eslint-plugin": "^5.54.1",
