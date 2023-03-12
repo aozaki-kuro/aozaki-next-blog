@@ -4,7 +4,7 @@ const Analytics = () => {
   return (
     <Script
       strategy="afterInteractive"
-      data-website-id="7fb39801-1ffd-4cfc-b7e3-001cf60d421b"
+      data-website-id="0a65d059-5317-4bb9-bf8f-ad710d5dc95e"
       src="https://sight.aozaki.cc/app.js"
     />
   )
