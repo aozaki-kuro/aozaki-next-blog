@@ -2,7 +2,11 @@ import Script from 'next/script'
 
 const Analytics = () => {
   return (
-    <Script strategy="afterInteractive" src="https://sight.aozaki.cc/app.js" />
+    <Script
+      strategy="afterInteractive"
+      data-domain="blog.aozaki.cc"
+      src="https://sight.aozaki.cc/app.js"
+    />
   )
 }
 
