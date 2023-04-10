@@ -17,10 +17,10 @@ dependencies:
     specifier: ^4.0.7
     version: 4.0.7(@next/env@13.3.0)(next@13.3.0)
   nextra:
-    specifier: ^2.2.20
+    specifier: 2.2.20
     version: 2.2.20(next@13.3.0)(react-dom@18.2.0)(react@18.2.0)
   nextra-theme-blog:
-    specifier: ^2.2.20
+    specifier: 2.2.20
     version: 2.2.20(next@13.3.0)(nextra@2.2.20)(react-dom@18.2.0)(react@18.2.0)
   postcss:
     specifier: ^8.4.21
