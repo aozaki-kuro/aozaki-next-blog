@@ -37,7 +37,7 @@
   /* Spacing above and under <480px */
 
   article {
-    @apply ss:pt-8 ss:pb-16;
+    @apply ss:pb-16 ss:pt-8;
   }
 
   /* Article Main Font color */
