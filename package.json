@@ -15,7 +15,7 @@
     "autoprefixer": "^10.4.14",
     "canvas-confetti": "^1.6.0",
     "gray-matter": "^4.0.3",
-    "next": "^13.3.1",
+    "next": "^13.3.0",
     "next-sitemap": "^4.0.7",
     "nextra": "2.4.1",
     "nextra-theme-blog": "2.4.1",
