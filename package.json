@@ -15,7 +15,7 @@
     "autoprefixer": "^10.4.14",
     "canvas-confetti": "^1.6.0",
     "gray-matter": "^4.0.3",
-    "next": "^13.3.1",
+    "next": "^13.3.2",
     "next-sitemap": "^4.0.7",
     "nextra": "2.4.2",
     "nextra-theme-blog": "2.4.2",
@@ -28,9 +28,9 @@
     "tailwindcss": "^3.3.2"
   },
   "devDependencies": {
-    "@next/env": "^13.3.1",
-    "@next/eslint-plugin-next": "^13.3.1",
-    "@types/node": "^18.16.2",
+    "@next/env": "^13.3.2",
+    "@next/eslint-plugin-next": "^13.3.2",
+    "@types/node": "^18.16.3",
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.1",
     "@typescript-eslint/eslint-plugin": "^5.59.1",
@@ -43,7 +43,7 @@
     "husky": "^8.0.3",
     "lint-staged": "^13.2.2",
     "prettier": "2.8.8",
-    "prettier-plugin-tailwindcss": "^0.2.7",
+    "prettier-plugin-tailwindcss": "^0.2.8",
     "typescript": "^5.0.4"
   },
   "prettier": {
