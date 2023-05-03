@@ -1,0 +1,185 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-variation-settings: 'wght' 450;
+    font-variant: common-ligatures contextual;
+  }
+
+  /* Headings and Strong */
+
+  h1 {
+    font-variation-settings: 'wght' 650;
+    letter-spacing: -0.02em;
+    font-size: 1.6em !important;
+    margin-bottom: 0.4em !important;
+  }
+
+  h2 {
+    font-variation-settings: 'wght' 600;
+    letter-spacing: -0.015em;
+  }
+
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-variation-settings: 'wght' 600;
+  }
+
+  b,
+  strong {
+    font-variation-settings: 'wght' 600;
+  }
+
+  /* Spacing above and under <480px */
+
+  article {
+    @apply ss:pb-16 ss:pt-8;
+  }
+
+  /* Article Main Font color */
+
+  p,
+  li {
+    @apply text-p-light dark:text-gray-300;
+  }
+
+  blockquote {
+    @apply dark:!border-l-zinc-600;
+  }
+
+  summary {
+    cursor: pointer;
+  }
+
+  hr {
+    @apply dark:!border-[#292c2d];
+  }
+
+  /* Link Styles */
+
+  a {
+    text-underline-position: from-font;
+    text-decoration-skip-ink: all;
+    @apply font-medium underline decoration-dec-light decoration-from-font transition-opacity hover:opacity-70 dark:decoration-dec-dark !important;
+  }
+
+  a[data-footnote-ref] {
+    text-decoration: none !important;
+    padding: 0.2rem;
+  }
+}
+
+/*=========================*/
+/*       Antialiased       */
+/*=========================*/
+
+@media screen and (min-device-pixel-ratio: 1.5),
+  screen and (min-resolution: 1.5dppx) {
+  body {
+    @apply antialiased;
+  }
+}
+
+/*=========================*/
+/*      Link Behavior      */
+/*=========================*/
+
+/* Selectable Tabs */
+
+.nx-mb-8 .nx-flex a {
+  @apply text-gray-600 dark:text-gray-100;
+}
+
+/* Current / Not selectable Tab */
+
+.nx-mb-8 .nx-flex .nx-cursor-default {
+  word-break: break-word;
+  @apply text-inactive-nav-light dark:text-inactive-nav-dark;
+}
+
+/*=========================*/
+/*        Post List        */
+/*=========================*/
+
+.font-variation-500 {
+  font-variation-settings: 'wght' 500;
+}
+
+.date {
+  font-feature-settings: 'case' 1, 'cpsp' 1, 'dlig' 1, 'cv01' 1, 'cv02',
+    'cv03' 1, 'cv04' 1, 'tnum' 1, 'calt' 1;
+}
+
+/* !! Ugly Hack to Get Rid of Patches !! */
+
+.post-item {
+  display: none;
+}
+
+/*=========================*/
+/*      Article Style      */
+/*=========================*/
+
+.md\:nx-prose {
+  line-height: 1.6;
+  word-spacing: -0.04em;
+  max-width: 40rem;
+}
+
+.dark .md\:nx-prose {
+  font-variation-settings: 'wght' 400;
+}
+
+/*=========================*/
+/*       Code blocks       */
+/*=========================*/
+
+.md\:nx-prose code::before,
+.md\:nx-prose code::after {
+  content: none;
+}
+
+.md\:nx-prose code {
+  border: none;
+  padding: 2px 4px;
+  font-weight: 500;
+  font-variation-settings: 'wght' 500;
+}
+
+article.prose pre code {
+  display: inline-block;
+  padding: 0;
+  color: #545454;
+  font-size: 0.9em;
+}
+
+.dark article.prose pre code {
+  color: #e9e9e9;
+}
+
+article.prose pre {
+  background-color: #f7f7f7 !important;
+  letter-spacing: 0;
+}
+
+.dark .dark\:prose-dark ul > li::before {
+  background-color: #4b4f50;
+}
+
+/*=========================*/
+/*    Custom Components    */
+/*=========================*/
+
+/* Table fix after Nextra 2.0 */
+
+.nx-border {
+  border-width: 0px;
+}
+
+.nx-block {
+  display: table;
+}
