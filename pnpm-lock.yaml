@@ -17,11 +17,11 @@ dependencies:
     specifier: ^4.0.9
     version: 4.0.9(@next/env@13.3.4)(next@13.3.4)
   nextra:
-    specifier: 2.4.2
-    version: 2.4.2(next@13.3.4)(react-dom@18.2.0)(react@18.2.0)
+    specifier: 2.5.0
+    version: 2.5.0(next@13.3.4)(react-dom@18.2.0)(react@18.2.0)
   nextra-theme-blog:
-    specifier: 2.4.2
-    version: 2.4.2(next@13.3.4)(nextra@2.4.2)(react-dom@18.2.0)(react@18.2.0)
+    specifier: 2.5.0
+    version: 2.5.0(next@13.3.4)(nextra@2.5.0)(react-dom@18.2.0)(react@18.2.0)
   postcss:
     specifier: ^8.4.23
     version: 8.4.23
@@ -3104,11 +3104,11 @@ packages:
       - babel-plugin-macros
     dev: false
 
-  /nextra-theme-blog@2.4.2(next@13.3.4)(nextra@2.4.2)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-vW+pjomhTVkAR8/nKTIhtmnVO+TFX48hXi/sLp7BAoz+VS/HMq5wT2UU2PLJLhzdfl+qOvyBrkT8gdTI+2n/4w==}
+  /nextra-theme-blog@2.5.0(next@13.3.4)(nextra@2.5.0)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-KITGLIVl3DzGcuYIRyzrnnD28IEtHCcRK0hPuivr/NS+S2XmcVztuNKraRlZp8R2u1iV+h1r6QjJFywHr4C7fQ==}
     peerDependencies:
       next: '>=9.5.3'
-      nextra: 2.4.2
+      nextra: 2.5.0
       react: '>=16.13.1'
       react-cusdis: ^2.1.3
       react-dom: '>=16.13.1'
@@ -3118,13 +3118,13 @@ packages:
     dependencies:
       next: 13.3.4(react-dom@18.2.0)(react@18.2.0)
       next-themes: 0.2.1(next@13.3.4)(react-dom@18.2.0)(react@18.2.0)
-      nextra: 2.4.2(next@13.3.4)(react-dom@18.2.0)(react@18.2.0)
+      nextra: 2.5.0(next@13.3.4)(react-dom@18.2.0)(react@18.2.0)
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
     dev: false
 
-  /nextra@2.4.2(next@13.3.4)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-FH2BTCF8q3aBtc1w1pj1N6LMFyiMP5KL+w6Ph4s2M5FwTtv150dSNWWw5Hy2GgxLTi391B/CRkO31OCjp9trkA==}
+  /nextra@2.5.0(next@13.3.4)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-YvknuUvV2fdFY3F3gsxNFA2lwDWg3KHEAiyumUxZKOnW8+yTwocXGFccD76Py9fYxcmUL9ARo+PEusnXlWmLeQ==}
     engines: {node: '>=16'}
     peerDependencies:
       next: '>=9.5.3'
