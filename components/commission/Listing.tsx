@@ -1,5 +1,5 @@
 import data from './data.json'
-import IllustratorInfo from '#components/Commission/IllustratorInfo'
+import IllustratorInfo from './IllustratorInfo'
 import Image from 'next/image'
 
 interface Props {
