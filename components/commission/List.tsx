@@ -7,7 +7,7 @@ interface Props {
   Featured?: boolean
 }
 
-interface Commission {
+interface CommissionInfo {
   Name: string
   PublishDate: string
   fileName: string
@@ -19,7 +19,7 @@ interface Commission {
 }
 
 const List = ({ CharaFilter, Featured }: Props) => {
-  let filteredCommissions = Object.values(data) as Commission[]
+  let filteredCommissions = Object.values(data) as CommissionInfo[]
 
   if (CharaFilter) {
     filteredCommissions = filteredCommissions.filter(
