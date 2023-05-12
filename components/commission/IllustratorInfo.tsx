@@ -3,9 +3,9 @@ import Link from 'next/link'
 interface IllustratorInfoProps {
   PublishDate: string
   Name: string
-  Twitter: string
-  Skeb: string
-  Pixiv: string
+  Twitter?: string
+  Skeb?: string
+  Pixiv?: string
 }
 
 const IllustratorInfo = ({
@@ -41,8 +41,9 @@ const IllustratorInfo = ({
       <div className="col-span-1">{Name || '-'}</div>
       <div className="col-span-2 text-right">
         {'[ '}
-        {createLink(Twitter, 'Twitter')} {createLink(Pixiv, 'Pixiv')}{' '}
-        {createLink(Skeb, 'Skeb')}
+        {createLink(Twitter ? Twitter : '', 'Twitter')}{' '}
+        {createLink(Pixiv ? Pixiv : '', 'Pixiv')}{' '}
+        {createLink(Skeb ? Skeb : '', 'Skeb')}
         {' ]'}
       </div>
     </div>
