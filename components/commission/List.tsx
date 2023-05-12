@@ -18,7 +18,7 @@ interface Commission {
   Featured: boolean
 }
 
-const Listing = ({ CharaFilter, Featured }: Props) => {
+const List = ({ CharaFilter, Featured }: Props) => {
   let filteredCommissions = Object.values(data) as Commission[]
 
   if (CharaFilter) {
@@ -52,4 +52,4 @@ const Listing = ({ CharaFilter, Featured }: Props) => {
   )
 }
 
-export default Listing
+export default List
