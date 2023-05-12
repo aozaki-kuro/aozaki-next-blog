@@ -6,25 +6,29 @@ description: The collection of illustrations commissioned by Aozaki.
 image: https://img.aozaki.cc/commission/20211018_Laxy.jpg
 ---
 
-import Featured from '#components/commission/1.Featured.mdx'
-import Nishe from '#components/commission/2.Nishe.mdx'
-import Tkmt from '#components/commission/9.Tkmt.mdx'
+import Commission from '#components/Commission/Listing'
 
-<Featured />
+## Featured
+
+<Commission Featured="true" />
 
 ---
 
+## Kanaut Nishe
+
 <details><summary children="More other works about Kanaut Nishe"/>
 
-<Nishe />
+<Commission CharaFilter="nishe" Featured="false" />
 
 </details>
 
 ---
 
+## Tokomachi
+
 <details><summary children="More other works about Tokomachi / Suisei"/>
 
-<Tkmt />
+<Commission CharaFilter="tkmt" Featured="false" />
 
 </details>
 
