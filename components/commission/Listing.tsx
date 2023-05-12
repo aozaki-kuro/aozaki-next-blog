@@ -1,4 +1,4 @@
-import data from '#components/Commission/data.json'
+import data from './data.json'
 import IllustratorInfo from '#components/Commission/IllustratorInfo'
 import Image from 'next/image'
 
