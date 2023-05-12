@@ -1,5 +1,6 @@
 {
   "github": {
     "silent": true
-  }
+  },
+  "routes": [{ "src": "/app.js", "dest": "https://sight.aozaki.cc/app.js" }]
 }
