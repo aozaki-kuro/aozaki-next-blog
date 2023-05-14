@@ -1,0 +1,9 @@
+node_modules
+.next
+.DS_Store
+.turbo
+.husky/_
+public/feed.xml
+public/sitemap*
+public/robots.txt
+out

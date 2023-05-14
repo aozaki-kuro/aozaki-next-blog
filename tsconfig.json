@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "importHelpers": true,
+    "typeRoots": ["types"],
+    "baseUrl": ".",
+    "paths": {
+      "#components/*": ["components/*"],
+      "#images/*": ["public/images/*"],
+      "#photography/*": ["public/images/photography/*"],
+      "#commission/*": ["components/commission/*"]
+    }
+  },
+  "include": ["next-env.d.ts", "types/*.d.ts", "**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"],
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS",
+      "paths": {
+        "#data/*": ["data/*"]
+      }
+    },
+    "require": ["tsconfig-paths/register"]
+  }
+}
