@@ -1,9 +1,9 @@
 import Image from 'next/image'
-import IllustratorInfo from './IllustratorInfo'
+import IllustratorInfo from './illustrator-info'
 
 // import commission data files
-import { data } from './data'
-import { priorityList } from './priorityList'
+import { commissionData } from '#data/CommissionData'
+import { priorityList } from '#data/PriorityList'
 
 // define the interface for each commission
 interface CommissionInfo {
@@ -19,7 +19,7 @@ interface CommissionInfo {
 
 const Featured = () => {
   // format commission data by manipulating formattedCommissions object
-  const commissionsValue = Object.values(data) as CommissionInfo[]
+  const commissionsValue = Object.values(commissionData) as CommissionInfo[]
   const formattedCommissions = commissionsValue.map(commission => ({
     ...commission,
     PublishDate: commission.fileName.slice(0, 8),

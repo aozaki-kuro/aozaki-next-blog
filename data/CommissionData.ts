@@ -7,7 +7,7 @@ interface Props {
   Featured: boolean
 }
 
-export const data: Props[] = [
+export const commissionData: Props[] = [
   {
     fileName: '20210424_Laxy',
     Character: 'tkmt',

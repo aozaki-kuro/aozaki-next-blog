@@ -1,5 +1,5 @@
-import { data } from './data'
-import IllustratorInfo from './IllustratorInfo'
+import { commissionData } from '#data/CommissionData'
+import IllustratorInfo from './illustrator-info'
 import Image from 'next/image'
 
 // define the expected props for List component
@@ -21,7 +21,7 @@ interface CommissionInfo {
 
 // filter commissions based on character and sort them by publish date
 const filterCommissions = (charaFilter: string): CommissionInfo[] => {
-  const commissions = Object.values(data) as CommissionInfo[]
+  const commissions = Object.values(commissionData) as CommissionInfo[]
   const commissionsWithDate = commissions.map(commission => ({
     ...commission,
     PublishDate: commission.fileName.slice(0, 8),

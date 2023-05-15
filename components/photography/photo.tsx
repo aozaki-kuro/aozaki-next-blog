@@ -1,22 +1,22 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { data } from './data'
+import { photographyData } from '#data/PhotographyData'
 
 type Props = {
   Title: string
 }
 
 const Photo = ({ Title }: Props) => {
-  const dda = data.find(item => item.title === Title)
+  const data = photographyData.find(item => item.title === Title)
 
-  if (!dda) {
+  if (!data) {
     return null // or render a fallback component
   }
 
-  const { title, amount } = dda
+  const { title, amount } = data
 
-  const PublishDate = dda.date
-  const Year = dda.date.slice(0, 4)
+  const PublishDate = data.date
+  const Year = data.date.slice(0, 4)
   const Url = `/photography#` + title.toLowerCase()
 
   return (

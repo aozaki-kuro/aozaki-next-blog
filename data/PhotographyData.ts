@@ -4,7 +4,7 @@ interface Props {
   amount: number
 }
 
-export const data: Props[] = [
+export const photographyData: Props[] = [
   {
     title: 'Awareness',
     date: '20151125',
