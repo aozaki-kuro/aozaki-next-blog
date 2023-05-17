@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export function OG({
   image,
   title,
@@ -10,7 +12,7 @@ export function OG({
   link: string
 }) {
   return (
-    <a
+    <Link
       href={link}
       target="_blank"
       rel="noreferrer"
@@ -52,6 +54,6 @@ export function OG({
       >
         {desc}
       </p>
-    </a>
+    </Link>
   )
 }
