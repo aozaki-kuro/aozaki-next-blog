@@ -4,22 +4,13 @@ import IllustratorInfo from './illustrator-info'
 // import commission data files
 import { commissionData } from '#data/CommissionData'
 import { priorityList } from '#data/PriorityList'
-
-// define the interface for each commission
-interface CommissionInfo {
-  fileName: string
-  Character: string
-  Twitter: string
-  Pixiv: string
-  Skeb: string
-  Featured: boolean
-  Creator: string
-  PublishDate: string
-}
+import type { CommissionInfoProps } from 'CommissionInfoProps'
 
 const Featured = () => {
   // format commission data by manipulating formattedCommissions object
-  const commissionsValue = Object.values(commissionData) as CommissionInfo[]
+  const commissionsValue = Object.values(
+    commissionData
+  ) as CommissionInfoProps[]
   const formattedCommissions = commissionsValue.map(commission => ({
     ...commission,
     PublishDate: commission.fileName.slice(0, 8),
@@ -27,8 +18,9 @@ const Featured = () => {
   }))
 
   // group featured commissions by creator
-  const featuredCommissionsByCreator: { [creator: string]: CommissionInfo[] } =
-    {}
+  const featuredCommissionsByCreator: {
+    [creator: string]: CommissionInfoProps[]
+  } = {}
   for (const commission of formattedCommissions) {
     if (commission.Featured) {
       if (!featuredCommissionsByCreator[commission.Creator]) {
@@ -61,7 +53,7 @@ const Featured = () => {
 
   // flatten the commissions and create a sorted array
   const flattenedCommissions = sortedCreators.reduce(
-    (acc: CommissionInfo[], creator) => {
+    (acc: CommissionInfoProps[], creator) => {
       const creatorCommissions = featuredCommissionsByCreator[creator]
       acc.push(...creatorCommissions)
       return acc
