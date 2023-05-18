@@ -26,8 +26,7 @@
     "react-icons": "^4.8.0",
     "rss": "^1.2.2",
     "sharp": "^0.32.1",
-    "tailwindcss": "^3.3.2",
-    "tslib": "^2.5.1"
+    "tailwindcss": "^3.3.2"
   },
   "devDependencies": {
     "@next/env": "^13.4.2",
