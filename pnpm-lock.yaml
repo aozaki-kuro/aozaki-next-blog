@@ -46,9 +46,6 @@ dependencies:
   tailwindcss:
     specifier: ^3.3.2
     version: 3.3.2
-  tslib:
-    specifier: ^2.5.1
-    version: 2.5.1
 
 devDependencies:
   '@next/env':
