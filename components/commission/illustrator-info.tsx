@@ -10,10 +10,10 @@ const IllustratorInfo = ({
   Pixiv
 }: CommissionInfoProps) => {
   // Format the date to YYYY/MM/DD
-  const formattedDate = `${PublishDate.slice(0, 4)}/${PublishDate.slice(
-    4,
-    6
-  )}/${PublishDate.slice(6, 8)}`
+  const Year = PublishDate.slice(0, 4)
+  const Month = PublishDate.slice(4, 6)
+  const Day = PublishDate.slice(6, 8)
+  const formattedDate = `${Year}/${Month}/${Day}`
 
   // Create a reusable function to generate links with proper styling
   const createLink = (url: string, text: string) => {
