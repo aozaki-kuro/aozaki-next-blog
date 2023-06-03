@@ -66,4 +66,4 @@ const BlogIndex = () => {
   })
 }
 
-export default BlogIndex // Exporting the component `BlogIndex` as default
+export default BlogIndex

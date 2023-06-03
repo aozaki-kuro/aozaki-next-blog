@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 export function OG({
   image,
@@ -26,8 +27,8 @@ export function OG({
         userSelect: 'none'
       }}
     >
-      <img
-        src={image}
+      <Image
+        src={require(image)}
         style={{
           margin: 0,
           aspectRatio: '1.9/1',
