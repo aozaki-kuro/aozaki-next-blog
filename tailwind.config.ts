@@ -1,6 +1,6 @@
-/** @type {import('tailwindcss').Config} */
+import type { Config } from 'tailwindcss'
 
-module.exports = {
+export default {
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -15,21 +15,9 @@ module.exports = {
         'var(--font-inter)',
         {
           fontFeatureSettings:
-            "'cpsp' 1, 'dlig' 1, 'cv01' 1, 'cv02', 'cv03' 1, 'cv04' 1"
-        },
-        'system-ui',
-        '-apple-system',
-        'BlinkMacSystemFont',
-        'Segoe UI',
-        'Roboto',
-        'Helvetica Neue',
-        'Arial',
-        'Noto Sans',
-        'sans-serif',
-        'Apple Color Emoji',
-        'Segoe UI Emoji',
-        'Segoe UI Symbol',
-        'Noto Color Emoji'
+            "'cpsp' 1, 'dlig' 1, 'cv01' 1, 'cv02', 'cv03' 1, 'cv04' 1",
+          fontVariationSettings: "'common-ligatures','contextual'"
+        }
       ],
       mono: [
         'Menlo',
@@ -60,4 +48,4 @@ module.exports = {
     }
   },
   plugins: []
-}
+} satisfies Config
