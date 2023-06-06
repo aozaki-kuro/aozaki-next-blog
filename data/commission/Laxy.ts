@@ -1,4 +1,4 @@
-import { Props } from './types'
+import { Props } from '#data/types'
 
 export const Laxy: Props[] = [
   {
