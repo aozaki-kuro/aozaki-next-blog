@@ -1,7 +1,5 @@
 {
   "name": "aozaki-next-blog",
-  "version": "1.5.0",
-  "main": "index.js",
   "author": "Aozaki <i@aozaki.cc>",
   "license": "MIT",
   "scripts": {
