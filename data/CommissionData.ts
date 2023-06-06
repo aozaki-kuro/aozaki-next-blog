@@ -1,4 +1,4 @@
-import { Props } from 'CommissionDataProps'
+import { Props } from './types'
 
 import { Laxy } from '#data/commission/Laxy'
 import { Shino } from '#data/commission/Shino'

@@ -2,7 +2,7 @@ import Image from 'next/image'
 import IllustratorInfo from './illustrator-info'
 import { commissionData } from '#data/CommissionData'
 import { priorityList } from '#data/PriorityList'
-import type { CommissionInfoProps } from 'CommissionInfoProps'
+import type { CommissionInfoProps } from './types'
 
 const Featured = () => {
   // Step 1: Converting the commissionerData object to an array and then adding the PublishDate and Creator properties to each commission object based on the fileName property.

@@ -1,4 +1,4 @@
-import { Props } from 'CommissionDataProps'
+import { Props } from './types'
 
 export const Misc: Props[] = [
   {

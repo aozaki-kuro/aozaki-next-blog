@@ -1,6 +1,6 @@
 import { commissionData } from '#data/CommissionData'
 import Image from 'next/image'
-import type { CommissionInfoProps } from 'CommissionInfoProps'
+import type { CommissionInfoProps } from './types'
 import IllustratorInfo from './illustrator-info'
 
 // Defining an interface for the Commission object, which extends the CommissionInfoProps interface and adds two properties - PublishDate and Creator
