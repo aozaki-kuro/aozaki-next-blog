@@ -7,3 +7,5 @@ public/feed.xml
 public/sitemap*
 public/robots.txt
 out
+
+scripts/gen-rss.js

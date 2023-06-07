@@ -6,7 +6,9 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "production": "node ./scripts/gen-rss.mjs ; next build ; next-sitemap --config ./scripts/next-sitemap.config.js",
+    "prebuild": "tsc scripts/gen-rss.ts --esModuleInterop && node scripts/gen-rss.js",
+    "postbuild": "next-sitemap --config ./scripts/next-sitemap.config.js",
+    "production": "pnpm prebuild && next build && pnpm postbuild",
     "prepare": "husky install"
   },
   "dependencies": {
@@ -31,8 +33,8 @@
     "@types/react": "^18.2.8",
     "@types/react-dom": "^18.2.4",
     "@types/rss": "^0.0.30",
-    "@typescript-eslint/eslint-plugin": "^5.59.8",
-    "@typescript-eslint/parser": "^5.59.8",
+    "@typescript-eslint/eslint-plugin": "^5.59.9",
+    "@typescript-eslint/parser": "^5.59.9",
     "eslint": "8.42.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^4.2.1",
