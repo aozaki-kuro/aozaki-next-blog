@@ -15,7 +15,7 @@
     "jsx": "preserve",
     "incremental": true,
     "importHelpers": true,
-    "typeRoots": ["types"],
+    "typeRoots": ["./node_modules/@types", "./types"],
     "baseUrl": ".",
     "paths": {
       "#components/*": ["components/*"],
@@ -33,7 +33,6 @@
       "paths": {
         "#data/*": ["data/*"]
       }
-    },
-    "require": ["tsconfig-paths/register"]
+    }
   }
 }

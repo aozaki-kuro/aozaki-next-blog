@@ -6,9 +6,9 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "prebuild": "tsc scripts/gen-rss.ts --esModuleInterop && node scripts/gen-rss.js",
+    "prebuild": "ts-node scripts/gen-rss.ts",
     "postbuild": "next-sitemap --config ./scripts/next-sitemap.config.js",
-    "production": "pnpm prebuild && next build && pnpm postbuild",
+    "production": "pnpm prebuild && pnpm build && pnpm postbuild",
     "prepare": "husky install"
   },
   "dependencies": {
@@ -44,6 +44,7 @@
     "lint-staged": "^13.2.2",
     "prettier": "^2.8.8",
     "prettier-plugin-tailwindcss": "^0.3.0",
+    "ts-node": "^10.9.1",
     "typescript": "^5.1.3"
   },
   "prettier": {
