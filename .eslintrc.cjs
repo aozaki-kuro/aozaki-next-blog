@@ -1,9 +1,13 @@
 /** @type {import('eslint').Linter.Config} */
 module.exports = {
-  root: true,
+  env: {
+    es6: true,
+    browser: true,
+    node: true
+  },
   reportUnusedDisableDirectives: true,
   ignorePatterns: ['next-env.d.ts'],
-  parser: '@typescript-eslint/parser', //定义ESLint的解析器
+  parser: '@typescript-eslint/parser',
   extends: [
     'plugin:@next/next/recommended',
     'plugin:@typescript-eslint/recommended',
@@ -11,27 +15,20 @@ module.exports = {
     'plugin:tailwindcss/recommended',
     'plugin:prettier/recommended'
   ],
-  plugins: ['@typescript-eslint'],
-  env: {
-    es2021: true,
-    browser: true,
-    node: true
-  },
   settings: {
-    //自动发现React的版本，从而进行规范react代码
     react: {
       pragma: 'React',
       version: 'detect'
     }
   },
   parserOptions: {
-    //指定ESLint可以解析JSX语法
-    ecmaVersion: 'latest',
+    ecmaVersion: 'esnext',
     sourceType: 'module',
     ecmaFeatures: {
       jsx: true
     }
   },
+  plugins: ['@typescript-eslint'],
   rules: {
     '@next/next/no-img-element': 'off',
     'prefer-const': 'error',
@@ -48,6 +45,11 @@ module.exports = {
     'tailwindcss/enforces-negative-arbitrary-values': 'error',
     'tailwindcss/enforces-shorthand': 'error',
     'tailwindcss/migration-from-tailwind-2': 'error',
-    'tailwindcss/no-custom-classname': 'error'
+    'tailwindcss/no-custom-classname': 'error',
+
+    // TypeScript
+    '@typescript-eslint/ban-ts-comment': 0,
+    '@typescript-eslint/no-var-requires': 0,
+    '@typescript-eslint/no-explicit-any': 0
   }
 }

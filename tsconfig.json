@@ -1,21 +1,44 @@
 {
   "compilerOptions": {
-    "module": "ESNext",
-    "target": "ESNext",
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
+    "target": "ES2022",
+    "module": "Node16",
+    "moduleResolution": "node",
+    "inlineSourceMap": true,
+    "esModuleInterop": true /* Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects for all imports. Implies 'allowSyntheticDefaultImports'. */,
+    "allowSyntheticDefaultImports": true, // https://zhuanlan.zhihu.com/p/29022311
+    "resolveJsonModule": true,
     "skipLibCheck": true,
+
+    // "strict": true /* Enable all strict type-checking options. */,
+    /* Strict Type-Checking Options */
+    // "noImplicitAny": true /* Raise error on expressions and declarations with an implied 'any' type. */,
+    "strictNullChecks": true /* Enable strict null checks. */,
+    // "strictFunctionTypes": true /* Enable strict checking of function types. */,
+    // "strictPropertyInitialization": true /* Enable strict checking of property initialization in classes. */,
+    // "noImplicitThis": true /* Raise error on 'this' expressions with an implied 'any' type. */,
+    // "alwaysStrict": true /* Parse in strict mode and emit "use strict" for each source file. */,
+
+    /* Additional Checks */
+    "noUnusedLocals": false /* Report errors on unused locals. */,
+    "noUnusedParameters": true /* Report errors on unused parameters. */,
+    "noImplicitReturns": true /* Report error when not all code paths in function return a value. */,
+    "noFallthroughCasesInSwitch": true /* Report errors for fallthrough cases in switch statement. */,
+
+    /* Debugging Options */
+    "traceResolution": false /* Report module resolution log messages. */,
+    "listEmittedFiles": false /* Print names of generated files part of the compilation. */,
+    "listFiles": false /* Print names of files part of the compilation. */,
+    "pretty": true /* Stylize errors and messages using color and context. */,
+
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "types": ["node"],
+    "typeRoots": ["./node_modules/@types", "./types"],
     "strict": true,
     "forceConsistentCasingInFileNames": true,
-    "noEmit": true,
-    "esModuleInterop": true,
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
     "importHelpers": true,
-    "typeRoots": ["./node_modules/@types", "./types"],
     "baseUrl": ".",
     "paths": {
       "#components/*": ["components/*"],
@@ -23,16 +46,10 @@
       "#photography/*": ["public/images/photography/*"],
       "#commission/*": ["components/commission/*"],
       "#data/*": ["data/*"]
-    }
+    },
+    "allowJs": true,
+    "noEmit": true
   },
   "include": ["next-env.d.ts", "types/*.d.ts", "**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules"],
-  "ts-node": {
-    "compilerOptions": {
-      "module": "CommonJS",
-      "paths": {
-        "#data/*": ["data/*"]
-      }
-    }
-  }
+  "exclude": ["node_modules/**"]
 }
