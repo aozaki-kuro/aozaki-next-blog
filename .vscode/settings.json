@@ -1,6 +1,9 @@
 {
+  "editor.formatOnSave": false,
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.organizeImports": true,
+    "source.addMissingImports": true,
+    "source.fixAll": true
   },
   "eslint.validate": ["typescript", "typescriptreact", "json"]
 }

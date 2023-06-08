@@ -35,10 +35,7 @@ module.exports = {
     // suppress errors for missing 'import React' in files
     'react/react-in-jsx-scope': 'off',
     // allow jsx syntax in js files (for next.js project)
-    'react/jsx-filename-extension': [
-      'error',
-      { extensions: ['.tsx', '.jsx'], allow: 'as-needed' }
-    ], //should add ".ts" if typescript project
+    'react/jsx-filename-extension': ['error', { extensions: ['.tsx', '.jsx'], allow: 'as-needed' }], //should add ".ts" if typescript project
 
     // Tailwind CSS
     'tailwindcss/classnames-order': 'off', // conflicts with prettier-plugin-tailwindcss

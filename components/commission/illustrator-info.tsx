@@ -2,13 +2,7 @@ import Link from 'next/link'
 import type { CommissionInfoProps } from './types'
 
 // Create a functional component named IllustratorInfo which takes in props of type CommissionInfoProps
-const IllustratorInfo = ({
-  PublishDate,
-  Creator,
-  Twitter,
-  Skeb,
-  Pixiv
-}: CommissionInfoProps) => {
+const IllustratorInfo = ({ PublishDate, Creator, Twitter, Skeb, Pixiv }: CommissionInfoProps) => {
   // Format the date to YYYY/MM/DD
   const Year = PublishDate.slice(0, 4)
   const Month = PublishDate.slice(4, 6)

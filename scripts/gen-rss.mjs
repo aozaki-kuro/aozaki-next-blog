@@ -1,7 +1,7 @@
 import { promises as fs } from 'fs'
+import matter from 'gray-matter'
 import { join } from 'path'
 import RSS from 'rss'
-import matter from 'gray-matter'
 
 async function generate() {
   try {
@@ -14,9 +14,7 @@ async function generate() {
     const dirPath = join('./pages/posts')
     const posts = await fs.readdir(dirPath)
 
-    for (const post of posts.filter(
-      fileName => !fileName.startsWith('index.')
-    )) {
+    for (const post of posts.filter(fileName => !fileName.startsWith('index.'))) {
       const content = await fs.readFile(join(dirPath, post))
       const frontmatter = matter(content)
 
@@ -31,18 +29,9 @@ async function generate() {
 
     await fs.writeFile('./public/feed.xml', feed.xml({ indent: true }))
 
-    console.log(
-      '\x1b[42m%s\x1b[0m',
-      ' DONE ',
-      'RSS feed generated successfully!'
-    )
+    console.log('\x1b[42m%s\x1b[0m', ' DONE ', 'RSS feed generated successfully!')
   } catch (error) {
-    console.error(
-      '\x1b[41m%s\x1b[0m',
-      ' FAIL ',
-      'Failed to generate RSS feed:',
-      error
-    )
+    console.error('\x1b[41m%s\x1b[0m', ' FAIL ', 'Failed to generate RSS feed:', error)
   }
 }
 

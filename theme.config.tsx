@@ -1,13 +1,7 @@
-import { useRouter } from 'next/router'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 
-import {
-  FaGithub,
-  FaMastodon,
-  FaRss,
-  FaTelegramPlane,
-  FaTwitter
-} from 'react-icons/fa'
+import { FaGithub, FaMastodon, FaRss, FaTelegramPlane, FaTwitter } from 'react-icons/fa'
 
 // Fixed name and paths
 const Site = `Aozaki's blog`
@@ -19,11 +13,7 @@ const YEAR = new Date().getFullYear()
 // Nextra blog theme config
 export default {
   // <Head>
-  head: ({
-    meta
-  }: {
-    meta: { title: string; description: string; image: string }
-  }) => {
+  head: ({ meta }: { meta: { title: string; description: string; image: string } }) => {
     // Get current route for Url
     const router = useRouter()
     const canonicalUrl = (
@@ -31,8 +21,7 @@ export default {
     ).split('?')[0]
 
     // Get Current Title
-    const currentTitle =
-      meta.title === `About` ? Site : `${meta.title} - ${Site}`
+    const currentTitle = meta.title === `About` ? Site : `${meta.title} - ${Site}`
 
     // Here goes the SEO part
     return (
@@ -65,32 +54,13 @@ export default {
         <meta name="application-name" content={Site} />
         <meta name="apple-mobile-web-app-title" content={Site} />
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="32x32"
-          href="/icons/favicon-32x32.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="16x16"
-          href="/icons/favicon-16x16.png"
-        />
+        <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png" />
         <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
-        <link
-          rel="mask-icon"
-          href="/icons/safari-pinned-tab.svg"
-          color="#6fa8dc"
-        />
+        <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#6fa8dc" />
 
         {/* SEO : RSS */}
-        <link
-          rel="feed"
-          href="/index.xml"
-          type="application/rss+xml"
-          title={Site}
-        />
+        <link rel="feed" href="/index.xml" type="application/rss+xml" title={Site} />
       </>
     )
   },
@@ -136,13 +106,7 @@ export default {
         >
           <FaTelegramPlane />
         </Link>
-        <Link
-          href="/feed.xml"
-          target="_blank"
-          rel="noreferrer"
-          aria-label="RSS"
-          className=""
-        >
+        <Link href="/feed.xml" target="_blank" rel="noreferrer" aria-label="RSS" className="">
           <FaRss />
         </Link>
       </div>

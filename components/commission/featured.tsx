@@ -1,14 +1,12 @@
-import Image from 'next/image'
-import IllustratorInfo from './illustrator-info'
 import { commissionData } from '#data/CommissionData'
 import { priorityList } from '#data/PriorityList'
+import Image from 'next/image'
+import IllustratorInfo from './illustrator-info'
 import type { CommissionInfoProps } from './types'
 
 const Featured = () => {
   // Step 1: Converting the commissionerData object to an array and then adding the PublishDate and Creator properties to each commission object based on the fileName property.
-  const commissionsValue = Object.values(
-    commissionData
-  ) as CommissionInfoProps[] // Creating an array of CommissionInfoProps from the values of commissionDataObj.
+  const commissionsValue = Object.values(commissionData) as CommissionInfoProps[] // Creating an array of CommissionInfoProps from the values of commissionDataObj.
 
   const formattedCommissions = commissionsValue.map(commission => ({
     // Adding PublishDate & Creator to Commission by mapping over each commission in commissionsValue array and returning a new object with additional properties
@@ -35,27 +33,23 @@ const Featured = () => {
   }
 
   // Step 3: Sorting the creators based on their priority level and name
-  const sortedCreators = Object.keys(featuredCommissionsByCreator).sort(
-    (a, b) => {
-      // Using a sort function as a callback to sort creators by comparing their priority and name
-      const aPriority = priorityList[a] || 0 // Assigning priority value of Creator 'a'. If priorityList has no entry for Creator 'a', assigning a default of 0.
-      const bPriority = priorityList[b] || 0 // Assigning priority value of Creator 'b'. If priorityList has no entry for Creator 'b', assigning a default of 0.
+  const sortedCreators = Object.keys(featuredCommissionsByCreator).sort((a, b) => {
+    // Using a sort function as a callback to sort creators by comparing their priority and name
+    const aPriority = priorityList[a] || 0 // Assigning priority value of Creator 'a'. If priorityList has no entry for Creator 'a', assigning a default of 0.
+    const bPriority = priorityList[b] || 0 // Assigning priority value of Creator 'b'. If priorityList has no entry for Creator 'b', assigning a default of 0.
 
-      if (aPriority !== bPriority) {
-        // If the priority levels of both creators are different, returning the difference between them
-        return bPriority - aPriority
-      }
-
-      return a.localeCompare(b) // If the priority levels of both creators are identical, comparing the names of both creators using the localeCompare method and returning the result.
+    if (aPriority !== bPriority) {
+      // If the priority levels of both creators are different, returning the difference between them
+      return bPriority - aPriority
     }
-  )
+
+    return a.localeCompare(b) // If the priority levels of both creators are identical, comparing the names of both creators using the localeCompare method and returning the result.
+  })
 
   // Step 4: Sorting the featured commissions for each creator by their publish date
   for (const creator of sortedCreators) {
     // Sorting the 'featuredCommissionsByCreator' array of each creator using a sort function as a callback. This sort function sorts the commissions based on their publish dates.
-    featuredCommissionsByCreator[creator].sort((a, b) =>
-      b.PublishDate.localeCompare(a.PublishDate)
-    )
+    featuredCommissionsByCreator[creator].sort((a, b) => b.PublishDate.localeCompare(a.PublishDate))
   }
 
   // Step 5: Flattening the nested object into a single array of commission objects

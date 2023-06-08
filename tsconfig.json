@@ -9,10 +9,10 @@
     "resolveJsonModule": true,
     "skipLibCheck": true,
 
-    // "strict": true /* Enable all strict type-checking options. */,
+    "strict": true /* Enable all strict type-checking options. */,
     /* Strict Type-Checking Options */
     // "noImplicitAny": true /* Raise error on expressions and declarations with an implied 'any' type. */,
-    "strictNullChecks": true /* Enable strict null checks. */,
+    // "strictNullChecks": true /* Enable strict null checks. */,
     // "strictFunctionTypes": true /* Enable strict checking of function types. */,
     // "strictPropertyInitialization": true /* Enable strict checking of property initialization in classes. */,
     // "noImplicitThis": true /* Raise error on 'this' expressions with an implied 'any' type. */,
@@ -33,7 +33,6 @@
     "lib": ["dom", "dom.iterable", "esnext"],
     "types": ["node"],
     "typeRoots": ["./node_modules/@types", "./types"],
-    "strict": true,
     "forceConsistentCasingInFileNames": true,
     "isolatedModules": true,
     "jsx": "preserve",

@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import List from './list'
 
 const Stale = ({ Character }: { Character: string }) => {
@@ -11,8 +11,7 @@ const Stale = ({ Character }: { Character: string }) => {
       const element = document.getElementById(contentID)
       if (element) {
         const { top } = element.getBoundingClientRect()
-        const windowHeight =
-          window.innerHeight || document.documentElement.clientHeight
+        const windowHeight = window.innerHeight || document.documentElement.clientHeight
         if (top <= windowHeight) {
           setIsLoaded(true)
           window.removeEventListener('scroll', handleScroll)

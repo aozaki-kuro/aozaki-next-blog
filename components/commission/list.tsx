@@ -1,7 +1,7 @@
 import { commissionData } from '#data/CommissionData'
 import Image from 'next/image'
-import type { CommissionInfoProps } from './types'
 import IllustratorInfo from './illustrator-info'
+import type { CommissionInfoProps } from './types'
 
 // Defining an interface for the Commission object, which extends the CommissionInfoProps interface and adds two properties - PublishDate and Creator
 interface Commission extends CommissionInfoProps {
@@ -21,9 +21,7 @@ const List = ({ Character }: CommissionInfoProps) => {
     }))
 
     // filter method is used to filter out only those commission objects that match the given Character name and are not Featured.
-    .filter(
-      commission => commission.Character === Character && !commission.Featured
-    )
+    .filter(commission => commission.Character === Character && !commission.Featured)
 
     // sort method is used here to sort the resulting filteredCommissions array in descending order of PublishDate
     .sort((a, b) => b.PublishDate.localeCompare(a.PublishDate))

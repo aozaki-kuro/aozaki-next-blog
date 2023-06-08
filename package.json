@@ -6,7 +6,7 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "prebuild": "ts-node scripts/gen-rss.ts",
+    "prebuild": "node scripts/gen-rss.mjs",
     "postbuild": "next-sitemap --config ./scripts/next-sitemap.config.js",
     "production": "pnpm prebuild && pnpm build && pnpm postbuild",
     "prepare": "husky install"
@@ -32,7 +32,6 @@
     "@types/node": "^20.2.5",
     "@types/react": "^18.2.9",
     "@types/react-dom": "^18.2.4",
-    "@types/rss": "^0.0.30",
     "@typescript-eslint/eslint-plugin": "^5.59.9",
     "@typescript-eslint/parser": "^5.59.9",
     "eslint": "8.42.0",
@@ -44,23 +43,13 @@
     "lint-staged": "^13.2.2",
     "prettier": "^2.8.8",
     "prettier-plugin-tailwindcss": "^0.3.0",
-    "ts-node": "^10.9.1",
     "typescript": "^5.1.3"
   },
-  "prettier": {
-    "semi": false,
-    "singleQuote": true,
-    "trailingComma": "none",
-    "arrowParens": "avoid",
-    "plugins": [
-      "prettier-plugin-tailwindcss"
-    ]
-  },
   "lint-staged": {
-    "*.+(js|mjs|cjs|jsx|ts|tsx)": [
+    "*.{js,mjs,cjs,jsx,ts,tsx}": [
       "eslint --cache --fix --cache-location './node_modules/@eslint/.eslintcache/'"
     ],
-    "*.+(json|css|md|mdx)": [
+    "*.{json,css,md,mdx}": [
       "prettier --write"
     ]
   },

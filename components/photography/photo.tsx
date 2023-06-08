@@ -1,6 +1,6 @@
+import { photographyData } from '#data/PhotographyData'
 import Image from 'next/image'
 import Link from 'next/link'
-import { photographyData } from '#data/PhotographyData'
 
 type Props = {
   Title: string

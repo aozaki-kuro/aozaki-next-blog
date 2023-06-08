@@ -1,8 +1,8 @@
 import { Props } from './types'
 
 import { Laxy } from '#data/commission/Laxy'
-import { Shino } from '#data/commission/Shino'
 import { Misc } from '#data/commission/Misc'
+import { Shino } from '#data/commission/Shino'
 
 export const commissionData: Props[] = [
   // Illustrators

@@ -1,6 +1,6 @@
-import { useMemo } from 'react' // Importing `useMemo` hook from React library
-import { getPagesUnderRoute } from 'nextra/context' // Importing function `getPagesUnderRoute` from custom module
-import Link from 'next/link' // Importing `Link` component from Next.js
+import Link from 'next/link'
+import { getPagesUnderRoute } from 'nextra/context'
+import { useMemo } from 'react'
 
 // Defining a type for the front matter object
 interface FrontMatter {
@@ -38,14 +38,11 @@ const BlogIndex = () => {
     const title = page.meta?.title || frontMatter.title || page.name
 
     // Extracting date from `frontMatter` and formatting it
-    const date = new Date(frontMatter.date || '').toLocaleDateString(
-      undefined,
-      {
-        year: 'numeric',
-        month: '2-digit',
-        day: '2-digit'
-      }
-    )
+    const date = new Date(frontMatter.date || '').toLocaleDateString(undefined, {
+      year: 'numeric',
+      month: '2-digit',
+      day: '2-digit'
+    })
 
     // Returning the Link component
     return (
@@ -57,9 +54,7 @@ const BlogIndex = () => {
           <h3 className="font-variation-500 my-[0.3rem] mr-4 flex-1 text-[1.1rem] font-medium text-zinc-900 dark:text-inherit">
             {title}
           </h3>
-          <time className="date shrink-0 whitespace-nowrap text-sm text-gray-400">
-            {date}
-          </time>
+          <time className="date shrink-0 whitespace-nowrap text-sm text-gray-400">{date}</time>
         </Link>
       </div>
     )

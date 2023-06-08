@@ -14,19 +14,11 @@ export default {
       sans: [
         'var(--font-inter)',
         {
-          fontFeatureSettings:
-            "'cpsp' 1, 'dlig' 1, 'cv01' 1, 'cv02', 'cv03' 1, 'cv04' 1",
+          fontFeatureSettings: "'cpsp' 1, 'dlig' 1, 'cv01' 1, 'cv02', 'cv03' 1, 'cv04' 1",
           fontVariationSettings: "'common-ligatures','contextual'"
         }
       ],
-      mono: [
-        'Menlo',
-        'Monaco',
-        'Consolas',
-        'Liberation Mono',
-        'Courier New',
-        'monospace'
-      ]
+      mono: ['Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', 'monospace']
     },
     extend: {
       colors: {
