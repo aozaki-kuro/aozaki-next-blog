@@ -1,0 +1,14 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "pipeline": {
+    "build": { "outputs": [".next/**", "!.next/cache/**"] },
+    "prod": { "outputs": [".next/**", "!.next/cache/**"] },
+    "prebuild": {},
+    "dev": {
+      "cache": false
+    },
+    "clean": {
+      "cache": false
+    }
+  }
+}

@@ -3,7 +3,7 @@
   "editor.codeActionsOnSave": {
     "source.organizeImports": true,
     "source.addMissingImports": true,
-    "source.fixAll": true
+    "source.fixAll.eslint": true
   },
-  "eslint.validate": ["typescript", "typescriptreact", "json"]
+  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact", "json"]
 }
