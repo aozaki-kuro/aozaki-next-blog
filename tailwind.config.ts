@@ -7,6 +7,7 @@ export default {
     'theme.config.tsx'
   ],
   theme: {
+    darkMode: 'class',
     screens: {
       ss: { max: '480px' }
     },
