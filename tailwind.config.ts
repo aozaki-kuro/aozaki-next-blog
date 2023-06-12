@@ -6,6 +6,7 @@ export default {
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     'theme.config.tsx'
   ],
+  darkMode: 'class',
   theme: {
     screens: {
       ss: { max: '480px' }
