@@ -80,7 +80,7 @@ export default {
           <FaTwitter />
         </Link>
         <Link
-          href="https://mastodon.social/@aozakiii"
+          href="https://m.cmx.im/@aozaki"
           target="_blank"
           rel="me"
           aria-label="Mastodon"
