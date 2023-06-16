@@ -11,11 +11,13 @@ const twitterCard = `https://img.aozaki.cc/twitter-card.jpg`
 const YEAR = new Date().getFullYear()
 
 // Nextra blog theme config
+// eslint-disable-next-line import/no-anonymous-default-export
 export default {
   // <Head>
   head: ({ meta }: { meta: { title: string; description: string; image: string } }) => {
     // Get current route for Url
-    const router = useRouter()
+    // eslint-disable-next-line react-hooks/rules-of-hooks
+    const router = useRouter()  
     const canonicalUrl = (
       `https://blog.aozaki.cc` + (router.asPath === '/' ? '' : router.asPath)
     ).split('?')[0]
