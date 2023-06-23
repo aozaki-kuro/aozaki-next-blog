@@ -12,6 +12,9 @@ const BlogThemeConfig = {
   // <Head>
   head: CustomHead,
 
+  // Date format
+  dateFormatter: (date: any) => `${date.toDateString()}`,
+
   // <Footer/>
   footer: (
     <div>
