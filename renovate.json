@@ -18,6 +18,11 @@
       "automerge": true
     },
     {
+      "matchPackagePatterns": ["nextra"],
+      "groupName": "Nextra",
+      "automerge": true
+    },
+    {
       "matchUpdateTypes": ["minor", "patch"],
       "matchCurrentVersion": "!/^0/",
       "automerge": true
