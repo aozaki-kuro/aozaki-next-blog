@@ -42,6 +42,7 @@ const securityHeaders = [
 
 export default withNextra({
   reactStrictMode: true,
+  cleanDistDir: true,
 
   // Image Loaders
   images: {
