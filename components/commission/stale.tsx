@@ -1,47 +1,49 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import List from './list'
 
 const Stale = ({ Character }: { Character: string }) => {
+  const containerRef = useRef<HTMLDivElement>(null)
   const [isLoaded, setIsLoaded] = useState(false)
 
-  const contentID = 'stale-commission-' + `${Character}`
-
   useEffect(() => {
-    const handleScroll = () => {
-      const element = document.getElementById(contentID)
-      if (element) {
-        const { top } = element.getBoundingClientRect()
-        const windowHeight = window.innerHeight || document.documentElement.clientHeight
-        if (top <= windowHeight) {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && !isLoaded) {
           setIsLoaded(true)
-          window.removeEventListener('scroll', handleScroll)
         }
+      },
+      {
+        rootMargin: '0px',
+        threshold: 1.0
       }
-    }
+    )
 
-    window.addEventListener('scroll', handleScroll)
-    handleScroll()
+    const currentContainer = containerRef.current
+
+    if (currentContainer) {
+      observer.observe(currentContainer)
+    }
 
     return () => {
-      window.removeEventListener('scroll', handleScroll)
+      if (currentContainer) {
+        observer.unobserve(currentContainer)
+      }
     }
-  }, [contentID]) // Add contentID to the dependency array
+  }, [isLoaded]) // empty dependency array ensures this runs once on mount and cleanup on unmount
 
   return (
-    <div id={contentID}>
+    <div ref={containerRef}>
       {isLoaded ? (
-        <div>
-          <List
-            Character={Character}
-            fileName={''}
-            PublishDate={''}
-            Creator={''}
-            Twitter={''}
-            Pixiv={''}
-            Skeb={''}
-            Featured={false}
-          />
-        </div>
+        <List
+          Character={Character}
+          fileName={''}
+          PublishDate={''}
+          Creator={''}
+          Twitter={''}
+          Pixiv={''}
+          Skeb={''}
+          Featured={false}
+        />
       ) : (
         <p>Loading...</p>
       )}

@@ -13,10 +13,8 @@ const Photo = ({ Title }: Props) => {
     return null // or render a fallback component
   }
 
-  const { title, amount } = data
-
-  const PublishDate = data.date
-  const Year = data.date.slice(0, 4)
+  const { title, amount, date: PublishDate } = data
+  const Year = PublishDate.slice(0, 4)
   const Url = `/photography#` + title.toLowerCase()
 
   return (
@@ -32,6 +30,7 @@ const Photo = ({ Title }: Props) => {
             alt={`Aozaki ©️ ${Year}`}
             quality={95}
             placeholder="blur"
+            loading="lazy"
           />
         )
       })}
