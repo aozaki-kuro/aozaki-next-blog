@@ -1,20 +1,25 @@
 import { commissionData } from '#data/CommissionData'
 import Image from 'next/image'
-import { useMemo } from 'react'
 import IllustratorInfo from './illustrator-info'
 import type { CommissionInfoProps } from './types'
 
+interface Commission extends CommissionInfoProps {
+  PublishDate: string
+  Creator: string
+}
+
 const List = ({ Character }: CommissionInfoProps) => {
-  const filteredCommissions = useMemo(() => {
-    return commissionData
-      .map(commission => ({
-        ...commission,
-        PublishDate: commission.fileName.slice(0, 8),
-        Creator: commission.fileName.split('_')[1]
-      }))
-      .filter(commission => commission.Character === Character && !commission.Featured)
-      .sort((a, b) => b.PublishDate.localeCompare(a.PublishDate))
-  }, [Character])
+  const filteredCommissions: Commission[] = commissionData
+
+    .map(commission => ({
+      ...commission,
+      PublishDate: commission.fileName.slice(0, 8),
+      Creator: commission.fileName.split('_')[1]
+    }))
+
+    .filter(commission => commission.Character === Character && !commission.Featured)
+
+    .sort((a, b) => b.PublishDate.localeCompare(a.PublishDate))
 
   return (
     <>
