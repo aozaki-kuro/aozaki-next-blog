@@ -18,13 +18,12 @@
   "newCommission": {
     "prefix": "newCommission",
     "body": [
-      "\"$1\": {",
-      "\"fileName\": \"$2\",",
-      "\"Featured\": $3,",
-      "\"Character\": \"$4\",",
-      "\"Twitter\": \"$5\",",
-      "\"Pixiv\": \"$6\",",
-      "\"Skeb\": \"$7\"",
+      "{",
+      "  fileName: '$1',",
+      "  Character: '$2',",
+      "  Twitter: '$3',",
+      "  Pixiv: '$4',",
+      "  Skeb: '$5'",
       "},"
     ],
     "description": "Add new commission info"

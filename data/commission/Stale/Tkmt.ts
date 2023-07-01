@@ -1,23 +1,46 @@
 import { Props } from '#data/types'
 
-export const Misc: Props[] = [
+export const Tkmt: Props[] = [
   {
-    fileName: '20221022_RENXZD',
-    Character: 'nishe',
+    fileName: '20211018_四ノ宮しの',
+    Character: 'tkmt',
     Featured: false,
-    Twitter: 'https://twitter.com/ASD03853116/status/1587269529586933762',
-    Pixiv: 'https://www.pixiv.net/artworks/102419272',
-    Skeb: ''
-  },
-  {
-    fileName: '20221030_RENXZD',
-    Character: 'nishe',
-    Featured: false,
-    Twitter: 'https://twitter.com/ASD03853116/status/1584420524641292289',
+    Twitter: 'https://twitter.com/sinosino141',
     Pixiv: '',
     Skeb: ''
   },
-
+  {
+    fileName: '20210708_四ノ宮しの',
+    Character: 'tkmt',
+    Featured: false,
+    Twitter: 'https://twitter.com/sinosino141',
+    Pixiv: '',
+    Skeb: 'https://skeb.jp/@sinosino/works/131'
+  },
+  {
+    fileName: '20220321_四ノ宮しの',
+    Character: 'tkmt',
+    Featured: false,
+    Twitter: 'https://twitter.com/sinosino141/status/1505863501885042691',
+    Pixiv: '',
+    Skeb: ''
+  },
+  {
+    fileName: '20210902_四ノ宮しの',
+    Character: 'tkmt',
+    Featured: false,
+    Twitter: 'https://twitter.com/sinosino141/status/1433446939106807813',
+    Pixiv: '',
+    Skeb: ''
+  },
+  {
+    fileName: '20210516_四ノ宮しの',
+    Character: 'tkmt',
+    Featured: false,
+    Twitter: 'https://twitter.com/sinosino141/status/1393899030342782977',
+    Pixiv: '',
+    Skeb: ''
+  },
   {
     fileName: '20210525_のんびり',
     Character: 'tkmt',
