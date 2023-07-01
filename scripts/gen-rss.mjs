@@ -3,6 +3,12 @@ import matter from 'gray-matter'
 import { join } from 'path'
 import RSS from 'rss'
 
+// Message definition
+const msgError = '\x1b[0m[\x1b[31m ERROR \x1b[0m]'
+const msgDone = '\x1b[0m[\x1b[32m DONE \x1b[0m]'
+// const msgInfo = '\x1b[0m[\x1b[33m INFO \x1b[0m]'
+// const msgWarn = '\x1b[0m[\x1b[33m WARN \x1b[0m]'
+
 async function generate() {
   try {
     const feed = new RSS({
@@ -29,9 +35,9 @@ async function generate() {
 
     await fs.writeFile('./public/feed.xml', feed.xml({ indent: true }))
 
-    console.log('\x1b[42m%s\x1b[0m', ' DONE ', 'RSS feed generated successfully!')
+    console.log(msgDone, 'RSS feed generated successfully!')
   } catch (error) {
-    console.error('\x1b[41m%s\x1b[0m', ' FAIL ', 'Failed to generate RSS feed:', error)
+    console.error(msgError, 'Failed to generate RSS feed:', error)
   }
 }
 
