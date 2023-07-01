@@ -34,10 +34,6 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# public images
-public/images/
-scripts/dl.js
-
 # sitemap & rss
 public/feed.xml
 public/sitemap*
