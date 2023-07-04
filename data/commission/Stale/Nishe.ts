@@ -16,5 +16,5 @@ export const Nishe: Props[] = [
     Twitter: 'https://twitter.com/ASD03853116/status/1584420524641292289',
     Pixiv: '',
     Skeb: ''
-  },
+  }
 ]

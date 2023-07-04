@@ -8,7 +8,6 @@ import { Tkmt } from './commission/Stale/Tkmt'
 export const commissionData: Props[] = [
   // Illustrators
   ...Laxy,
-  
 
   // Characters
   ...Lucia,
@@ -16,5 +15,4 @@ export const commissionData: Props[] = [
   // Stale
   ...Tkmt,
   ...Nishe
-
 ]
