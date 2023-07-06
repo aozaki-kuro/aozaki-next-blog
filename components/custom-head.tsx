@@ -1,4 +1,4 @@
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/router'
 
 const Head = ({ meta }: { meta: { title: string; description: string; image: string } }) => {
   // Site info

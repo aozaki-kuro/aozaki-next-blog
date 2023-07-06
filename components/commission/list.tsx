@@ -14,7 +14,7 @@ const List = ({ Character }: CommissionInfoProps) => {
     .map(commission => ({
       ...commission,
       PublishDate: commission.fileName.slice(0, 8),
-      Creator: commission.fileName.split('_')[1]
+      Creator: commission.fileName.split('_')[1],
     }))
 
     .filter(commission => commission.Character === Character && !commission.Featured)

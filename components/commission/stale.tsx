@@ -14,8 +14,8 @@ const Stale = ({ Character }: { Character: string }) => {
       },
       {
         rootMargin: '0px',
-        threshold: 1.0
-      }
+        threshold: 1.0,
+      },
     )
 
     const currentContainer = containerRef.current

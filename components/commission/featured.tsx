@@ -10,7 +10,7 @@ const Featured = () => {
   const formattedCommissions = commissionsValue.map(commission => ({
     ...commission,
     PublishDate: commission.fileName.slice(0, 8),
-    Creator: commission.fileName.split('_')[1]
+    Creator: commission.fileName.split('_')[1],
   }))
 
   const featuredCommissionsByCreator: {

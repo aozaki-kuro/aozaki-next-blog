@@ -4,22 +4,22 @@ export default {
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
-    'theme.config.tsx'
+    'theme.config.tsx',
   ],
   darkMode: 'class',
   theme: {
     screens: {
-      ss: { max: '480px' }
+      ss: { max: '480px' },
     },
     fontFamily: {
       sans: [
         'var(--font-inter)',
         {
           fontFeatureSettings: "'cpsp' 1, 'dlig' 1, 'cv01' 1, 'cv02', 'cv03' 1, 'cv04' 1",
-          fontVariationSettings: "'common-ligatures','contextual'"
-        }
+          fontVariationSettings: "'common-ligatures','contextual'",
+        },
       ],
-      mono: ['Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', 'monospace']
+      mono: ['Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', 'monospace'],
     },
     extend: {
       colors: {
@@ -30,15 +30,15 @@ export default {
         'inactive-nav-dark': '#66686d',
         'back-light': '#fcfcfc',
         'back-dark': '#18181a',
-        selected: '#95a5ac40'
+        selected: '#95a5ac40',
       },
       minHeight: {
-        dynamic: '100dvh'
+        dynamic: '100dvh',
       },
       letterSpacing: {
-        custom: '0.005em'
-      }
-    }
+        custom: '0.005em',
+      },
+    },
   },
-  plugins: []
+  plugins: [],
 } satisfies Config

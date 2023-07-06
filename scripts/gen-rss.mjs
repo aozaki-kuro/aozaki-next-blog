@@ -14,7 +14,7 @@ async function generate() {
     const feed = new RSS({
       title: "Aozaki's Blog",
       site_url: 'https://blog.aozaki.cc',
-      feed_url: 'https://blog.aozaki.cc/feed.xml'
+      feed_url: 'https://blog.aozaki.cc/feed.xml',
     })
 
     const dirPath = join('./pages/posts')
@@ -29,7 +29,7 @@ async function generate() {
         url: `/posts/${post.replace(/\.mdx?/, '')}`,
         date: frontmatter.data.date,
         description: frontmatter.data.description,
-        author: frontmatter.data.author
+        author: frontmatter.data.author,
       })
     }
 

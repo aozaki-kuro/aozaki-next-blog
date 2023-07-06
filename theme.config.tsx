@@ -71,7 +71,7 @@ const BlogThemeConfig = {
         <div className="float-right">[ Afezria ]</div>
       </small>
     </div>
-  )
+  ),
 }
 
 export default BlogThemeConfig

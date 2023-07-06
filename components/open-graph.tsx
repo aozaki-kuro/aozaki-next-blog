@@ -5,7 +5,7 @@ export function OG({
   image,
   title,
   desc,
-  link
+  link,
 }: {
   image: string
   title: string
@@ -24,7 +24,7 @@ export function OG({
         overflow: 'hidden',
         textDecoration: 'none',
         color: 'currentColor',
-        userSelect: 'none'
+        userSelect: 'none',
       }}
     >
       <Image
@@ -33,7 +33,7 @@ export function OG({
           margin: 0,
           aspectRatio: '1.9/1',
           objectFit: 'cover',
-          borderBottom: '1px solid rgba(150,150,150,0.25)'
+          borderBottom: '1px solid rgba(150,150,150,0.25)',
         }}
         alt="og"
       />
@@ -41,7 +41,7 @@ export function OG({
         style={{
           margin: '0.8rem 0.8rem 0.2rem',
           fontVariationSettings: '"wght" 550',
-          fontWeight: 500
+          fontWeight: 500,
         }}
       >
         {title}
@@ -50,7 +50,7 @@ export function OG({
         style={{
           margin: '0.2rem 0.8rem 0.8rem',
           opacity: 0.8,
-          fontSize: 14
+          fontSize: 14,
         }}
       >
         {desc}

@@ -4,7 +4,7 @@ module.exports = {
   env: {
     es2021: true,
     browser: true,
-    node: true
+    node: true,
   },
   reportUnusedDisableDirectives: true,
   parser: '@typescript-eslint/parser',
@@ -13,25 +13,25 @@ module.exports = {
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:tailwindcss/recommended',
-    'prettier'
+    'prettier',
   ],
   settings: {
     react: {
       pragma: 'React',
-      version: 'detect'
+      version: 'detect',
     },
     'import/resolver': {
       node: {
-        extensions: ['.ts', '.tsx']
-      }
-    }
+        extensions: ['.ts', '.tsx'],
+      },
+    },
   },
   parserOptions: {
     ecmaVersion: 'esnext',
     sourceType: 'module',
     ecmaFeatures: {
-      jsx: true
-    }
+      jsx: true,
+    },
   },
   plugins: ['@typescript-eslint'],
   rules: {
@@ -48,6 +48,6 @@ module.exports = {
     // TypeScript
     '@typescript-eslint/ban-ts-comment': 0,
     '@typescript-eslint/no-var-requires': 0,
-    '@typescript-eslint/no-explicit-any': 0
-  }
+    '@typescript-eslint/no-explicit-any': 0,
+  },
 }
