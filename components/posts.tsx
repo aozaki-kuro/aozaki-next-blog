@@ -1,14 +1,11 @@
 import Link from 'next/link'
 import { getPagesUnderRoute } from 'nextra/context'
-import { useMemo } from 'react'
 
-// Defining a type for the front matter object
 interface FrontMatter {
   date?: string
   title?: string
 }
 
-// Defining a type for the nextra page object
 interface Page {
   route: string
   name: string
@@ -16,35 +13,31 @@ interface Page {
   frontMatter?: FrontMatter
 }
 
-// Defining a component called `BlogIndex`
+const pages = getPagesUnderRoute('/posts')
+
+// Sort once to prevent unnecessary computation on each render
+const sortedPages = pages.sort((a: Page, b: Page) => {
+  const dateA = new Date(a.frontMatter?.date || '').getTime()
+  const dateB = new Date(b.frontMatter?.date || '').getTime()
+
+  // Check if dateA or dateB is NaN (invalid date)
+  if (isNaN(dateA) || isNaN(dateB)) {
+    throw new Error('Invalid date format in frontMatter')
+  }
+
+  return dateB - dateA
+})
+
 const BlogIndex = () => {
-  // Defining a sorted list of pages under `/posts` route, sorted by date in descending order
-  const sortedPages = useMemo(() => {
-    const pages = getPagesUnderRoute('/posts')
-    return pages.sort((a: Page, b: Page) => {
-      // Reformatting the dates to make them comparable
-      const dateA = new Date(a.frontMatter?.date || '').getTime()
-      const dateB = new Date(b.frontMatter?.date || '').getTime()
-      return dateB - dateA // Sorting by date in descending order
-    })
-  }, []) // Only compute once, on component mount
-
-  // Returning an array of `Link` components mapped to each page in `sortedPages`
   return sortedPages.map((page: Page) => {
-    // Extracting frontMatter object from the page and handling missing values
     const frontMatter = page.frontMatter || {}
-
-    // Extracting title from either `page.meta`, `frontMatter`, or `page.name`
     const title = page.meta?.title || frontMatter.title || page.name
-
-    // Extracting date from `frontMatter` and formatting it
     const date = new Date(frontMatter.date || '').toLocaleDateString(undefined, {
       year: 'numeric',
       month: '2-digit',
       day: '2-digit',
     })
 
-    // Returning the Link component
     return (
       <div key={page.route}>
         <Link
