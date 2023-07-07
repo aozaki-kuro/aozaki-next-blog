@@ -12,8 +12,7 @@ module.exports = {
     'next/core-web-vitals',
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
-    'plugin:tailwindcss/recommended',
-    'prettier',
+    'plugin:prettier/recommended',
   ],
   settings: {
     react: {
@@ -37,13 +36,6 @@ module.exports = {
   rules: {
     '@next/next/no-img-element': 'off',
     'prefer-const': 'error',
-
-    // Tailwind CSS
-    'tailwindcss/classnames-order': 'off', // conflicts with prettier-plugin-tailwindcss
-    'tailwindcss/enforces-negative-arbitrary-values': 'error',
-    'tailwindcss/enforces-shorthand': 'error',
-    'tailwindcss/migration-from-tailwind-2': 'error',
-    'tailwindcss/no-custom-classname': 'error',
 
     // TypeScript
     '@typescript-eslint/ban-ts-comment': 0,
