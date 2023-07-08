@@ -12,7 +12,7 @@ export const Lucia: Props[] = [
   {
     fileName: '20230703_Lowrise',
     Character: 'lucia',
-    Featured: false,
+    Featured: true,
     Twitter: 'https://twitter.com/L0WR15E/status/1675836797627006976',
     Pixiv: '',
     Skeb: 'https://skeb.jp/@L0WR15E/works/11',
