@@ -8,7 +8,7 @@ import { FaGithub, FaMastodon, FaRss, FaTelegramPlane, FaTwitter } from 'react-i
 const YEAR = new Date().getFullYear()
 
 // Nextra blog theme config
-const BlogThemeConfig = {
+const NextraThemeConfig = {
   // <Head>
   head: CustomHead,
 
@@ -74,4 +74,4 @@ const BlogThemeConfig = {
   ),
 }
 
-export default BlogThemeConfig
+export default NextraThemeConfig
