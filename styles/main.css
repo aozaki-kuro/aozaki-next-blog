@@ -108,8 +108,16 @@
 }
 
 .date {
-  font-feature-settings: 'case' 1, 'cpsp' 1, 'dlig' 1, 'cv01' 1, 'cv02', 'cv03' 1, 'cv04' 1,
-    'tnum' 1, 'calt' 1;
+  font-feature-settings:
+    'case' 1,
+    'cpsp' 1,
+    'dlig' 1,
+    'cv01' 1,
+    'cv02',
+    'cv03' 1,
+    'cv04' 1,
+    'tnum' 1,
+    'calt' 1;
 }
 
 /* !! Ugly Hack to Get Rid of Patches !! */

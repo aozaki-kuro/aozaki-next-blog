@@ -15,25 +15,20 @@ export const inter = localFont({
     {
       path: '../public/fonts/InterDisplay-roman.var.woff2',
       weight: '100',
-      style: 'normal'
+      style: 'normal',
     },
     {
       path: '../public/fonts/InterDisplay-roman.var.woff2',
       weight: '900',
-      style: 'normal'
-    }
-  ]
+      style: 'normal',
+    },
+  ],
 })
 
 export default function App({ Component, pageProps }) {
   return (
     <main className={`${inter.variable} font-sans`}>
-      <link
-        rel="alternate"
-        type="application/rss+xml"
-        title="RSS"
-        href="/feed.xml"
-      />
+      <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml" />
       <Component {...pageProps} />
       <CustomAnalytics />
     </main>
