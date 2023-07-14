@@ -18,6 +18,8 @@ const IllustratorInfo = ({ PublishDate, Creator, Twitter, Skeb, Pixiv }: Commiss
     ) : null
   }
 
+  const isAllLinksEmpty = !Twitter && !Skeb && !Pixiv
+
   return (
     <div className="flex flex-auto font-mono text-sm ss:text-xs">
       <span className="">{formattedDate}</span>
@@ -26,9 +28,15 @@ const IllustratorInfo = ({ PublishDate, Creator, Twitter, Skeb, Pixiv }: Commiss
       <span className="grow text-right">
         {'['}
         <span className="pr-3 ss:pr-2" />
-        {createLink(Twitter, 'Twitter')}
-        {createLink(Pixiv, 'Pixiv')}
-        {createLink(Skeb, 'Skeb')}
+        {isAllLinksEmpty ? (
+          <span className="pr-3 ss:pr-2">N/A</span>
+        ) : (
+          <>
+            {createLink(Twitter, 'Twitter')}
+            {createLink(Pixiv, 'Pixiv')}
+            {createLink(Skeb, 'Skeb')}
+          </>
+        )}
         {']'}
       </span>
     </div>
