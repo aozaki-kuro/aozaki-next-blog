@@ -35,8 +35,9 @@
       "automerge": true
     },
     {
-      "matchPackagePatterns": ["types", "tsx"],
-      "groupName": "Next.js",
+      "matchDepTypes": ["devDependencies"],
+      "matchPackageNames": ["types", "tsx"],
+      "groupName": "TypeScript",
       "automerge": true
     },
     {
