@@ -13,13 +13,30 @@
   "packageRules": [
     {
       "matchDepTypes": ["devDependencies"],
-      "matchPackagePatterns": ["lint", "prettier"],
-      "groupName": "eslint",
+      "matchPackagePatterns": ["eslint"],
+      "groupName": "ESLint and plugins",
+      "automerge": true
+    },
+    {
+      "matchDepTypes": ["devDependencies"],
+      "matchPackagePatterns": ["prettier"],
+      "groupName": "Prettier and plugins",
       "automerge": true
     },
     {
       "matchPackagePatterns": ["nextra"],
       "groupName": "Nextra",
+      "automerge": true
+    },
+    {
+      "matchPackageNames": ["^next(?!ra)$"],
+      "excludePackageNames": ["^nextra$"],
+      "groupName": "Next.js",
+      "automerge": true
+    },
+    {
+      "matchPackagePatterns": ["types", "tsx"],
+      "groupName": "Next.js",
       "automerge": true
     },
     {
