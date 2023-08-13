@@ -18,11 +18,11 @@ dependencies:
     specifier: ^4.2.2
     version: 4.2.2(next@13.4.13)
   nextra:
-    specifier: 2.10.0
-    version: 2.10.0(next@13.4.13)(react-dom@18.2.0)(react@18.2.0)
+    specifier: 2.11.0
+    version: 2.11.0(next@13.4.13)(react-dom@18.2.0)(react@18.2.0)
   nextra-theme-blog:
-    specifier: 2.10.0
-    version: 2.10.0(next@13.4.13)(nextra@2.10.0)(react-dom@18.2.0)(react@18.2.0)
+    specifier: 2.11.0
+    version: 2.11.0(next@13.4.13)(nextra@2.11.0)(react-dom@18.2.0)(react@18.2.0)
   postcss:
     specifier: ^8.4.27
     version: 8.4.27
@@ -1196,8 +1196,8 @@ packages:
       execa: 0.8.0
     dev: false
 
-  /clsx@1.2.1:
-    resolution: {integrity: sha512-EcR6r5a8bj6pu3ycsa/E/cKVGuTgZJZdsyUYHOksG/UHIiKfjxzRxYJpyVBwYaQeOvghal9fcc4PidlgzugAQg==}
+  /clsx@2.0.0:
+    resolution: {integrity: sha512-rQ1+kcj+ttHG0MKVGBUXwayCCF1oh39BF5COIpRzuCEv8Mwjv0XucrI2ExNTOn9IlLifGClWQcU9BrZORvtw6Q==}
     engines: {node: '>=6'}
     dev: false
 
@@ -3959,11 +3959,11 @@ packages:
       - babel-plugin-macros
     dev: false
 
-  /nextra-theme-blog@2.10.0(next@13.4.13)(nextra@2.10.0)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-WvkaN2V12Jy+MqaZzrpukr9IPlbG+jTolKCCZi1hC5RyQ1CDPBONe6ETAsaX2XcUvcsivQHnRujixWSKjew/9A==}
+  /nextra-theme-blog@2.11.0(next@13.4.13)(nextra@2.11.0)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-Y371DyJ4u6DDLoBATY1Ml7pz+y04UXyQJhtdGvQBbHn3Ys3D5KDJ6ZDjvvwUOUBUWSMPAnyeIokRgQlau9AB1w==}
     peerDependencies:
       next: '>=9.5.3'
-      nextra: 2.10.0
+      nextra: 2.11.0
       react: '>=16.13.1'
       react-cusdis: ^2.1.3
       react-dom: '>=16.13.1'
@@ -3973,13 +3973,13 @@ packages:
     dependencies:
       next: 13.4.13(react-dom@18.2.0)(react@18.2.0)
       next-themes: 0.2.1(next@13.4.13)(react-dom@18.2.0)(react@18.2.0)
-      nextra: 2.10.0(next@13.4.13)(react-dom@18.2.0)(react@18.2.0)
+      nextra: 2.11.0(next@13.4.13)(react-dom@18.2.0)(react@18.2.0)
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
     dev: false
 
-  /nextra@2.10.0(next@13.4.13)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-euv93UnWpdth8slMRJLqMrWvCCzR/VTVH6DPrn1JW7hZS03c2lzG2q+fsiYULGiy/kFyysmlxd4Nx5KGB1Txwg==}
+  /nextra@2.11.0(next@13.4.13)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-I9F+NYl5fMBG6HUdPAvD6SbH3lpAvBeOmkS2Hkk+Cn3r8Ouc/QgLmJfpBXmG3gVFFxqYs2eQ2w/ppIivLLdylg==}
     engines: {node: '>=16'}
     peerDependencies:
       next: '>=9.5.3'
@@ -3992,7 +3992,7 @@ packages:
       '@napi-rs/simple-git': 0.1.8
       '@theguild/remark-mermaid': 0.0.4(react@18.2.0)
       '@theguild/remark-npm2yarn': 0.1.1
-      clsx: 1.2.1
+      clsx: 2.0.0
       github-slugger: 2.0.0
       graceful-fs: 4.2.11
       gray-matter: 4.0.3
