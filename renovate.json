@@ -1,0 +1,49 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+
+  "extends": ["config:base"],
+
+  "lockFileMaintenance": {
+    "enabled": true,
+    "automerge": true,
+    "automergeType": "pr",
+    "platformAutomerge": true
+  },
+
+  "packageRules": [
+    {
+      "matchDepTypes": ["devDependencies"],
+      "matchPackagePatterns": ["eslint"],
+      "groupName": "ESLint and plugins",
+      "automerge": true
+    },
+    {
+      "matchDepTypes": ["devDependencies"],
+      "matchPackagePatterns": ["prettier"],
+      "groupName": "Prettier and plugins",
+      "automerge": true
+    },
+    {
+      "matchPackagePatterns": ["nextra"],
+      "groupName": "Nextra",
+      "automerge": true
+    },
+    {
+      "matchPackageNames": ["^next(?!ra)$"],
+      "excludePackageNames": ["^nextra$"],
+      "groupName": "Next.js",
+      "automerge": true
+    },
+    {
+      "matchDepTypes": ["devDependencies"],
+      "matchPackageNames": ["types", "tsx"],
+      "groupName": "TypeScript",
+      "automerge": true
+    },
+    {
+      "matchUpdateTypes": ["minor", "patch"],
+      "matchCurrentVersion": "!/^0/",
+      "automerge": true
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{/* CSS */}
+import '../styles/main.css'
+
+{/* Analytics */}
+import CustomAnalytics from '#components/analytics'
+
+{/* Custom Font */}
+import localFont from 'next/font/local'
+
+export const inter = localFont({
+  variable: '--font-inter',
+  display: 'block',
+  style: 'normal',
+  src: [
+    {
+      path: '../public/fonts/InterDisplay-roman.var.woff2',
+      weight: '100',
+      style: 'normal',
+    },
+    {
+      path: '../public/fonts/InterDisplay-roman.var.woff2',
+      weight: '900',
+      style: 'normal',
+    },
+  ],
+})
+
+export default function App({ Component, pageProps }) {
+  return (
+    <main className={`${inter.variable} font-sans`}>
+      <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml" />
+      <Component {...pageProps} />
+      <CustomAnalytics />
+    </main>
+  )
+}
