@@ -3,8 +3,9 @@ export interface CommissionInfoProps {
   PublishDate: string
   Creator: string
   Character: string
-  Twitter: string
-  Pixiv: string
-  Skeb: string
+  Twitter?: string
+  Pixiv?: string
+  Fantia?: string
+  Skeb?: string
   Featured: boolean
 }
