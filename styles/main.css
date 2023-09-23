@@ -63,7 +63,7 @@
   a {
     text-underline-position: from-font;
     text-decoration-skip-ink: all;
-    @apply font-medium decoration-dec-light decoration-from-font transition-opacity hover:opacity-70 dark:decoration-dec-dark !important;
+    @apply font-medium decoration-dec-light decoration-from-font transition-opacity hover:opacity-70 dark:decoration-dec-dark dark:decoration-1 !important;
   }
 
   a[data-footnote-ref] {

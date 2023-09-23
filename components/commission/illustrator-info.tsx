@@ -19,7 +19,7 @@ const IllustratorInfo = ({
     return url ? (
       <>
         <span className="pr-3 ss:pr-2" />
-        <Link href={url} className="underline-offset-[0.2rem]" target="_blank">
+        <Link href={url} className="underline-offset-[0.1rem]" target="_blank">
           {text}
         </Link>
       </>
