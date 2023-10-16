@@ -97,7 +97,7 @@ devDependencies:
     version: 8.0.3
   lint-staged:
     specifier: ^15.0.0
-    version: 15.0.0
+    version: 15.0.1
   prettier:
     specifier: ^3.0.3
     version: 3.0.3
@@ -2558,7 +2558,7 @@ packages:
       mdast-util-mdxjs-esm: 1.3.1
       property-information: 6.3.0
       space-separated-tokens: 2.0.2
-      style-to-object: 0.4.3
+      style-to-object: 0.4.4
       unist-util-position: 4.0.4
       zwitch: 2.0.4
     transitivePeerDependencies:
@@ -2935,8 +2935,8 @@ packages:
     resolution: {integrity: sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==}
     dev: false
 
-  /lint-staged@15.0.0:
-    resolution: {integrity: sha512-OdrAd/qZhO4MnPyNRehI1Fh6j8kcfQoGpjQ1Vw8dSkDkNONdqe/HpKXqtKpFIPCAYeF4/tfnE11MnjLYuLKjqA==}
+  /lint-staged@15.0.1:
+    resolution: {integrity: sha512-2IU5OWmCaxch0X0+IBF4/v7sutpB+F3qoXbro43pYjQTOo5wumckjxoxn47pQBqqBsCWrD5HnI2uG/zJA7isew==}
     engines: {node: '>=18.12.0'}
     hasBin: true
     dependencies:
@@ -4756,8 +4756,8 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /style-to-object@0.4.3:
-    resolution: {integrity: sha512-RP9icVx0g3Pt0CyNiC2qvBkqMTHD5uBVC2XYcSr/ag8QWKApx/oXEh2ehMGSyzkjK0+ySkukMuO+mz+DNQq57Q==}
+  /style-to-object@0.4.4:
+    resolution: {integrity: sha512-HYNoHZa2GorYNyqiCaBgsxvcJIn7OHq6inEga+E6Ke3m5JkoqpQbnFssk4jwe+K7AhGa2fcha4wSOf1Kn01dMg==}
     dependencies:
       inline-style-parser: 0.1.1
     dev: false
