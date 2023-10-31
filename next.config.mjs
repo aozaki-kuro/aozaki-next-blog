@@ -100,4 +100,8 @@ export default withNextra({
       },
     ]
   },
+
+  experimental: {
+    webpackBuildWorker: true,
+  },
 })
