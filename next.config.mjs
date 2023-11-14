@@ -69,11 +69,6 @@ export default withNextra({
   async redirects() {
     return [
       {
-        source: '/posts/kanaut-nishe-goods-1',
-        destination: '/posts/kanaut-nishe-merch',
-        permanent: true,
-      },
-      {
         source: '/blog/:slug*',
         destination: '/posts/:slug*',
         permanent: true,
@@ -102,6 +97,6 @@ export default withNextra({
   },
 
   experimental: {
-    webpackBuildWorker: true,
+    // webpackBuildWorker: true,
   },
 })
