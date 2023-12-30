@@ -1,11 +1,13 @@
-{/* CSS */}
+/* CSS */
 import '../styles/main.css'
 
-{/* Analytics */}
+/* Analytics */
 import CustomAnalytics from '#components/analytics'
 
-{/* Custom Font */}
+/* Custom Font */
 import localFont from 'next/font/local'
+
+import type { AppProps } from 'next/app'
 
 export const inter = localFont({
   variable: '--font-inter',
@@ -25,7 +27,7 @@ export const inter = localFont({
   ],
 })
 
-export default function App({ Component, pageProps }) {
+export default function App({ Component, pageProps }: AppProps) {
   return (
     <main className={`${inter.variable} font-sans`}>
       <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml" />
