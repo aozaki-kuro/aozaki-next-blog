@@ -104,7 +104,7 @@ export default withNextra({
         destination: 'https://sight.aozaki.cc/app.js',
       },
       {
-        source: '/sight/api/event',
+        source: '/sight/event',
         destination: 'https://sight.aozaki.cc/api/event',
       },
     ]
