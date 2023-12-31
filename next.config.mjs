@@ -103,6 +103,10 @@ export default withNextra({
         source: '/app.js',
         destination: 'https://sight.aozaki.cc/app.js',
       },
+      {
+        source: '/api/event',
+        destination: 'https://sight.aozaki.cc/api/event',
+      },
     ]
   },
 
