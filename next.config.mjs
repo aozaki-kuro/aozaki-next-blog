@@ -96,6 +96,20 @@ export default withNextra({
     ]
   },
 
+  // Plausible Analytics
+  async rewrites() {
+    return [
+      {
+        source: '/app.js',
+        destination: 'https://sight.aozaki.cc/app.js',
+      },
+      {
+        source: '/api/event', // Or '/api/event/' if you have `trailingSlash: true` in this config
+        destination: 'https://sight.aozaki.cc/api/event',
+      },
+    ]
+  },
+
   experimental: {
     // webpackBuildWorker: true,
   },
