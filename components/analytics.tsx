@@ -9,8 +9,7 @@ const Analytics = () => {
     <Script
       strategy="afterInteractive"
       data-domain="blog.aozaki.cc"
-      src="/sight/app.js"
-      data-api="/sight/event"
+      src="https://sight.aozaki.cc/app.js"
     />
   )
 }
