@@ -9,7 +9,7 @@
     "prebuild": "node scripts/gen-rss.mjs",
     "postbuild": "next-sitemap --config ./scripts/next-sitemap.config.js",
     "prod": "pnpm prebuild && pnpm build && pnpm postbuild",
-    "prepare": "husky install"
+    "prepare": "husky"
   },
   "dependencies": {
     "autoprefixer": "^10.4.17",
