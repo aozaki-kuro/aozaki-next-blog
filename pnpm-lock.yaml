@@ -94,8 +94,8 @@ devDependencies:
     specifier: 5.1.3
     version: 5.1.3(eslint-config-prettier@9.1.0)(eslint@8.56.0)(prettier@3.2.4)
   husky:
-    specifier: ^8.0.3
-    version: 8.0.3
+    specifier: ^9.0.0
+    version: 9.0.7
   lint-staged:
     specifier: ^15.2.0
     version: 15.2.0
@@ -705,11 +705,11 @@ packages:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.17.0
 
-  /@nolyfill/array-includes@1.0.24:
-    resolution: {integrity: sha512-4vnalzvzxhffSjyRVlmYJo1wqTCL5jesG94CeER4bwUx/S7sCtInHEZ3fncnt+MYMX+53BbSPOQT8Oz3NmdGig==}
+  /@nolyfill/array-includes@1.0.28:
+    resolution: {integrity: sha512-3LFZArKSQTQu//UvQXb4lBHWvhxmiZ5h2v50WIXfWb5UPNgeLpeGP8WgsfTePCpZgNlxt5JVFDdv5zLRa7cQXw==}
     engines: {node: '>=12.4.0'}
     dependencies:
-      '@nolyfill/shared': 1.0.24
+      '@nolyfill/shared': 1.0.28
     dev: true
 
   /@nolyfill/array.prototype.findlastindex@1.0.24:
@@ -719,18 +719,18 @@ packages:
       '@nolyfill/shared': 1.0.24
     dev: true
 
-  /@nolyfill/array.prototype.flat@1.0.24:
-    resolution: {integrity: sha512-RCD+BTf2JXc2SexkTOVm7ELYfQRmJjfdHBavuWaE715QP8zvv5zh4hpFqS7jZpDZWC4bTCpmiuDS3CmEepKrLA==}
+  /@nolyfill/array.prototype.flat@1.0.28:
+    resolution: {integrity: sha512-bvBWaZDCWV7+jD70tJCy3Olp03Qx9svHN2KmC2j0CYvqfYRet5+iOb09nzb6QULqGrj7O8DQJ03ZQk6gih9J3g==}
     engines: {node: '>=12.4.0'}
     dependencies:
-      '@nolyfill/shared': 1.0.24
+      '@nolyfill/shared': 1.0.28
     dev: true
 
-  /@nolyfill/array.prototype.flatmap@1.0.24:
-    resolution: {integrity: sha512-OH6aQ70QztI/5apHKaMWehcBPgxNy5dWGPlWNUSoD6BfG0u1XdOxtFOjqAruQnU+mbxr6eHA9OMAkHUvxTyl0Q==}
+  /@nolyfill/array.prototype.flatmap@1.0.28:
+    resolution: {integrity: sha512-Ui/aMijqnYISchzIG0MbRiRh2DKWORJW2s//nw6rJ5jFp6x+nmFCQ5U2be3+id36VsmTxXiv+qLAHxdfXz8g8g==}
     engines: {node: '>=12.4.0'}
     dependencies:
-      '@nolyfill/shared': 1.0.24
+      '@nolyfill/shared': 1.0.28
     dev: true
 
   /@nolyfill/array.prototype.tosorted@1.0.24:
@@ -751,25 +751,25 @@ packages:
     resolution: {integrity: sha512-RhoW4Hk6B4/DM8B6sjbCkVJkhmtycA38cURrC489u4lwb/YafpUeknuLRzBoaNWvfLqkyR3rM/t0aa8U2/tvkQ==}
     engines: {node: '>=12.4.0'}
 
-  /@nolyfill/object.assign@1.0.24:
-    resolution: {integrity: sha512-s1UPaJu730s6WWct5+NZVCDxu3OXM74ZvWxfnluNp89Rha92xDn5QpRqtHolB2WsTXBwQJDqZV72Jhr1gPTIbw==}
+  /@nolyfill/object.assign@1.0.28:
+    resolution: {integrity: sha512-rrtnXgU2XJvUF9jFMwRbyvLdAlCIJOKtecflza4xWDom6u8UPliTOS0OQ6kvhql7/hpv9b8x9p0s467BVY58xg==}
     engines: {node: '>=12.4.0'}
     dependencies:
-      '@nolyfill/shared': 1.0.24
+      '@nolyfill/shared': 1.0.28
     dev: true
 
-  /@nolyfill/object.entries@1.0.24:
-    resolution: {integrity: sha512-im+bDIpHCgshjKasOEyHpQNE34xMtQMyV6ECLtkOTwZ0RX4OleSKSreogVbOyo5ocLR7PoscmdM8TQRpVQSVpQ==}
+  /@nolyfill/object.entries@1.0.28:
+    resolution: {integrity: sha512-2t4PayP6Sx7Z20HJjcf8XhhPBO8/H31bwMdP0yEdDcxSXeEhl90Ibb9E3XKzSlcsGf43nXyfabHNrnfvdWE4Ng==}
     engines: {node: '>=12.4.0'}
     dependencies:
-      '@nolyfill/shared': 1.0.24
+      '@nolyfill/shared': 1.0.28
     dev: true
 
-  /@nolyfill/object.fromentries@1.0.24:
-    resolution: {integrity: sha512-nl9e2bebvirv0XE70hdHlHrqXE0Kjwp8BsyHkazOSUM/3Y3YQfcEEIrtf402bdu/jYew4EApcMd8iO4ODyrDcw==}
+  /@nolyfill/object.fromentries@1.0.28:
+    resolution: {integrity: sha512-EUt70p38p+xdHDi2i8pIgw6HjrI3y9zndVhAZdEQsAvatKGKRpe3XWZRleEwYRZjkbeAG53Pz30j4tE1IJjvQQ==}
     engines: {node: '>=12.4.0'}
     dependencies:
-      '@nolyfill/shared': 1.0.24
+      '@nolyfill/shared': 1.0.28
     dev: true
 
   /@nolyfill/object.groupby@1.0.24:
@@ -786,11 +786,11 @@ packages:
       '@nolyfill/shared': 1.0.24
     dev: true
 
-  /@nolyfill/object.values@1.0.24:
-    resolution: {integrity: sha512-FEbvgDQUGDdWZmXHvg8DhKzI9LM3jclZKVmkIx5ZMs3xLb37Sh/c6VG56pmObrHZjwISlDs4cHouVYRsFzwLZw==}
+  /@nolyfill/object.values@1.0.28:
+    resolution: {integrity: sha512-W6CdQv4Y/19aA5tenUhRELqlBoD92D4Uh1TDp5uHXD7s9zEHgcDCPCdA8ak6y4I66fR//Fir6C1mAQWv1QLnXw==}
     engines: {node: '>=12.4.0'}
     dependencies:
-      '@nolyfill/shared': 1.0.24
+      '@nolyfill/shared': 1.0.28
     dev: true
 
   /@nolyfill/shared@1.0.21:
@@ -801,11 +801,15 @@ packages:
     resolution: {integrity: sha512-TGCpg3k5N7jj9AgU/1xFw9K1g4AC1vEE5ZFkW77oPNNLzprxT17PvFaNr/lr3BkkT5fJ5LNMntaTIq+pyWaeEA==}
     dev: true
 
-  /@nolyfill/string.prototype.matchall@1.0.24:
-    resolution: {integrity: sha512-SkuI/OiXNBKGakbtRsuaLHTrKbf+wNWNCACk+6116dqwmVXOg1O+XzjZRqFuzS1ml5gEJ0XTkaST89LXuevv1g==}
+  /@nolyfill/shared@1.0.28:
+    resolution: {integrity: sha512-UJTshFMDgugBcYXGLopbL1enYpGREOEfjUMQKLPLeJqWfbfElGtYbGbUcucCENa7cicGo3M5u/DnPiZe/PYQyw==}
+    dev: true
+
+  /@nolyfill/string.prototype.matchall@1.0.28:
+    resolution: {integrity: sha512-k74WKi7WmtRV847QWlY1ndg6XU1loeAyO9+NVoXrd7RL5lEjBtovp4CPZkifipBMBrZrZu2WwrQqkGrvLNZYpw==}
     engines: {node: '>=12.4.0'}
     dependencies:
-      '@nolyfill/shared': 1.0.24
+      '@nolyfill/shared': 1.0.28
     dev: true
 
   /@pkgjs/parseargs@0.11.0:
@@ -2075,10 +2079,10 @@ packages:
         optional: true
     dependencies:
       '@typescript-eslint/parser': 6.19.1(eslint@8.56.0)(typescript@5.3.3)
-      array-includes: /@nolyfill/array-includes@1.0.24
+      array-includes: /@nolyfill/array-includes@1.0.28
       array.prototype.findlastindex: /@nolyfill/array.prototype.findlastindex@1.0.24
-      array.prototype.flat: /@nolyfill/array.prototype.flat@1.0.24
-      array.prototype.flatmap: /@nolyfill/array.prototype.flatmap@1.0.24
+      array.prototype.flat: /@nolyfill/array.prototype.flat@1.0.28
+      array.prototype.flatmap: /@nolyfill/array.prototype.flatmap@1.0.28
       debug: 3.2.7
       doctrine: 2.1.0
       eslint: 8.56.0
@@ -2088,9 +2092,9 @@ packages:
       is-core-module: 2.13.1
       is-glob: 4.0.3
       minimatch: 3.1.2
-      object.fromentries: /@nolyfill/object.fromentries@1.0.24
+      object.fromentries: /@nolyfill/object.fromentries@1.0.28
       object.groupby: /@nolyfill/object.groupby@1.0.24
-      object.values: /@nolyfill/object.values@1.0.24
+      object.values: /@nolyfill/object.values@1.0.28
       semver: 6.3.1
       tsconfig-paths: 3.15.0
     transitivePeerDependencies:
@@ -2107,8 +2111,8 @@ packages:
     dependencies:
       '@babel/runtime': 7.23.9
       aria-query: 5.3.0
-      array-includes: /@nolyfill/array-includes@1.0.24
-      array.prototype.flatmap: /@nolyfill/array.prototype.flatmap@1.0.24
+      array-includes: /@nolyfill/array-includes@1.0.28
+      array.prototype.flatmap: /@nolyfill/array.prototype.flatmap@1.0.28
       ast-types-flow: 0.0.8
       axe-core: 4.7.0
       axobject-query: 3.2.1
@@ -2120,8 +2124,8 @@ packages:
       jsx-ast-utils: 3.3.5
       language-tags: 1.0.9
       minimatch: 3.1.2
-      object.entries: /@nolyfill/object.entries@1.0.24
-      object.fromentries: /@nolyfill/object.fromentries@1.0.24
+      object.entries: /@nolyfill/object.entries@1.0.28
+      object.fromentries: /@nolyfill/object.fromentries@1.0.28
     dev: true
 
   /eslint-plugin-prettier@5.1.3(eslint-config-prettier@9.1.0)(eslint@8.56.0)(prettier@3.2.4):
@@ -2160,8 +2164,8 @@ packages:
     peerDependencies:
       eslint: ^3 || ^4 || ^5 || ^6 || ^7 || ^8
     dependencies:
-      array-includes: /@nolyfill/array-includes@1.0.24
-      array.prototype.flatmap: /@nolyfill/array.prototype.flatmap@1.0.24
+      array-includes: /@nolyfill/array-includes@1.0.28
+      array.prototype.flatmap: /@nolyfill/array.prototype.flatmap@1.0.28
       array.prototype.tosorted: /@nolyfill/array.prototype.tosorted@1.0.24
       doctrine: 2.1.0
       es-iterator-helpers: /@nolyfill/es-iterator-helpers@1.0.21
@@ -2169,14 +2173,14 @@ packages:
       estraverse: 5.3.0
       jsx-ast-utils: 3.3.5
       minimatch: 3.1.2
-      object.entries: /@nolyfill/object.entries@1.0.24
-      object.fromentries: /@nolyfill/object.fromentries@1.0.24
+      object.entries: /@nolyfill/object.entries@1.0.28
+      object.fromentries: /@nolyfill/object.fromentries@1.0.28
       object.hasown: /@nolyfill/object.hasown@1.0.24
-      object.values: /@nolyfill/object.values@1.0.24
+      object.values: /@nolyfill/object.values@1.0.28
       prop-types: 15.8.1
       resolve: 2.0.0-next.5
       semver: 6.3.1
-      string.prototype.matchall: /@nolyfill/string.prototype.matchall@1.0.24
+      string.prototype.matchall: /@nolyfill/string.prototype.matchall@1.0.28
     dev: true
 
   /eslint-scope@7.2.2:
@@ -2710,9 +2714,9 @@ packages:
     engines: {node: '>=16.17.0'}
     dev: true
 
-  /husky@8.0.3:
-    resolution: {integrity: sha512-+dQSyqPh4x1hlO1swXBiNb2HzTDN1I2IGLQx1GrBuiqFJfoMrnZWwVmatvSiO+Iz8fBUnf+lekwNo4c2LlXItg==}
-    engines: {node: '>=14'}
+  /husky@9.0.7:
+    resolution: {integrity: sha512-vWdusw+y12DUEeoZqW1kplOFqk3tedGV8qlga8/SF6a3lOiWLqGZZQvfWvY0fQYdfiRi/u1DFNpudTSV9l1aCg==}
+    engines: {node: '>=18'}
     hasBin: true
     dev: true
 
@@ -2936,10 +2940,10 @@ packages:
     resolution: {integrity: sha512-ZZow9HBI5O6EPgSJLUb8n2NKgmVWTwCvHGwFuJlMjvLFqlGG6pjirPhtdsseaLZjSibD8eegzmYpUZwoIlj2cQ==}
     engines: {node: '>=4.0'}
     dependencies:
-      array-includes: /@nolyfill/array-includes@1.0.24
-      array.prototype.flat: /@nolyfill/array.prototype.flat@1.0.24
-      object.assign: /@nolyfill/object.assign@1.0.24
-      object.values: /@nolyfill/object.values@1.0.24
+      array-includes: /@nolyfill/array-includes@1.0.28
+      array.prototype.flat: /@nolyfill/array.prototype.flat@1.0.28
+      object.assign: /@nolyfill/object.assign@1.0.28
+      object.values: /@nolyfill/object.values@1.0.28
     dev: true
 
   /katex@0.16.9:
