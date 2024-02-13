@@ -6,15 +6,15 @@ export const Laxy: Props[] = [
     Character: 'tkmt',
     Featured: true,
     Twitter: 'https://twitter.com/laxyiii/status/1385985122332155908',
-    Pixiv: 'https://www.pixiv.net/artworks/94218084',
+    Pixiv: '',
     Skeb: '',
   },
   {
     fileName: '20210531_Laxy',
     Character: 'tkmt',
-    Featured: true,
+    Featured: false,
     Twitter: 'https://twitter.com/laxyiii/status/1402415053567975424',
-    Pixiv: 'https://www.pixiv.net/artworks/94219599',
+    Pixiv: '',
     Skeb: '',
   },
   {
@@ -22,7 +22,7 @@ export const Laxy: Props[] = [
     Character: 'tkmt',
     Featured: true,
     Twitter: 'https://twitter.com/laxyiii/status/1451854024609714183',
-    Pixiv: 'https://www.pixiv.net/artworks/94220608',
+    Pixiv: '',
     Skeb: '',
   },
   {
@@ -30,7 +30,7 @@ export const Laxy: Props[] = [
     Character: 'tkmt',
     Featured: true,
     Twitter: 'https://twitter.com/laxyiii/status/1481568202060709892',
-    Pixiv: 'https://www.pixiv.net/artworks/95659790',
+    Pixiv: '',
     Skeb: '',
   },
   {
@@ -38,7 +38,7 @@ export const Laxy: Props[] = [
     Character: 'tkmt',
     Featured: true,
     Twitter: 'https://twitter.com/laxyiii/status/1541634796887019522',
-    Pixiv: 'https://www.pixiv.net/artworks/101553383',
+    Pixiv: '',
     Skeb: '',
   },
 ]
