@@ -51,7 +51,7 @@
       "prettier --write"
     ]
   },
-  "packageManager": "pnpm@8.15.1",
+  "packageManager": "pnpm@8.15.2",
   "pnpm": {
     "overrides": {
       "array-includes": "npm:@nolyfill/array-includes@latest",
