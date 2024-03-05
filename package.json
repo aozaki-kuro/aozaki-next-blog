@@ -12,9 +12,9 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "autoprefixer": "^10.4.17",
+    "autoprefixer": "^10.4.18",
     "gray-matter": "^4.0.3",
-    "next": "^14.1.0",
+    "next": "^14.1.2",
     "next-sitemap": "^4.2.3",
     "nextra": "2.13.4",
     "nextra-theme-blog": "2.13.4",
@@ -27,17 +27,17 @@
     "tailwindcss": "^3.4.1"
   },
   "devDependencies": {
-    "@next/env": "^14.1.0",
-    "@types/node": "^20.11.17",
-    "@types/react": "^18.2.55",
+    "@next/env": "^14.1.2",
+    "@types/node": "^20.11.24",
+    "@types/react": "^18.2.63",
     "@types/react-dom": "^18.2.19",
-    "@typescript-eslint/eslint-plugin": "^7.0.1",
-    "@typescript-eslint/parser": "^7.0.1",
+    "@typescript-eslint/eslint-plugin": "^7.1.1",
+    "@typescript-eslint/parser": "^7.1.1",
     "eslint": "8.57.0",
     "eslint-config-next": "14.1.2",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "5.1.3",
-    "husky": "^9.0.10",
+    "husky": "^9.0.11",
     "lint-staged": "^15.2.2",
     "prettier": "^3.2.5",
     "prettier-plugin-tailwindcss": "^0.5.11",
@@ -68,7 +68,9 @@
       "object.hasown": "npm:@nolyfill/object.hasown@latest",
       "object.values": "npm:@nolyfill/object.values@latest",
       "string.prototype.matchall": "npm:@nolyfill/string.prototype.matchall@latest",
-      "hasown": "npm:@nolyfill/hasown@latest"
+      "hasown": "npm:@nolyfill/hasown@latest",
+      "array.prototype.findlast": "npm:@nolyfill/array.prototype.findlast@latest",
+      "array.prototype.toreversed": "npm:@nolyfill/array.prototype.toreversed@latest"
     }
   }
 }
