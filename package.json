@@ -6,9 +6,9 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "prebuild": "node scripts/gen-rss.mjs",
-    "postbuild": "next-sitemap --config ./scripts/next-sitemap.config.js",
-    "prod": "pnpm prebuild && pnpm build && pnpm postbuild",
+    "pre-build": "node scripts/gen-rss.mjs",
+    "post-build": "next-sitemap --config ./scripts/next-sitemap.config.js",
+    "prod": "pnpm pre-build && pnpm build && pnpm post-build",
     "prepare": "husky"
   },
   "dependencies": {
