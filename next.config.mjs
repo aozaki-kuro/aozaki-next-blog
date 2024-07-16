@@ -47,7 +47,8 @@ export default withNextra({
   // Image Loaders
   images: {
     domains: ['img.aozaki.cc'],
-    unoptimized: true,
+    // unoptimized: true,
+    minimumCacheTTL: 604800,
   },
 
   // Ignore Lint during Build
