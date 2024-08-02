@@ -1,2 +1,2 @@
-pnpm i
-pnpm lint-staged
+bun i
+bun lint-staged
