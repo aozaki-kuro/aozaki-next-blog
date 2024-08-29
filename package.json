@@ -6,7 +6,7 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "pre-build": "node scripts/gen-rss.mjs",
+    "pre-build": "bun run scripts/gen-rss.mjs",
     "post-build": "next-sitemap --config ./scripts/next-sitemap.config.js",
     "prod": "bun run pre-build && bun run build && bun run post-build",
     "lint": "eslint .",
