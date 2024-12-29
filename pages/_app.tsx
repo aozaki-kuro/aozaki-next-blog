@@ -1,12 +1,11 @@
-{/* CSS */}
+// _app.tsx
+
+import CustomAnalytics from '#components/analytics'
+import type { AppProps } from 'next/app'
+import localFont from 'next/font/local'
 import '../styles/main.css'
 
-{/* Analytics */}
-import CustomAnalytics from '#components/analytics'
-
-{/* Custom Font */}
-import localFont from 'next/font/local'
-
+// 定义自定义字体
 export const inter = localFont({
   variable: '--font-inter',
   display: 'block',
@@ -25,11 +24,17 @@ export const inter = localFont({
   ],
 })
 
-export default function App({ Component, pageProps }) {
+// 定义 App 组件
+export default function App({ Component, pageProps }: AppProps) {
   return (
     <main className={`${inter.variable} font-sans`}>
+      {/* RSS 链接 */}
       <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml" />
+
+      {/* 渲染页面组件 */}
       <Component {...pageProps} />
+
+      {/* 自定义分析组件 */}
       <CustomAnalytics />
     </main>
   )

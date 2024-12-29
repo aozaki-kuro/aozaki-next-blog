@@ -13,7 +13,7 @@ interface Page {
   frontMatter?: FrontMatter
 }
 
-const pages = getPagesUnderRoute('/posts')
+const pages = getPagesUnderRoute('/posts') || []
 
 // Sort once to prevent unnecessary computation on each render
 const sortedPages = pages.sort((a: Page, b: Page) => {
@@ -39,7 +39,7 @@ const BlogIndex = () => {
     })
 
     return (
-      <div key={page.route}>
+      <div key={page.route} className="blog-post-item" data-custom="true">
         <Link
           href={page.route}
           className="flex items-baseline text-2xl font-semibold text-inherit !no-underline"

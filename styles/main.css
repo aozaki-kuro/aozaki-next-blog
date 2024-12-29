@@ -122,7 +122,7 @@
 
 /* !! Ugly Hack to Get Rid of Patches !! */
 
-.post-item {
+article div:has(h2[class^='_'], p[class^='_'], time[class^='_']) {
   display: none;
 }
 
