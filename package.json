@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "gray-matter": "^4.0.3",
-    "next": "^15.0.0",
+    "next": "^15.0.3",
     "next-sitemap": "^4.2.3",
     "nextra": "2.13.4",
     "nextra-theme-blog": "2.13.4",
@@ -26,34 +26,29 @@
     "sharp": "^0.33.5"
   },
   "devDependencies": {
-    "@eslint/compat": "^1.1.1",
-    "@eslint/eslintrc": "^3.1.0",
-    "@eslint/js": "^9.10.0",
-    "@next/env": "^15.0.0",
-    "@types/eslint__js": "^8.42.3",
-    "@types/node": "^22.5.4",
-    "@types/react": "^18.3.5",
-    "@types/react-dom": "^18.3.0",
-    "@types/rss": "^0.0.32",
+    "@eslint/eslintrc": "^3.2.0",
+    "@next/env": "^15.1.3",
+    "@types/eslint__eslintrc": "^2.1.2",
+    "@types/node": "^22.10.2",
+    "@types/react": "^19.0.2",
+    "@types/react-dom": "^19.0.2",
     "autoprefixer": "^10.4.20",
-    "eslint": "^9.10.0",
-    "eslint-config-next": "15.0.3",
+    "eslint": "^9.17.0",
+    "eslint-config-next": "15.1.3",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.1",
-    "eslint-plugin-tailwindcss": "^3.17.4",
-    "husky": "^9.1.5",
-    "lint-staged": "^15.2.10",
-    "postcss": "^8.4.45",
-    "prettier": "^3.3.3",
-    "prettier-plugin-tailwindcss": "^0.6.6",
-    "tailwindcss": "^3.4.10",
-    "tsx": "^4.19.0",
-    "typescript": "^5.5.4",
-    "typescript-eslint": "^8.4.0"
+    "husky": "^9.1.7",
+    "jiti": "^2.4.2",
+    "lint-staged": "^15.3.0",
+    "postcss": "^8.4.49",
+    "prettier": "^3.4.2",
+    "prettier-plugin-tailwindcss": "^0.6.9",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.7.2"
   },
   "lint-staged": {
     "*.{js,mjs,cjs,jsx,ts,tsx}": [
-      "eslint --cache --fix --cache-location './node_modules/@eslint/.eslintcache/'"
+      "eslint --cache --fix --cache-location './node_modules/@eslint/.eslintcache/' --flag unstable_ts_config --config eslint.config.ts"
     ],
     "*.{json,css,md,mdx}": [
       "prettier --write"

@@ -46,7 +46,7 @@ export default withNextra({
 
   // Image Loaders
   images: {
-    domains: ['img.aozaki.cc'],
+    // domains: ['img.aozaki.cc'],
     // unoptimized: true,
     minimumCacheTTL: 604800,
   },
