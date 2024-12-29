@@ -47,58 +47,13 @@ export default withNextra({
   // Image Loaders
   images: {
     // domains: ['img.aozaki.cc'],
-    // unoptimized: true,
+    unoptimized: true,
     minimumCacheTTL: 604800,
   },
 
   // Ignore Lint during Build
   eslint: {
     ignoreDuringBuilds: true,
-  },
-
-  // Fix Routing by Redirecting
-  async redirects() {
-    return [
-      {
-        source: '/blog/:slug*',
-        destination: '/posts/:slug*',
-        permanent: true,
-      },
-      {
-        source: '/portfoilo/:slug*',
-        destination: '/photography/:slug*',
-        permanent: true,
-      },
-      {
-        source: '/about',
-        destination: '/',
-        permanent: true,
-      },
-      {
-        source: '/desk-new-layout',
-        destination: '/posts/new-desktop-layout',
-        permanent: true,
-      },
-      {
-        source: '/bladerunner-revisit',
-        destination: '/posts/bladerunner-revisit',
-        permanent: true,
-      },
-    ]
-  },
-
-  // Plausible Analytics
-  async rewrites() {
-    return [
-      {
-        source: '/sight/app.js',
-        destination: 'https://sight.aozaki.cc/app.js',
-      },
-      {
-        source: '/sight/event',
-        destination: 'https://sight.aozaki.cc/api/event',
-      },
-    ]
   },
 
   experimental: {
@@ -128,6 +83,49 @@ export default withNextra({
             {
               source: '/(.*)',
               headers: [...securityHeaders],
+            },
+          ]
+        },
+        // Fix Routing by Redirecting
+        async redirects() {
+          return [
+            {
+              source: '/blog/:slug*',
+              destination: '/posts/:slug*',
+              permanent: true,
+            },
+            {
+              source: '/portfoilo/:slug*',
+              destination: '/photography/:slug*',
+              permanent: true,
+            },
+            {
+              source: '/about',
+              destination: '/',
+              permanent: true,
+            },
+            {
+              source: '/desk-new-layout',
+              destination: '/posts/new-desktop-layout',
+              permanent: true,
+            },
+            {
+              source: '/bladerunner-revisit',
+              destination: '/posts/bladerunner-revisit',
+              permanent: true,
+            },
+          ]
+        },
+        // Plausible Analytics
+        async rewrites() {
+          return [
+            {
+              source: '/sight/app.js',
+              destination: 'https://sight.aozaki.cc/app.js',
+            },
+            {
+              source: '/sight/event',
+              destination: 'https://sight.aozaki.cc/api/event',
             },
           ]
         },

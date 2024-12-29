@@ -41,3 +41,6 @@ public/robots.txt
 
 # .env
 .env
+
+# wrangler
+/.wrangler/
