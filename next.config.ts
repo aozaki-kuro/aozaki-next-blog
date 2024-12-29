@@ -56,16 +56,6 @@ export default withNextra({
     ignoreDuringBuilds: true,
   },
 
-  // Security Headers
-  async headers() {
-    return [
-      {
-        source: '/(.*)',
-        headers: securityHeaders,
-      },
-    ]
-  },
-
   // Fix Routing by Redirecting
   async redirects() {
     return [
@@ -114,4 +104,32 @@ export default withNextra({
   experimental: {
     // webpackBuildWorker: true,
   },
+
+  ...(process.env.CF_PAGES === 'true'
+    ? /*
+       * If true = Cloudflare Pages
+       */
+      {
+        /*
+         * bun run pre-build && bunx @cloudflare/next-on-pages
+         * Change output dir: .vercel/output/static
+         * Add compatibility flag: nodejs_compat
+         * Then you can disable output: 'export'
+         */
+        output: 'export', // Use static output for Cloudflare Pages
+      }
+    : /*
+       * If false = Not Cloudflare Pages
+       */
+      {
+        // Add headers when NOT on Cloudflare Pages
+        async headers() {
+          return [
+            {
+              source: '/(.*)',
+              headers: [...securityHeaders],
+            },
+          ]
+        },
+      }),
 })

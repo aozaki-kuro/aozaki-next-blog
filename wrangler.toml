@@ -1,0 +1,11 @@
+name = "aozaki-next-blog"
+
+# pages_build_output_dir = ".vercel/output/static"
+pages_build_output_dir = "out"
+
+# compatibility_flags = ["nodejs_compat"]
+
+# compatibility_date = "2024-09-02"
+
+[env.production]
+vars = { NODE_VERSION = "22" , BUN_VERSION = "latest", "CF_PAGES" = "true", NODE_ENV = "production" }
