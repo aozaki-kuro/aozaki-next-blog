@@ -44,7 +44,6 @@ const IllustratorInfo = ({
             {createLink(Twitter ? Twitter : '', 'Twitter')}
             {createLink(Pixiv ? Pixiv : '', 'Pixiv')}
             {createLink(Fantia ? Fantia : '', 'Fantia')}
-            {createLink(Skeb ? Skeb : '', 'Skeb')}
           </>
         )}
       </span>

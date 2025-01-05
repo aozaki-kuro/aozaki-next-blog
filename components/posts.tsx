@@ -14,6 +14,18 @@ interface Page {
   frontMatter?: FrontMatter
 }
 
+// 新增日期格式化函数
+const formatDate = (dateString: string): string => {
+  const date = new Date(dateString)
+  if (isNaN(date.getTime())) return 'No date'
+
+  const year = date.getFullYear()
+  const month = String(date.getMonth() + 1).padStart(2, '0')
+  const day = String(date.getDate()).padStart(2, '0')
+
+  return `${year}/${month}/${day}`
+}
+
 const usePages = () => {
   const [pages, setPages] = useState<Page[]>([])
   const [isLoading, setIsLoading] = useState(true)
@@ -98,15 +110,7 @@ const BlogIndex = () => {
   return pages.map((page: Page) => {
     const frontMatter = page.frontMatter || {}
     const title = page.meta?.title || frontMatter.title || page.name
-
-    const dateObj = new Date(frontMatter.date || '')
-    const date = !isNaN(dateObj.getTime())
-      ? dateObj.toLocaleDateString(undefined, {
-          year: 'numeric',
-          month: '2-digit',
-          day: '2-digit',
-        })
-      : 'No date'
+    const formattedDate = formatDate(frontMatter.date || '')
 
     return (
       <div key={page.route} className="blog-post-item" data-custom="true">
@@ -114,10 +118,12 @@ const BlogIndex = () => {
           href={page.route}
           className="flex items-baseline text-2xl font-semibold text-inherit !no-underline"
         >
-          <h3 className="font-variation-500 my-[0.3rem] mr-4 flex-1 text-[1.1rem] font-medium text-zinc-900 dark:text-inherit">
+          <h3 className="font-variation-500 my-[0.3rem] mr-4 flex-1 text-[1.1rem] font-medium text-zinc-900 ss:text-sm dark:text-inherit">
             {title}
           </h3>
-          <time className="date shrink-0 whitespace-nowrap text-sm text-gray-400">{date}</time>
+          <time className="date shrink-0 whitespace-nowrap font-mono text-sm text-gray-400">
+            {formattedDate}
+          </time>
         </Link>
       </div>
     )
