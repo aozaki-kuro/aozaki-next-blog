@@ -9,8 +9,7 @@
     "pre-build": "bun run scripts/gen-rss.mjs",
     "post-build": "next-sitemap --config ./scripts/next-sitemap.config.js",
     "prod": "bun run pre-build && bun run build && bun run post-build",
-    "lint": "eslint .",
-    "lint-fix": "eslint . --fix",
+    "lint": "eslint --fix",
     "prepare": "husky"
   },
   "dependencies": {
@@ -29,7 +28,7 @@
     "@eslint/eslintrc": "^3.2.0",
     "@next/env": "^15.1.3",
     "@types/eslint__eslintrc": "^2.1.2",
-    "@types/node": "^22.10.2",
+    "@types/node": "^22.10.5",
     "@types/react": "^19.0.2",
     "@types/react-dom": "^19.0.2",
     "autoprefixer": "^10.4.20",
@@ -38,7 +37,6 @@
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.1",
     "husky": "^9.1.7",
-    "jiti": "^2.4.2",
     "lint-staged": "^15.3.0",
     "postcss": "^8.4.49",
     "prettier": "^3.4.2",
@@ -48,10 +46,10 @@
   },
   "lint-staged": {
     "*.{js,mjs,cjs,jsx,ts,tsx}": [
-      "eslint --cache --fix --cache-location './node_modules/@eslint/.eslintcache/' --flag unstable_ts_config --config eslint.config.ts"
+      "bun lint"
     ],
-    "*.{json,css,md,mdx}": [
-      "prettier --write"
+    "*.{json,css,md,mdx,jsonc}": [
+      "bun prettier --write"
     ]
   }
 }
