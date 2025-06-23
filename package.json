@@ -28,7 +28,7 @@
     "@eslint/eslintrc": "^3.2.0",
     "@next/env": "^15.1.4",
     "@types/eslint__eslintrc": "^2.1.2",
-    "@types/node": "^22.10.5",
+    "@types/node": "^24.0.0",
     "@types/react": "^19.0.5",
     "@types/react-dom": "^19.0.3",
     "autoprefixer": "^10.4.20",
