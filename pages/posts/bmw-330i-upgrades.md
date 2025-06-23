@@ -2,7 +2,7 @@
 title: 'BMW 330i 新车 & 升级'
 date: 2025/06/22
 author: Aozaki
-description: '人生第一辆自己买的车，还有谋划已久的升级'
+description: '人生第一辆自己买的车，还有计划已久的升级'
 image: https://img.aozaki.cc/20250622/cover.jpg
 ---
 
