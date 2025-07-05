@@ -2,8 +2,19 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import commissionData from '#data/commission.json'
-import { priorityList } from '#data/PriorityList'
-import type { CommissionInfoProps } from './types'
+import priorityList from '#data/priorityList.json'
+
+export interface CommissionInfoProps {
+  fileName: string
+  PublishDate: string
+  Creator: string
+  Character: string
+  Twitter?: string
+  Pixiv?: string
+  Fantia?: string
+  Skeb?: string
+  Featured: boolean
+}
 
 const IllustratorInfo = ({
   PublishDate,
